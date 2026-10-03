@@ -18,7 +18,6 @@ export default defineConfig({
         pangeam: resolve(__dirname, 'pangeam.html'),
         keyword: resolve(__dirname, 'keyword.html'),
         globaltrack: resolve(__dirname, 'globaltrack.html'),
-        lumus: resolve(__dirname, 'lumus-ai.html'),
         payhoa: resolve(__dirname, 'payhoa.html')
       }
     }
