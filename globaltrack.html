@@ -1,0 +1,613 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GlobalTrack — Case Study</title>
+  <meta name="description" content="GlobalTrack is a pipeline pig tracking and passage detection platform for oil and gas. A 0→1 product designed for onshore, offshore and subsea operations, built to work offline in remote locations.">
+  
+  <link rel="preload" as="image"
+        type="image/avif"
+        href="/case/globaltrack-hero-1200.avif?v=7075f81b"
+        imagesrcset="/case/globaltrack-hero-480.avif?v=7075f81b 480w, /case/globaltrack-hero-720.avif?v=7075f81b 720w, /case/globaltrack-hero-1200.avif?v=7075f81b 1200w, /case/globaltrack-hero-1600.avif?v=7075f81b 1600w, /case/globaltrack-hero-2400.avif?v=7075f81b 2400w"
+        imagesizes="100vw">
+  
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="/favicon-32.png" sizes="32x32" type="image/png">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "CreativeWork",
+    "name": "GlobalTrack — Case Study",
+    "headline": "GlobalTrack",
+    "description": "GlobalTrack is a pipeline pig tracking and passage detection platform for oil and gas. A 0→1 product designed for onshore, offshore and subsea operations, built to work offline in remote locations.",
+    "url": "https://sashamartynchuk.com/globaltrack",
+    "image": "https://sashamartynchuk.com/case/globaltrack-hero-1200.webp",
+    "author": {
+      "@type": "Person",
+      "name": "Sasha Martynchuk",
+      "url": "https://sashamartynchuk.com/"
+    },
+    "inLanguage": "en"
+  }
+  </script>
+  <link rel="canonical" href="https://sashamartynchuk.com/globaltrack">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="GlobalTrack — Case Study">
+  <meta property="og:description" content="GlobalTrack is a pipeline pig tracking and passage detection platform for oil and gas. A 0→1 product designed for onshore, offshore and subsea operations, built to work offline in remote locations.">
+  <meta property="og:url" content="https://sashamartynchuk.com/globaltrack">
+  
+  <meta property="og:image" content="https://sashamartynchuk.com/case/globaltrack-hero-1200.webp">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="GlobalTrack — Case Study">
+  <meta name="twitter:description" content="GlobalTrack is a pipeline pig tracking and passage detection platform for oil and gas. A 0→1 product designed for onshore, offshore and subsea operations, built to work offline in remote locations.">
+  <meta name="twitter:image" content="https://sashamartynchuk.com/case/globaltrack-hero-1200.webp">
+  <meta name="theme-color" content="#000000">
+
+  <link rel="preload" href="/fonts/NeueMontreal-Regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/fonts/NeueMontreal-Bold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/fonts/Arges-Black.woff2" as="font" type="font/woff2" crossorigin>
+
+  <script>
+  (function () {
+    function startAnalytics() {
+      var g = document.createElement('script');
+      g.async = true;
+      g.src = 'https://www.googletagmanager.com/gtag/js?id=G-FXJ8ZVD01Y';
+      document.head.appendChild(g);
+      window.dataLayer = window.dataLayer || [];
+      window.gtag = function () { window.dataLayer.push(arguments); };
+      window.gtag('js', new Date());
+      window.gtag('config', 'G-FXJ8ZVD01Y');
+
+      (function (c, l, a, r, i, t, y) {
+        c[a] = c[a] || function () { (c[a].q = c[a].q || []).push(arguments) };
+        t = l.createElement(r); t.async = 1; t.src = 'https://www.clarity.ms/tag/' + i;
+        y = l.getElementsByTagName(r)[0]; y.parentNode.insertBefore(t, y);
+      })(window, document, 'clarity', 'script', 'y0ua8k1qhj');
+
+      /*
+       * Contentsquare, tag 238705649a093.
+       *
+       * Their install doc gives a plain <script defer> in <head> for a project
+       * with no JS framework, which this is. It goes HERE instead, inside the
+       * same activation gate, for the reason the gate exists: a prerendered
+       * document runs its head scripts immediately, so a reader who merely
+       * HOVERED a case-study link would have opened a Contentsquare session for
+       * a page they never visited. Same URL, same tag, deferred to the moment
+       * the visit becomes a visit.
+       *
+       * The _uxa queue is declared before the script so anything the page ever
+       * pushes is buffered rather than dropped — the doc's IIFE loader pattern,
+       * which is the variant to use when _uxa is called directly.
+       */
+      window._uxa = window._uxa || [];
+      var cs = document.createElement('script');
+      cs.async = true;
+      cs.src = 'https://t.contentsquare.net/uxa/238705649a093.js';
+      document.head.appendChild(cs);
+    }
+
+    /*
+     * Even an activated visit waits for the page to settle: three trackers
+     * traced as 360ms of throttled main-thread time during boot. They start
+     * on the reader's first gesture, or a few seconds after load - whichever
+     * comes first. Same shape as index.html's copy.
+     */
+    function whenSettled() {
+      var fired = false;
+      var go = function () { if (fired) return; fired = true; startAnalytics(); };
+      var kinds = ['pointerdown', 'keydown', 'touchstart', 'wheel', 'scroll'];
+      for (var i = 0; i < kinds.length; i++) {
+        addEventListener(kinds[i], go, { once: true, passive: true, capture: true });
+      }
+      if (document.readyState === 'complete') setTimeout(go, 3500);
+      else addEventListener('load', function () { setTimeout(go, 3500); }, { once: true });
+    }
+
+    if (document.prerendering) {
+      document.addEventListener('prerenderingchange', whenSettled, { once: true });
+    } else {
+      whenSettled();
+    }
+  })();
+  </script>
+  <script>
+  /* Service worker: see public/sw.js for what it caches and why.
+
+     The kill switch is the important part of this snippet. A bad worker is
+     sticky - it can keep serving a broken site to anyone who has already
+     visited, and they have no way to ask for the real one. So:
+
+       ?nosw   unregisters it, clears its caches, and REMEMBERS that, so the
+               next load does not simply register it again - which is what the
+               first version of this did, one line after unregistering.
+       ?sw     turns it back on.
+
+     The flag lives in localStorage because it has to outlive the reload. */
+  (function () {
+    if (!('serviceWorker' in navigator)) return;
+    var OFF = 'sw-disabled';
+    var q = location.search;
+
+    if (q.indexOf('sw=1') > -1) { try { localStorage.removeItem(OFF); } catch (e) {} }
+
+    if (q.indexOf('nosw') > -1) {
+      try { localStorage.setItem(OFF, '1'); } catch (e) {}
+      navigator.serviceWorker.getRegistrations()
+        .then(function (rs) { return Promise.all(rs.map(function (r) { return r.unregister(); })); })
+        .then(function () { return window.caches ? caches.keys() : []; })
+        .then(function (ks) { return Promise.all(ks.map(function (k) { return caches.delete(k); })); })
+        .then(function () {
+          /* Uncontrolled on the way back, or the worker still serving this page
+             refills the caches that were just deleted. */
+          location.replace(location.pathname);
+        })
+        .catch(function () {});
+      return;
+    }
+
+    var off = false;
+    try { off = localStorage.getItem(OFF) === '1'; } catch (e) {}
+    if (off) {
+      /* Sweep on every disabled load, not only on the one that flipped the
+         switch. The worker that was still controlling the page during that
+         first pass refilled the caches after they were deleted; this load is
+         uncontrolled, so now the delete sticks. Costs nothing once empty. */
+      if (window.caches) {
+        caches.keys().then(function (ks) {
+          ks.forEach(function (k) { caches.delete(k); });
+        }).catch(function () {});
+      }
+      return;
+    }
+
+    addEventListener('load', function () {
+      navigator.serviceWorker.register('/sw.js').catch(function () {});
+    });
+  })();
+  </script>
+  <script type="speculationrules">
+  {
+    "prerender": [{
+      "where": { "href_matches": "/*" },
+      "eagerness": "moderate"
+    }]
+  }
+  </script>
+  <script>/* A skipped view transition (hidden tab, rapid re-navigation) rejects its
+     own ready/finished promises. Adopting them via pagereveal/pageswap covers
+     the case where the event still carries a transition object; when the skip
+     happens BEFORE pagereveal there is nothing to adopt, and only the global
+     handler can stop it surfacing as an uncaught error. Both, therefore. */
+    addEventListener("pagereveal",e=>{const t=e.viewTransition;if(t){t.ready&&t.ready.catch(()=>{});t.finished&&t.finished.catch(()=>{})}});
+    addEventListener("pageswap",e=>{const t=e.viewTransition;if(t&&t.finished)t.finished.catch(()=>{})});
+    addEventListener("unhandledrejection",e=>{const r=e.reason;
+      if(r&&r.name==="AbortError"&&/transition/i.test(r.message||""))e.preventDefault();});</script>
+  <script type="module" crossorigin src="/assets/index-CzGW6FVa.js"></script>
+  <script type="module" crossorigin src="/assets/fold-mode-DbKzrdIL.js"></script>
+  <script type="module" crossorigin src="/assets/elastic-pulse-CKgubG0W.js"></script>
+  <script type="module" crossorigin src="/assets/ScrollTrigger-DNECHiyU.js"></script>
+  <script type="module" crossorigin src="/assets/lightbox-08EUTKND.js"></script>
+  <script type="module" crossorigin src="/assets/main-BIwZVA1e.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/main-ClT0MItD.css">
+</head>
+<body>
+<!--
+
+     ┌───────────────────────────────────────────────────────────────┐
+     │   Hello, View Source.                                         │
+     └───────────────────────────────────────────────────────────────┘
+
+     You have found a very tidy document, and that is a little bit of a lie.
+
+     Every page on this site is written with its reasoning in the margin —
+     why Arges is preloaded and Neue Montreal is not, why the analytics tags
+     wait for a prerendered page to actually be activated, why the sign-off's
+     WebGL scene must not declare its lazy-load attribute (the SDK reads it as
+     a string, and "false" is truthy — that one cost an afternoon).
+
+     On this page that came to 16kB of prose against 19kB of actual markup.
+     Wonderful to work on. Rude to make you download. So a build step lifts it
+     out on the way to the server, and it all still lives one step upstream.
+
+     If you like this sort of thing, the whole of it is readable at:
+     github.com/iamvisp  ·  and I am reachable at iamvisp@gmail.com
+
+     Built with Vite, GSAP, Lenis, Matter.js, hand-written WebGL2, and a
+     number of Osmo Supply resources that are credited where they are used.
+
+-->
+
+  <a class="skip" href="#main">Skip to content</a>
+
+  <div class="rail" aria-hidden="true"><span class="rail__fill" data-rail></span></div>
+
+  <header class="topbar">
+    <a class="topbar__me" href="/" data-inkbleed aria-label="Sasha Martynchuk — home">
+      <img class="topbar__logo" src="/sasha-logo.svg" alt="Sasha Martynchuk" width="145" height="32" fetchpriority="high">
+    </a>
+
+    <a class="hero__mail copy-email-button" href="mailto:iamvisp@gmail.com"
+       aria-label="Copy email to clipboard" data-copy-button data-copy-email="iamvisp@gmail.com">
+      <span class="copy-email-icon" aria-hidden="true">
+        <span class="copy-email-icon__el"></span>
+        <span class="copy-email-icon__el"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3.33301 10H2.66634C2.31272 10 1.97358 9.85952 1.72353 9.60947C1.47348 9.35943 1.33301 9.02029 1.33301 8.66666V2.66667C1.33301 2.31304 1.47348 1.9739 1.72353 1.72386C1.97358 1.47381 2.31272 1.33333 2.66634 1.33333H8.66634C9.01996 1.33333 9.3591 1.47381 9.60915 1.72386C9.8592 1.9739 9.99967 2.31304 9.99967 2.66667V3.33333M7.33301 6H13.333C14.0694 6 14.6663 6.59695 14.6663 7.33333V13.3333C14.6663 14.0697 14.0694 14.6667 13.333 14.6667H7.33301C6.59663 14.6667 5.99967 14.0697 5.99967 13.3333V7.33333C5.99967 6.59695 6.59663 6 7.33301 6Z" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+        <span class="copy-email-icon__el"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M6.79985 9.9032L11.8909 4.81164C12.1252 4.57732 12.505 4.57724 12.7394 4.81146C12.9739 5.04579 12.974 5.42588 12.7396 5.66029L7.14697 11.2529C6.95526 11.4446 6.64443 11.4446 6.45272 11.2529L3.40565 8.2058C3.17137 7.97152 3.17137 7.59168 3.40565 7.3574C3.63992 7.12312 4.01977 7.12312 4.25405 7.3574L6.79985 9.9032Z" fill="currentColor"/></svg></span>
+      </span>
+      <span class="copy-email-text__wrap">
+        <span data-copy-email-element class="copy-email-text__el">iamvisp@gmail.com</span>
+        <span class="copy-email-text__el">Click to copy email</span>
+        <span class="copy-email-text__el">Copied to clipboard!</span>
+      </span>
+    </a>
+  </header>
+
+  <main id="main">
+    <section class="intro">
+      <div class="wrap" data-reveal-group data-stagger="90" data-start="top 85%" data-start="top 95%">
+        <h1 class="intro__title">GlobalTrack</h1>
+        <div class="intro__grid" data-reveal-group-nested data-stagger="110" data-ignore="false">
+          <div class="intro__lede">
+            <p>GlobalTrack is a comprehensive pipeline pig tracking and passage detection solution designed for the oil and gas industry. This case study documents my role in creating a 0→1 product that transformed how pipeline operators track, monitor, and report on pipeline inspection gauge (PIG) operations across onshore, offshore, and subsea environments.</p>
+          </div>
+          <dl class="facts">
+            <dt>My role</dt><dd>Product Designer</dd>
+            <dt>Timeline</dt><dd>Nov 2020 – Feb 2021 (2 months)</dd>
+            <dt>Team</dt><dd>Product Manager, Software Engineer, Head of Product</dd>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <div class="hero" style="--hero-ar: 1756 / 510">
+      <div class="hero__plate">
+        <picture >
+      <source type="image/avif" sizes="100vw" srcset="/case/globaltrack-hero-480.avif?v=7075f81b 480w, /case/globaltrack-hero-720.avif?v=7075f81b 720w, /case/globaltrack-hero-1200.avif?v=7075f81b 1200w, /case/globaltrack-hero-1600.avif?v=7075f81b 1600w, /case/globaltrack-hero-2400.avif?v=7075f81b 2400w">
+      <source type="image/webp" sizes="100vw" srcset="/case/globaltrack-hero-480.webp?v=7075f81b 480w, /case/globaltrack-hero-720.webp?v=7075f81b 720w, /case/globaltrack-hero-1200.webp?v=7075f81b 1200w, /case/globaltrack-hero-2400.webp?v=7075f81b 2400w">
+      <img class="hero__img" src="/case/globaltrack-hero-2400.webp?v=7075f81b"
+           width="4000" height="1163" alt="GlobalTrack — product imagery"
+           fetchpriority="high" decoding="async">
+    </picture>
+      </div>
+    </div>
+
+    <section class="band" id="challenge">
+      <div class="wrap" data-reveal-group data-stagger="90" data-start="top 85%">
+        <p class="band__no" aria-hidden="true">01</p>
+        <h2 class="band__title">Challenge</h2>
+        <div class="duo">
+          <div><h3 class="feature__name">Industry context</h3>
+        <p class="feature__body">Pipeline inspection gauges (PIGs) are critical tools in the oil and gas industry, used to clean, inspect, and maintain pipelines without interrupting flow. However, tracking these devices as they travel through miles of pipeline presented significant challenges:</p>
+        <ul class="notes notes--dot notes--wide">
+      <li><span class="notes__mark" aria-hidden="true">•</span><span><b>Fragmented Systems:</b> Pipeline tracking was previously managed through disconnected spreadsheets, paper logs, and manual processes</span></li>
+      <li><span class="notes__mark" aria-hidden="true">•</span><span><b>Data Inconsistency:</b> Information was often duplicated, outdated, or incomplete across different tracking methods</span></li>
+      <li><span class="notes__mark" aria-hidden="true">•</span><span><b>Limited Visibility:</b> Real-time location tracking was imprecise, leading to operational inefficiencies</span></li>
+      <li><span class="notes__mark" aria-hidden="true">•</span><span><b>Compliance Risks:</b> Inadequate documentation created potential regulatory compliance issues</span></li>
+    </ul></div>
+          <div><h3 class="feature__name">User needs</h3>
+        <p class="feature__body">Through extensive field research and stakeholder interviews, we identified several critical user needs:</p>
+        <ul class="notes notes--dot notes--wide">
+      <li><span class="notes__mark" aria-hidden="true">•</span><span><b>Field Operators</b> needed reliable tracking that works in remote locations with limited connectivity</span></li>
+      <li><span class="notes__mark" aria-hidden="true">•</span><span><b>Survey Teams</b> needed precise GPS coordinate recording with minimal manual input</span></li>
+      <li><span class="notes__mark" aria-hidden="true">•</span><span><b>Project Managers</b> needed a comprehensive overview of all pipeline projects and their status</span></li>
+      <li><span class="notes__mark" aria-hidden="true">•</span><span><b>Compliance Officers</b> needed standardized reporting that meets regulatory requirements</span></li>
+    </ul></div>
+        </div>
+        <figure class="figure"><picture data-parallax="trigger" data-parallax-start="5" data-parallax-end="-5" data-parallax-disable="mobileLandscape">
+      <source type="image/avif" sizes="(min-width: 1296px) 1200px, calc(100vw - 2 * clamp(1.25rem, 5vw, 3rem))" srcset="/case/globaltrack-challenge-480.avif?v=370e2a5c 480w, /case/globaltrack-challenge-720.avif?v=370e2a5c 720w, /case/globaltrack-challenge-1200.avif?v=370e2a5c 1200w, /case/globaltrack-challenge-1600.avif?v=370e2a5c 1600w, /case/globaltrack-challenge-2200.avif?v=370e2a5c 2200w">
+      <source type="image/webp" sizes="(min-width: 1296px) 1200px, calc(100vw - 2 * clamp(1.25rem, 5vw, 3rem))" srcset="/case/globaltrack-challenge-480.webp?v=370e2a5c 480w, /case/globaltrack-challenge-720.webp?v=370e2a5c 720w, /case/globaltrack-challenge-1200.webp?v=370e2a5c 1200w, /case/globaltrack-challenge-2200.webp?v=370e2a5c 2200w">
+      <img class="shot" src="/case/globaltrack-challenge-2200.webp?v=370e2a5c"
+           width="2200" height="1440" alt="How pipeline pig runs were tracked before GlobalTrack — spreadsheets, paper logs and manual handoffs"
+           loading="lazy" decoding="async" data-fold>
+    </picture></figure>
+      </div>
+    </section>
+
+    <section class="band" id="design-process">
+      <div class="wrap" data-reveal-group data-stagger="90" data-start="top 85%">
+        <p class="band__no" aria-hidden="true">02</p>
+        <h2 class="band__title">Design process</h2>
+        <div class="duo">
+          <div><h3 class="feature__name">Ideation &amp; exploration</h3>
+        <p class="feature__body">I partnered with the Product Owner to translate business requirements into user-centered design solutions:</p>
+        <ul class="notes notes--dot notes--wide">
+      <li><span class="notes__mark" aria-hidden="true">•</span><span><b>Collaborative Workshops:</b> Ran 3 ideation sessions with cross-functional teams to generate solution concepts</span></li>
+      <li><span class="notes__mark" aria-hidden="true">•</span><span><b>User Flow Mapping:</b> Created comprehensive user flows for key scenarios, identifying potential pain points</span></li>
+      <li><span class="notes__mark" aria-hidden="true">•</span><span><b>Feature Prioritization:</b> Used the MoSCoW method (Must have, Should have, Could have, Won’t have) to prioritize features based on user needs and technical feasibility</span></li>
+    </ul></div>
+          <div><h3 class="feature__name">Design decisions &amp; trade-offs</h3>
+        <ul class="notes notes--dot notes--wide">
+      <li><span class="notes__mark" aria-hidden="true">•</span><span><b>Offline Functionality:</b> Prioritized robust offline mode over feature richness to ensure reliability in remote locations.</span></li>
+      <li><span class="notes__mark" aria-hidden="true">•</span><span><b>Simplified UI:</b> Chose simpler UI solutions over complex interactions to optimize for field conditions and low training requirements.</span></li>
+      <li><span class="notes__mark" aria-hidden="true">•</span><span><b>Data Synchronization:</b> Designed a system that would store and sync data when connectivity was restored, ensuring no data loss.</span></li>
+    </ul></div>
+        </div>
+        <div class="work__slider" data-slider-status="idle" role="region"
+      aria-roledescription="carousel" aria-label="Flows, wireframes and prioritisation">
+      <div class="work__viewport">
+        <div class="work__track" data-grab="idle">
+        <div class="work__slide" data-slide-status="idle" role="group"
+             aria-roledescription="slide" aria-label="1 of 4">
+          <picture >
+      <source type="image/avif" sizes="(min-width: 1296px) 1200px, calc(100vw - 2 * clamp(1.25rem, 5vw, 3rem))" srcset="/case/globaltrack-process-1-480.avif?v=5f33a758 480w, /case/globaltrack-process-1-720.avif?v=5f33a758 720w, /case/globaltrack-process-1-1200.avif?v=5f33a758 1200w, /case/globaltrack-process-1-1600.avif?v=5f33a758 1600w">
+      <source type="image/webp" sizes="(min-width: 1296px) 1200px, calc(100vw - 2 * clamp(1.25rem, 5vw, 3rem))" srcset="/case/globaltrack-process-1-480.webp?v=5f33a758 480w, /case/globaltrack-process-1-720.webp?v=5f33a758 720w, /case/globaltrack-process-1-1200.webp?v=5f33a758 1200w, /case/globaltrack-process-1-1600.webp?v=5f33a758 1600w">
+      <img class="work__shot" src="/case/globaltrack-process-1-1600.webp?v=5f33a758"
+           width="1699" height="923" alt="Flows, wireframes and prioritisation — 1 of 4"
+           loading="lazy" decoding="async" data-fold>
+    </picture>
+        </div>
+        <div class="work__slide" data-slide-status="idle" role="group"
+             aria-roledescription="slide" aria-label="2 of 4">
+          <picture >
+      <source type="image/avif" sizes="(min-width: 1296px) 1200px, calc(100vw - 2 * clamp(1.25rem, 5vw, 3rem))" srcset="/case/globaltrack-process-2-480.avif?v=2ac5a941 480w, /case/globaltrack-process-2-720.avif?v=2ac5a941 720w, /case/globaltrack-process-2-1200.avif?v=2ac5a941 1200w, /case/globaltrack-process-2-1600.avif?v=2ac5a941 1600w, /case/globaltrack-process-2-1928.avif?v=2ac5a941 1928w">
+      <source type="image/webp" sizes="(min-width: 1296px) 1200px, calc(100vw - 2 * clamp(1.25rem, 5vw, 3rem))" srcset="/case/globaltrack-process-2-480.webp?v=2ac5a941 480w, /case/globaltrack-process-2-720.webp?v=2ac5a941 720w, /case/globaltrack-process-2-1200.webp?v=2ac5a941 1200w, /case/globaltrack-process-2-1928.webp?v=2ac5a941 1928w">
+      <img class="work__shot" src="/case/globaltrack-process-2-1928.webp?v=2ac5a941"
+           width="1928" height="869" alt="Flows, wireframes and prioritisation — 2 of 4"
+           loading="lazy" decoding="async" data-fold>
+    </picture>
+        </div>
+        <div class="work__slide" data-slide-status="idle" role="group"
+             aria-roledescription="slide" aria-label="3 of 4">
+          <picture >
+      <source type="image/avif" sizes="(min-width: 1296px) 1200px, calc(100vw - 2 * clamp(1.25rem, 5vw, 3rem))" srcset="/case/globaltrack-process-3-480.avif?v=8ba65c97 480w, /case/globaltrack-process-3-720.avif?v=8ba65c97 720w, /case/globaltrack-process-3-1115.avif?v=8ba65c97 1115w">
+      <source type="image/webp" sizes="(min-width: 1296px) 1200px, calc(100vw - 2 * clamp(1.25rem, 5vw, 3rem))" srcset="/case/globaltrack-process-3-480.webp?v=8ba65c97 480w, /case/globaltrack-process-3-720.webp?v=8ba65c97 720w, /case/globaltrack-process-3-1115.webp?v=8ba65c97 1115w">
+      <img class="work__shot" src="/case/globaltrack-process-3-1115.webp?v=8ba65c97"
+           width="1115" height="753" alt="Flows, wireframes and prioritisation — 3 of 4"
+           loading="lazy" decoding="async" data-fold>
+    </picture>
+        </div>
+        <div class="work__slide" data-slide-status="idle" role="group"
+             aria-roledescription="slide" aria-label="4 of 4">
+          <picture >
+      <source type="image/avif" sizes="(min-width: 1296px) 1200px, calc(100vw - 2 * clamp(1.25rem, 5vw, 3rem))" srcset="/case/globaltrack-process-4-480.avif?v=3c8b493f 480w, /case/globaltrack-process-4-720.avif?v=3c8b493f 720w, /case/globaltrack-process-4-1200.avif?v=3c8b493f 1200w, /case/globaltrack-process-4-1600.avif?v=3c8b493f 1600w, /case/globaltrack-process-4-2180.avif?v=3c8b493f 2180w">
+      <source type="image/webp" sizes="(min-width: 1296px) 1200px, calc(100vw - 2 * clamp(1.25rem, 5vw, 3rem))" srcset="/case/globaltrack-process-4-480.webp?v=3c8b493f 480w, /case/globaltrack-process-4-720.webp?v=3c8b493f 720w, /case/globaltrack-process-4-1200.webp?v=3c8b493f 1200w, /case/globaltrack-process-4-2180.webp?v=3c8b493f 2180w">
+      <img class="work__shot" src="/case/globaltrack-process-4-2180.webp?v=3c8b493f"
+           width="2180" height="1030" alt="Flows, wireframes and prioritisation — 4 of 4"
+           loading="lazy" decoding="async" data-fold>
+    </picture>
+        </div>
+        </div>
+      </div>
+    </div>
+      </div>
+    </section>
+
+    <section class="band" id="solution">
+      <div class="wrap" data-reveal-group data-stagger="90" data-start="top 85%">
+        <p class="band__no" aria-hidden="true">03</p>
+        <h2 class="band__title">Solution</h2>
+        <p class="band__lede">Seven surfaces, built around one constraint: a field operator holding a tablet in the middle of a pipeline right-of-way, with no signal and no time to learn anything.</p>
+      </div>
+    </section>
+
+    <section class="band feature">
+      <div class="wrap" data-reveal-group data-stagger="90" data-start="top 85%">
+        <h2 class="feature__name">Pig Run</h2>
+        <p class="feature__tagline">The live view of a single run — where the pig is, where it has been, and when it is due at the next marker.</p>
+        <figure class="figure"><picture data-parallax="trigger" data-parallax-start="5" data-parallax-end="-5" data-parallax-disable="mobileLandscape">
+      <source type="image/avif" sizes="(min-width: 1296px) 1200px, calc(100vw - 2 * clamp(1.25rem, 5vw, 3rem))" srcset="/case/globaltrack-pig-run-480.avif?v=dccfd90a 480w, /case/globaltrack-pig-run-720.avif?v=dccfd90a 720w, /case/globaltrack-pig-run-1200.avif?v=dccfd90a 1200w, /case/globaltrack-pig-run-1600.avif?v=dccfd90a 1600w, /case/globaltrack-pig-run-2400.avif?v=dccfd90a 2400w">
+      <source type="image/webp" sizes="(min-width: 1296px) 1200px, calc(100vw - 2 * clamp(1.25rem, 5vw, 3rem))" srcset="/case/globaltrack-pig-run-480.webp?v=dccfd90a 480w, /case/globaltrack-pig-run-720.webp?v=dccfd90a 720w, /case/globaltrack-pig-run-1200.webp?v=dccfd90a 1200w, /case/globaltrack-pig-run-2400.webp?v=dccfd90a 2400w">
+      <img class="shot" src="/case/globaltrack-pig-run-2400.webp?v=dccfd90a"
+           width="3140" height="1762" alt="Pig Run — final solution"
+           loading="lazy" decoding="async" data-fold>
+    </picture></figure>
+      </div>
+    </section>
+
+    <section class="band feature">
+      <div class="wrap" data-reveal-group data-stagger="90" data-start="top 85%">
+        <h2 class="feature__name">Pig run — tracking sheet</h2>
+        <p class="feature__tagline">The tracking sheet is at the heart of GlobalTrack, containing survey data points in GPS coordinates, estimated arrival times, and links to work location photographs.</p>
+        <figure class="figure"><picture data-parallax="trigger" data-parallax-start="5" data-parallax-end="-5" data-parallax-disable="mobileLandscape">
+      <source type="image/avif" sizes="(min-width: 1296px) 1200px, calc(100vw - 2 * clamp(1.25rem, 5vw, 3rem))" srcset="/case/globaltrack-tracking-sheet-480.avif?v=f4b1c45d 480w, /case/globaltrack-tracking-sheet-720.avif?v=f4b1c45d 720w, /case/globaltrack-tracking-sheet-1200.avif?v=f4b1c45d 1200w, /case/globaltrack-tracking-sheet-1600.avif?v=f4b1c45d 1600w, /case/globaltrack-tracking-sheet-2400.avif?v=f4b1c45d 2400w">
+      <source type="image/webp" sizes="(min-width: 1296px) 1200px, calc(100vw - 2 * clamp(1.25rem, 5vw, 3rem))" srcset="/case/globaltrack-tracking-sheet-480.webp?v=f4b1c45d 480w, /case/globaltrack-tracking-sheet-720.webp?v=f4b1c45d 720w, /case/globaltrack-tracking-sheet-1200.webp?v=f4b1c45d 1200w, /case/globaltrack-tracking-sheet-2400.webp?v=f4b1c45d 2400w">
+      <img class="shot" src="/case/globaltrack-tracking-sheet-2400.webp?v=f4b1c45d"
+           width="3140" height="2507" alt="Pig run — tracking sheet — final solution"
+           loading="lazy" decoding="async" data-fold>
+    </picture></figure>
+      </div>
+    </section>
+
+    <section class="band feature">
+      <div class="wrap" data-reveal-group data-stagger="90" data-start="top 85%">
+        <h2 class="feature__name">Pig run — AGM passage details</h2>
+        <p class="feature__tagline">I designed a detailed view for Above-Ground Marker (AGM) passage data, showing critical technical information.</p>
+        <figure class="figure"><picture data-parallax="trigger" data-parallax-start="5" data-parallax-end="-5" data-parallax-disable="mobileLandscape">
+      <source type="image/avif" sizes="(min-width: 1296px) 1200px, calc(100vw - 2 * clamp(1.25rem, 5vw, 3rem))" srcset="/case/globaltrack-agm-passage-480.avif?v=7e83e5fc 480w, /case/globaltrack-agm-passage-720.avif?v=7e83e5fc 720w, /case/globaltrack-agm-passage-1200.avif?v=7e83e5fc 1200w, /case/globaltrack-agm-passage-1600.avif?v=7e83e5fc 1600w, /case/globaltrack-agm-passage-2400.avif?v=7e83e5fc 2400w">
+      <source type="image/webp" sizes="(min-width: 1296px) 1200px, calc(100vw - 2 * clamp(1.25rem, 5vw, 3rem))" srcset="/case/globaltrack-agm-passage-480.webp?v=7e83e5fc 480w, /case/globaltrack-agm-passage-720.webp?v=7e83e5fc 720w, /case/globaltrack-agm-passage-1200.webp?v=7e83e5fc 1200w, /case/globaltrack-agm-passage-2400.webp?v=7e83e5fc 2400w">
+      <img class="shot" src="/case/globaltrack-agm-passage-2400.webp?v=7e83e5fc"
+           width="3140" height="3114" alt="Pig run — AGM passage details — final solution"
+           loading="lazy" decoding="async" data-fold>
+    </picture></figure>
+      </div>
+    </section>
+
+    <section class="band feature">
+      <div class="wrap" data-reveal-group data-stagger="90" data-start="top 85%">
+        <h2 class="feature__name">Projects dashboard</h2>
+        <p class="feature__tagline">The dashboard provides a high-level view of all pipeline projects, displaying status, schedule, and key metrics.</p>
+        <figure class="figure"><picture data-parallax="trigger" data-parallax-start="5" data-parallax-end="-5" data-parallax-disable="mobileLandscape">
+      <source type="image/avif" sizes="(min-width: 1296px) 1200px, calc(100vw - 2 * clamp(1.25rem, 5vw, 3rem))" srcset="/case/globaltrack-projects-dashboard-480.avif?v=1f91493e 480w, /case/globaltrack-projects-dashboard-720.avif?v=1f91493e 720w, /case/globaltrack-projects-dashboard-1200.avif?v=1f91493e 1200w, /case/globaltrack-projects-dashboard-1600.avif?v=1f91493e 1600w, /case/globaltrack-projects-dashboard-2400.avif?v=1f91493e 2400w">
+      <source type="image/webp" sizes="(min-width: 1296px) 1200px, calc(100vw - 2 * clamp(1.25rem, 5vw, 3rem))" srcset="/case/globaltrack-projects-dashboard-480.webp?v=1f91493e 480w, /case/globaltrack-projects-dashboard-720.webp?v=1f91493e 720w, /case/globaltrack-projects-dashboard-1200.webp?v=1f91493e 1200w, /case/globaltrack-projects-dashboard-2400.webp?v=1f91493e 2400w">
+      <img class="shot" src="/case/globaltrack-projects-dashboard-2400.webp?v=1f91493e"
+           width="3140" height="1764" alt="Projects dashboard — final solution"
+           loading="lazy" decoding="async" data-fold>
+    </picture></figure>
+      </div>
+    </section>
+
+    <section class="band feature">
+      <div class="wrap" data-reveal-group data-stagger="90" data-start="top 85%">
+        <h2 class="feature__name">Projects roadmap</h2>
+        <p class="feature__tagline">The dashboard overview gives a high-level view of the pipeline pig projects that are scheduled and ongoing, including a map that displays the projects, surveys, and runs.</p>
+        <figure class="figure"><picture data-parallax="trigger" data-parallax-start="5" data-parallax-end="-5" data-parallax-disable="mobileLandscape">
+      <source type="image/avif" sizes="(min-width: 1296px) 1200px, calc(100vw - 2 * clamp(1.25rem, 5vw, 3rem))" srcset="/case/globaltrack-projects-roadmap-480.avif?v=d49d5554 480w, /case/globaltrack-projects-roadmap-720.avif?v=d49d5554 720w, /case/globaltrack-projects-roadmap-1200.avif?v=d49d5554 1200w, /case/globaltrack-projects-roadmap-1600.avif?v=d49d5554 1600w, /case/globaltrack-projects-roadmap-2400.avif?v=d49d5554 2400w">
+      <source type="image/webp" sizes="(min-width: 1296px) 1200px, calc(100vw - 2 * clamp(1.25rem, 5vw, 3rem))" srcset="/case/globaltrack-projects-roadmap-480.webp?v=d49d5554 480w, /case/globaltrack-projects-roadmap-720.webp?v=d49d5554 720w, /case/globaltrack-projects-roadmap-1200.webp?v=d49d5554 1200w, /case/globaltrack-projects-roadmap-2400.webp?v=d49d5554 2400w">
+      <img class="shot" src="/case/globaltrack-projects-roadmap-2400.webp?v=d49d5554"
+           width="3140" height="1764" alt="Projects roadmap — final solution"
+           loading="lazy" decoding="async" data-fold>
+    </picture></figure>
+      </div>
+    </section>
+
+    <section class="band feature">
+      <div class="wrap" data-reveal-group data-stagger="90" data-start="top 85%">
+        <h2 class="feature__name">New project flow — create a route</h2>
+        <p class="feature__tagline">A pipeline survey is the actual route the pig will take. These routes are created beforehand by the pipeline operator and input into the web app; they consist of GPS longitudes and latitudes.</p>
+        <figure class="figure"><picture data-parallax="trigger" data-parallax-start="5" data-parallax-end="-5" data-parallax-disable="mobileLandscape">
+      <source type="image/avif" sizes="(min-width: 1296px) 1200px, calc(100vw - 2 * clamp(1.25rem, 5vw, 3rem))" srcset="/case/globaltrack-create-route-480.avif?v=9cc86e4a 480w, /case/globaltrack-create-route-720.avif?v=9cc86e4a 720w, /case/globaltrack-create-route-1200.avif?v=9cc86e4a 1200w, /case/globaltrack-create-route-1600.avif?v=9cc86e4a 1600w, /case/globaltrack-create-route-2400.avif?v=9cc86e4a 2400w">
+      <source type="image/webp" sizes="(min-width: 1296px) 1200px, calc(100vw - 2 * clamp(1.25rem, 5vw, 3rem))" srcset="/case/globaltrack-create-route-480.webp?v=9cc86e4a 480w, /case/globaltrack-create-route-720.webp?v=9cc86e4a 720w, /case/globaltrack-create-route-1200.webp?v=9cc86e4a 1200w, /case/globaltrack-create-route-2400.webp?v=9cc86e4a 2400w">
+      <img class="shot" src="/case/globaltrack-create-route-2400.webp?v=9cc86e4a"
+           width="3140" height="1765" alt="New project flow — create a route — final solution"
+           loading="lazy" decoding="async" data-fold>
+    </picture></figure>
+      </div>
+    </section>
+
+    <section class="band feature">
+      <div class="wrap" data-reveal-group data-stagger="90" data-start="top 85%">
+        <h2 class="feature__name">Custom reporting</h2>
+        <p class="feature__tagline">All field activity data is compiled into client deliverables showing completed work. I designed a flexible reporting system that lets users create and customize reports for different stakeholders.</p>
+        <figure class="figure"><picture data-parallax="trigger" data-parallax-start="5" data-parallax-end="-5" data-parallax-disable="mobileLandscape">
+      <source type="image/avif" sizes="(min-width: 1296px) 1200px, calc(100vw - 2 * clamp(1.25rem, 5vw, 3rem))" srcset="/case/globaltrack-reporting-480.avif?v=27a2bc87 480w, /case/globaltrack-reporting-720.avif?v=27a2bc87 720w, /case/globaltrack-reporting-1200.avif?v=27a2bc87 1200w, /case/globaltrack-reporting-1600.avif?v=27a2bc87 1600w, /case/globaltrack-reporting-2400.avif?v=27a2bc87 2400w">
+      <source type="image/webp" sizes="(min-width: 1296px) 1200px, calc(100vw - 2 * clamp(1.25rem, 5vw, 3rem))" srcset="/case/globaltrack-reporting-480.webp?v=27a2bc87 480w, /case/globaltrack-reporting-720.webp?v=27a2bc87 720w, /case/globaltrack-reporting-1200.webp?v=27a2bc87 1200w, /case/globaltrack-reporting-2400.webp?v=27a2bc87 2400w">
+      <img class="shot" src="/case/globaltrack-reporting-2400.webp?v=27a2bc87"
+           width="3140" height="1764" alt="Custom reporting — final solution"
+           loading="lazy" decoding="async" data-fold>
+    </picture></figure>
+      </div>
+    </section>
+
+    <section class="band" id="lessons-learned">
+      <div class="wrap" data-reveal-group data-stagger="90" data-start="top 85%">
+        <p class="band__no" aria-hidden="true">04</p>
+        <h2 class="band__title">Lessons learned</h2>
+        <ul class="wins" data-reveal-group-nested data-stagger="80">
+          <li><span class="notes__mark" aria-hidden="true">•</span>
+            <span>Early collaboration with engineering ensured smoother handoff and fewer implementation surprises.</span></li>
+          <li><span class="notes__mark" aria-hidden="true">•</span>
+            <span>Choosing simpler UI solutions over complex interactions saved significant design and development time without compromising usability.</span></li>
+          <li><span class="notes__mark" aria-hidden="true">•</span>
+            <span>Starting with a clear list of business needs helped focus ideation but required extra effort to balance with user-centered design.</span></li>
+          <li><span class="notes__mark" aria-hidden="true">•</span>
+            <span>Field users prioritize reliability and simplicity — every design decision had to support confident use under pressure.</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="band" id="what-i-would-do-next">
+      <div class="wrap" data-reveal-group data-stagger="90" data-start="top 85%">
+        <p class="band__no" aria-hidden="true">05</p>
+        <h2 class="band__title">What I would do next</h2>
+        <div class="duo">
+          <div><h3 class="feature__name">Personal growth</h3>
+        <ul class="notes notes--dot notes--wide">
+      <li><span class="notes__mark" aria-hidden="true">•</span><span>Designing for environments with technical constraints.</span></li>
+      <li><span class="notes__mark" aria-hidden="true">•</span><span>Creating systems that work seamlessly online and offline.</span></li>
+      <li><span class="notes__mark" aria-hidden="true">•</span><span>Balancing business requirements with user needs.</span></li>
+      <li><span class="notes__mark" aria-hidden="true">•</span><span>Collaborating effectively with cross-functional teams.</span></li>
+    </ul></div>
+          <div><h3 class="feature__name">Where the product goes</h3>
+        <ul class="notes notes--dot notes--wide">
+      <li><span class="notes__mark" aria-hidden="true">•</span><span><b>Machine Learning:</b> Exploring AI-powered anomaly detection.</span></li>
+      <li><span class="notes__mark" aria-hidden="true">•</span><span><b>Integration Ecosystem:</b> Developing APIs for third-party system integration.</span></li>
+      <li><span class="notes__mark" aria-hidden="true">•</span><span><b>Mobile Optimization:</b> Enhancing the mobile experience for field teams.</span></li>
+      <li><span class="notes__mark" aria-hidden="true">•</span><span><b>Advanced Analytics:</b> Implementing predictive maintenance capabilities.</span></li>
+    </ul></div>
+        </div>
+      </div>
+    </section>
+
+    <nav data-section-dock-init aria-label="On this page" class="section-dock">
+      <div data-section-dock-pill class="section-dock__pill">
+        <button data-section-dock-toggle aria-expanded="false" aria-controls="section-dock-list" class="section-dock__toggle">
+          <span data-section-dock-label-wrap class="section-dock__label-wrap">
+            <span class="section-dock__label">
+              <span class="section-dock__link-num">01</span>
+              <span>Challenge</span>
+            </span>
+          </span>
+        </button>
+        <div data-section-dock-list id="section-dock-list" class="section-dock__list">
+          <div data-section-dock-indicator class="section-dock__indicator"></div>
+          <ul class="section-dock__items">
+        <li>
+          <a data-active data-section-dock-link href="#challenge" class="section-dock__link">
+            <span class="section-dock__link-num">01</span>
+            <span>Challenge</span>
+          </a>
+        </li>
+        <li>
+          <a data-section-dock-link href="#design-process" class="section-dock__link">
+            <span class="section-dock__link-num">02</span>
+            <span>Design process</span>
+          </a>
+        </li>
+        <li>
+          <a data-section-dock-link href="#solution" class="section-dock__link">
+            <span class="section-dock__link-num">03</span>
+            <span>Solution</span>
+          </a>
+        </li>
+        <li>
+          <a data-section-dock-link href="#lessons-learned" class="section-dock__link">
+            <span class="section-dock__link-num">04</span>
+            <span>Lessons learned</span>
+          </a>
+        </li>
+        <li>
+          <a data-section-dock-link href="#what-i-would-do-next" class="section-dock__link">
+            <span class="section-dock__link-num">05</span>
+            <span>What I would do next</span>
+          </a>
+        </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="wrap">
+      <a class="next" href="/keyword">
+        <span>Next case study<strong>Keyword.com</strong></span>
+        <span aria-hidden="true">→</span>
+      </a>
+    </div>
+
+    <footer class="section outro" aria-labelledby="outro-title" data-section-dock-hide>
+      
+      <div class="outro__fx" aria-hidden="true"
+           data-us-project="HfdY3nAq99Kc0BCtuBfP"
+           data-us-scale="1" data-us-dpi="1" data-us-fps="30"></div>
+      <div class="outro__inner">
+        
+        <h2 class="outro__title" id="outro-title" aria-label="Let’s talk about the next big thing"><span>Let&rsquo;s talk about</span><span>the next big thing</span></h2>
+
+        <a class="outro__social" href="https://www.linkedin.com/in/iamvisp/"
+           target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><span class="outro__roll" aria-hidden="true"><span class="outro__roll-ch" style="--i:0"><span>L</span><span>L</span></span><span class="outro__roll-ch" style="--i:1"><span>i</span><span>i</span></span><span class="outro__roll-ch" style="--i:2"><span>n</span><span>n</span></span><span class="outro__roll-ch" style="--i:3"><span>k</span><span>k</span></span><span class="outro__roll-ch" style="--i:4"><span>e</span><span>e</span></span><span class="outro__roll-ch" style="--i:5"><span>d</span><span>d</span></span><span class="outro__roll-ch" style="--i:6"><span>I</span><span>I</span></span><span class="outro__roll-ch" style="--i:7"><span>n</span><span>n</span></span></span><svg class="outro__arrow" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M7 17L17 7M17 17V7H7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        <a class="outro__mail" href="mailto:iamvisp@gmail.com"
+           aria-label="Copy email to clipboard" data-copy-button data-copy-email="iamvisp@gmail.com">
+          <span class="copy-email-icon copy-email-icon--lg" aria-hidden="true">
+            <span class="copy-email-icon__el"></span>
+            <span class="copy-email-icon__el"><svg viewBox="0 0 36 36" fill="none"><path d="M7.5 22.5H6C5.20435 22.5 4.44129 22.1839 3.87868 21.6213C3.31607 21.0587 3 20.2956 3 19.5V6C3 5.20435 3.31607 4.44129 3.87868 3.87868C4.44129 3.31607 5.20435 3 6 3H19.5C20.2956 3 21.0587 3.31607 21.6213 3.87868C22.1839 4.44129 22.5 5.20435 22.5 6V7.5M16.5 13.5H30C31.6569 13.5 33 14.8431 33 16.5V30C33 31.6569 31.6569 33 30 33H16.5C14.8431 33 13.5 31.6569 13.5 30V16.5C13.5 14.8431 14.8431 13.5 16.5 13.5Z" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+            <span class="copy-email-icon__el"><svg viewBox="0 0 36 36" fill="none"><path d="M30 9L13.5 25.5L6 18" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+          </span>
+          <span class="copy-email-text__wrap">
+            <span data-copy-email-element class="copy-email-text__el">iamvisp@gmail.com</span>
+            <span class="copy-email-text__el">Click to copy email</span>
+            <span class="copy-email-text__el">Copied to clipboard!</span>
+          </span>
+        </a>
+
+      </div>
+
+      <div class="outro__meta">
+        <span>&copy; 2026</span>
+      </div>
+    </footer>
+  </main>
+
+</body>
+</html>

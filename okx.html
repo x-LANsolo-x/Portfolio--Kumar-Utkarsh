@@ -1,0 +1,1206 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OKX — Case Study</title>
+  <meta name="description" content="OKX is one of the world’s largest crypto exchanges. Product design across advanced trading in regulated markets, growth and AI — the Trade page revamp, European X-Perps, Simple Perps, USDG growth and OKX Intelligence.">
+  
+  <link rel="preload" as="image"
+        type="image/avif"
+        href="/case/okx-hero-1200.avif?v=5fec98fe"
+        imagesrcset="/case/okx-hero-480.avif?v=5fec98fe 480w, /case/okx-hero-720.avif?v=5fec98fe 720w, /case/okx-hero-1200.avif?v=5fec98fe 1200w, /case/okx-hero-1600.avif?v=5fec98fe 1600w, /case/okx-hero-2400.avif?v=5fec98fe 2400w, /case/okx-hero-3072.avif?v=5fec98fe 3072w, /case/okx-hero-4096.avif?v=5fec98fe 4096w"
+        imagesizes="100vw">
+  
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="/favicon-32.png" sizes="32x32" type="image/png">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "CreativeWork",
+    "name": "OKX — Case Study",
+    "headline": "OKX",
+    "description": "OKX is one of the world’s largest crypto exchanges. Product design across advanced trading in regulated markets, growth and AI — the Trade page revamp, European X-Perps, Simple Perps, USDG growth and OKX Intelligence.",
+    "url": "https://sashamartynchuk.com/okx",
+    "image": "https://sashamartynchuk.com/case/okx-hero-1200.webp",
+    "author": {
+      "@type": "Person",
+      "name": "Sasha Martynchuk",
+      "url": "https://sashamartynchuk.com/"
+    },
+    "inLanguage": "en"
+  }
+  </script>
+  <link rel="canonical" href="https://sashamartynchuk.com/okx">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="OKX — Case Study">
+  <meta property="og:description" content="OKX is one of the world’s largest crypto exchanges. Product design across advanced trading in regulated markets, growth and AI — the Trade page revamp, European X-Perps, Simple Perps, USDG growth and OKX Intelligence.">
+  <meta property="og:url" content="https://sashamartynchuk.com/okx">
+  
+  <meta property="og:image" content="https://sashamartynchuk.com/case/okx-hero-1200.webp">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="OKX — Case Study">
+  <meta name="twitter:description" content="OKX is one of the world’s largest crypto exchanges. Product design across advanced trading in regulated markets, growth and AI — the Trade page revamp, European X-Perps, Simple Perps, USDG growth and OKX Intelligence.">
+  <meta name="twitter:image" content="https://sashamartynchuk.com/case/okx-hero-1200.webp">
+  <meta name="theme-color" content="#000000">
+
+  <link rel="preload" href="/fonts/NeueMontreal-Regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/fonts/NeueMontreal-Bold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/fonts/Arges-Black.woff2" as="font" type="font/woff2" crossorigin>
+
+  <script>
+  (function () {
+    function startAnalytics() {
+      var g = document.createElement('script');
+      g.async = true;
+      g.src = 'https://www.googletagmanager.com/gtag/js?id=G-FXJ8ZVD01Y';
+      document.head.appendChild(g);
+      window.dataLayer = window.dataLayer || [];
+      window.gtag = function () { window.dataLayer.push(arguments); };
+      window.gtag('js', new Date());
+      window.gtag('config', 'G-FXJ8ZVD01Y');
+
+      (function (c, l, a, r, i, t, y) {
+        c[a] = c[a] || function () { (c[a].q = c[a].q || []).push(arguments) };
+        t = l.createElement(r); t.async = 1; t.src = 'https://www.clarity.ms/tag/' + i;
+        y = l.getElementsByTagName(r)[0]; y.parentNode.insertBefore(t, y);
+      })(window, document, 'clarity', 'script', 'y0ua8k1qhj');
+
+      /*
+       * Contentsquare, tag 238705649a093.
+       *
+       * Their install doc gives a plain <script defer> in <head> for a project
+       * with no JS framework, which this is. It goes HERE instead, inside the
+       * same activation gate, for the reason the gate exists: a prerendered
+       * document runs its head scripts immediately, so a reader who merely
+       * HOVERED a case-study link would have opened a Contentsquare session for
+       * a page they never visited. Same URL, same tag, deferred to the moment
+       * the visit becomes a visit.
+       *
+       * The _uxa queue is declared before the script so anything the page ever
+       * pushes is buffered rather than dropped — the doc's IIFE loader pattern,
+       * which is the variant to use when _uxa is called directly.
+       */
+      window._uxa = window._uxa || [];
+      var cs = document.createElement('script');
+      cs.async = true;
+      cs.src = 'https://t.contentsquare.net/uxa/238705649a093.js';
+      document.head.appendChild(cs);
+    }
+
+    /*
+     * Even an activated visit waits for the page to settle: three trackers
+     * traced as 360ms of throttled main-thread time during boot. They start
+     * on the reader's first gesture, or a few seconds after load - whichever
+     * comes first. Same shape as index.html's copy.
+     */
+    function whenSettled() {
+      var fired = false;
+      var go = function () { if (fired) return; fired = true; startAnalytics(); };
+      var kinds = ['pointerdown', 'keydown', 'touchstart', 'wheel', 'scroll'];
+      for (var i = 0; i < kinds.length; i++) {
+        addEventListener(kinds[i], go, { once: true, passive: true, capture: true });
+      }
+      if (document.readyState === 'complete') setTimeout(go, 3500);
+      else addEventListener('load', function () { setTimeout(go, 3500); }, { once: true });
+    }
+
+    if (document.prerendering) {
+      document.addEventListener('prerenderingchange', whenSettled, { once: true });
+    } else {
+      whenSettled();
+    }
+  })();
+  </script>
+  <script>
+  /* Service worker: see public/sw.js for what it caches and why.
+
+     The kill switch is the important part of this snippet. A bad worker is
+     sticky - it can keep serving a broken site to anyone who has already
+     visited, and they have no way to ask for the real one. So:
+
+       ?nosw   unregisters it, clears its caches, and REMEMBERS that, so the
+               next load does not simply register it again - which is what the
+               first version of this did, one line after unregistering.
+       ?sw     turns it back on.
+
+     The flag lives in localStorage because it has to outlive the reload. */
+  (function () {
+    if (!('serviceWorker' in navigator)) return;
+    var OFF = 'sw-disabled';
+    var q = location.search;
+
+    if (q.indexOf('sw=1') > -1) { try { localStorage.removeItem(OFF); } catch (e) {} }
+
+    if (q.indexOf('nosw') > -1) {
+      try { localStorage.setItem(OFF, '1'); } catch (e) {}
+      navigator.serviceWorker.getRegistrations()
+        .then(function (rs) { return Promise.all(rs.map(function (r) { return r.unregister(); })); })
+        .then(function () { return window.caches ? caches.keys() : []; })
+        .then(function (ks) { return Promise.all(ks.map(function (k) { return caches.delete(k); })); })
+        .then(function () {
+          /* Uncontrolled on the way back, or the worker still serving this page
+             refills the caches that were just deleted. */
+          location.replace(location.pathname);
+        })
+        .catch(function () {});
+      return;
+    }
+
+    var off = false;
+    try { off = localStorage.getItem(OFF) === '1'; } catch (e) {}
+    if (off) {
+      /* Sweep on every disabled load, not only on the one that flipped the
+         switch. The worker that was still controlling the page during that
+         first pass refilled the caches after they were deleted; this load is
+         uncontrolled, so now the delete sticks. Costs nothing once empty. */
+      if (window.caches) {
+        caches.keys().then(function (ks) {
+          ks.forEach(function (k) { caches.delete(k); });
+        }).catch(function () {});
+      }
+      return;
+    }
+
+    addEventListener('load', function () {
+      navigator.serviceWorker.register('/sw.js').catch(function () {});
+    });
+  })();
+  </script>
+  <script type="speculationrules">
+  {
+    "prerender": [{
+      "where": { "href_matches": "/*" },
+      "eagerness": "moderate"
+    }]
+  }
+  </script>
+  <script>/* A skipped view transition (hidden tab, rapid re-navigation) rejects its
+     own ready/finished promises. Adopting them via pagereveal/pageswap covers
+     the case where the event still carries a transition object; when the skip
+     happens BEFORE pagereveal there is nothing to adopt, and only the global
+     handler can stop it surfacing as an uncaught error. Both, therefore. */
+    addEventListener("pagereveal",e=>{const t=e.viewTransition;if(t){t.ready&&t.ready.catch(()=>{});t.finished&&t.finished.catch(()=>{})}});
+    addEventListener("pageswap",e=>{const t=e.viewTransition;if(t&&t.finished)t.finished.catch(()=>{})});
+    addEventListener("unhandledrejection",e=>{const r=e.reason;
+      if(r&&r.name==="AbortError"&&/transition/i.test(r.message||""))e.preventDefault();});</script>
+  <script type="module" crossorigin src="/assets/index-CzGW6FVa.js"></script>
+  <script type="module" crossorigin src="/assets/fold-mode-DbKzrdIL.js"></script>
+  <script type="module" crossorigin src="/assets/elastic-pulse-CKgubG0W.js"></script>
+  <script type="module" crossorigin src="/assets/ScrollTrigger-DNECHiyU.js"></script>
+  <script type="module" crossorigin src="/assets/lightbox-08EUTKND.js"></script>
+  <script type="module" crossorigin src="/assets/main-BIwZVA1e.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/main-ClT0MItD.css">
+</head>
+<body>
+<!--
+
+     ┌───────────────────────────────────────────────────────────────┐
+     │   Hello, View Source.                                         │
+     └───────────────────────────────────────────────────────────────┘
+
+     You have found a very tidy document, and that is a little bit of a lie.
+
+     Every page on this site is written with its reasoning in the margin —
+     why Arges is preloaded and Neue Montreal is not, why the analytics tags
+     wait for a prerendered page to actually be activated, why the sign-off's
+     WebGL scene must not declare its lazy-load attribute (the SDK reads it as
+     a string, and "false" is truthy — that one cost an afternoon).
+
+     On this page that came to 16kB of prose against 19kB of actual markup.
+     Wonderful to work on. Rude to make you download. So a build step lifts it
+     out on the way to the server, and it all still lives one step upstream.
+
+     If you like this sort of thing, the whole of it is readable at:
+     github.com/iamvisp  ·  and I am reachable at iamvisp@gmail.com
+
+     Built with Vite, GSAP, Lenis, Matter.js, hand-written WebGL2, and a
+     number of Osmo Supply resources that are credited where they are used.
+
+-->
+
+  <a class="skip" href="#main">Skip to content</a>
+
+  <div class="rail" aria-hidden="true"><span class="rail__fill" data-rail></span></div>
+
+  <header class="topbar">
+    <a class="topbar__me" href="/" data-inkbleed aria-label="Sasha Martynchuk — home">
+      <img class="topbar__logo" src="/sasha-logo.svg" alt="Sasha Martynchuk" width="145" height="32" fetchpriority="high">
+    </a>
+
+    <a class="hero__mail copy-email-button" href="mailto:iamvisp@gmail.com"
+       aria-label="Copy email to clipboard" data-copy-button data-copy-email="iamvisp@gmail.com">
+      <span class="copy-email-icon" aria-hidden="true">
+        <span class="copy-email-icon__el"></span>
+        <span class="copy-email-icon__el"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3.33301 10H2.66634C2.31272 10 1.97358 9.85952 1.72353 9.60947C1.47348 9.35943 1.33301 9.02029 1.33301 8.66666V2.66667C1.33301 2.31304 1.47348 1.9739 1.72353 1.72386C1.97358 1.47381 2.31272 1.33333 2.66634 1.33333H8.66634C9.01996 1.33333 9.3591 1.47381 9.60915 1.72386C9.8592 1.9739 9.99967 2.31304 9.99967 2.66667V3.33333M7.33301 6H13.333C14.0694 6 14.6663 6.59695 14.6663 7.33333V13.3333C14.6663 14.0697 14.0694 14.6667 13.333 14.6667H7.33301C6.59663 14.6667 5.99967 14.0697 5.99967 13.3333V7.33333C5.99967 6.59695 6.59663 6 7.33301 6Z" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+        <span class="copy-email-icon__el"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M6.79985 9.9032L11.8909 4.81164C12.1252 4.57732 12.505 4.57724 12.7394 4.81146C12.9739 5.04579 12.974 5.42588 12.7396 5.66029L7.14697 11.2529C6.95526 11.4446 6.64443 11.4446 6.45272 11.2529L3.40565 8.2058C3.17137 7.97152 3.17137 7.59168 3.40565 7.3574C3.63992 7.12312 4.01977 7.12312 4.25405 7.3574L6.79985 9.9032Z" fill="currentColor"/></svg></span>
+      </span>
+      <span class="copy-email-text__wrap">
+        <span data-copy-email-element class="copy-email-text__el">iamvisp@gmail.com</span>
+        <span class="copy-email-text__el">Click to copy email</span>
+        <span class="copy-email-text__el">Copied to clipboard!</span>
+      </span>
+    </a>
+  </header>
+
+  <main id="main">
+    <section class="intro">
+      <div class="wrap" data-reveal-group data-stagger="90" data-start="top 85%" data-start="top 95%">
+        <h1 class="intro__title">OKX</h1>
+        <div class="intro__grid" data-reveal-group-nested data-stagger="110" data-ignore="false">
+          <div class="intro__lede">
+            <p>OKX is one of the world’s largest crypto exchanges. But its most active traders still leave the platform to decide what to trade.</p>
+            <p>I joined as a day trader turned product designer, leading design across advanced trading in regulated markets, growth, and AI — with one goal: make OKX a better place to discover, analyze, and execute trades.</p>
+          </div>
+          <dl class="facts">
+            <dt>My role</dt><dd>Staff Product Designer (Advanced Trading)</dd>
+            <dt>Timeline</dt><dd>2025 Q3 – Current</dd>
+            <dt>Team</dt><dd>VP, 3 Design Directors, 10+ PMs, 3 Senior Product Designers, 3 Content Designers, 6 Engineers</dd>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <div class="hero" style="--hero-ar: 4096 / 2212">
+      <div class="hero__plate">
+        <picture >
+      <source type="image/avif" sizes="100vw" srcset="/case/okx-hero-480.avif?v=5fec98fe 480w, /case/okx-hero-720.avif?v=5fec98fe 720w, /case/okx-hero-1200.avif?v=5fec98fe 1200w, /case/okx-hero-1600.avif?v=5fec98fe 1600w, /case/okx-hero-2400.avif?v=5fec98fe 2400w, /case/okx-hero-3072.avif?v=5fec98fe 3072w, /case/okx-hero-4096.avif?v=5fec98fe 4096w">
+      <source type="image/webp" sizes="100vw" srcset="/case/okx-hero-480.webp?v=5fec98fe 480w, /case/okx-hero-1200.webp?v=5fec98fe 1200w, /case/okx-hero-4096.webp?v=5fec98fe 4096w">
+      <img class="hero__img" src="/case/okx-hero-4096.webp?v=5fec98fe"
+           width="4096" height="2212" alt="OKX — product imagery"
+           fetchpriority="high" decoding="async">
+    </picture>
+      </div>
+    </div>
+
+    <section class="band">
+      <div class="wrap" data-reveal-group data-stagger="90" data-start="top 85%">
+        <h2 class="band__title">Key contributions</h2>
+        <ul class="notes notes--dot">
+      <li><span class="notes__mark" aria-hidden="true">•</span><span><b>$208M/year:</b> Opportunity identified for Simple Perps</span></li>
+      <li><span class="notes__mark" aria-hidden="true">•</span><span><b>120K+ traders · $450M+ peak daily volume:</b> European X-Perps launch</span></li>
+      <li><span class="notes__mark" aria-hidden="true">•</span><span><b>15× AUM · +32% CTR:</b> USDG growth after redesigning deposit discovery</span></li>
+      <li><span class="notes__mark" aria-hidden="true">•</span><span><b>4 regulated markets:</b> Scaled derivatives on a shared product architecture</span></li>
+      <li><span class="notes__mark" aria-hidden="true">•</span><span><b>3,100 tickets → 22 priority problems:</b> Turned fragmented feedback into one coordinated product revamp</span></li>
+      <li><span class="notes__mark" aria-hidden="true">•</span><span><b>6 intelligence pillars:</b> Defined a shared framework for OKX’s AI product strategy</span></li>
+      <li><span class="notes__mark" aria-hidden="true">•</span><span><b>2 advanced trading masterclasses:</b> Raised trading-domain expertise across Design, Research, and Product</span></li>
+    </ul>
+      </div>
+    </section>
+
+    <section class="band" id="trade-page-revamp">
+      <div class="wrap" data-reveal-group data-stagger="90" data-start="top 85%">
+        <p class="band__no" aria-hidden="true">01</p>
+        <h2 class="band__title">Trade page revamp</h2>
+        <div class="duo">
+          <div><h3 class="feature__name">Problem</h3>
+        <p class="feature__body">Trading has evolved faster than trading platforms. Our Trade page had fallen behind how modern traders work: dense, rigid, difficult to customize, with an interface that had accumulated complexity over time.</p>
+      <p class="feature__body">Different traders need different tools and workflows, but we were giving everyone essentially the same workspace.</p></div>
+          <div><h3 class="feature__name">What I did</h3>
+        <p class="feature__body">After 34 interviews with European KOLs, 15 with VIP and high-frequency traders, and a competitive teardown across Binance, Bybit, Bitget, TradingLite, Coinglass and Bookmap, I identified the highest-impact gaps in our trading experience.</p>
+      <p class="feature__body">The vision brought the fragmented workflow into one place: AI Market Summary, Footprint Charts, Order Book Heatmaps, on-chart derivatives data, custom workspaces and an opportunity screener.</p></div>
+          <div><h3 class="feature__name">Work</h3>
+        <p class="feature__body">I led the vision for a modular trading experience where traders could add, resize, rearrange and save their workspace around how they trade.</p>
+      <p class="feature__body">At the same time we brought more of the analytical workflow into OKX — Footprint Charts, Order Book Heatmaps, CVD, Open Interest, advanced drawing tools and opportunity discovery. The goal wasn’t to add more information; it was to give traders control over the information they need.</p></div>
+          <div><h3 class="feature__name">The solution &amp; outcome</h3>
+        <p class="feature__body">The work established a new direction for OKX Trading and aligned Web, Mobile, Data and AI teams around a shared vision — from a fixed execution interface to a flexible workspace built around the trader.</p>
+        <ul class="notes notes--dot notes--wide">
+      <li><span class="notes__mark" aria-hidden="true">•</span><span><b>+15%</b> 30-day retention</span></li>
+      <li><span class="notes__mark" aria-hidden="true">•</span><span><b>+25%</b> session duration</span></li>
+      <li><span class="notes__mark" aria-hidden="true">•</span><span><b>+5%</b> volume per user</span></li>
+      <li><span class="notes__mark" aria-hidden="true">•</span><span><b>+12</b> NPS</span></li>
+    </ul></div>
+        </div>
+        <div class="work__slider" data-slider-status="idle" role="region"
+      aria-roledescription="carousel" aria-label="Personas, the problem map, and the modular trading workspace">
+      <div class="work__viewport">
+        <div class="work__track" data-grab="idle">
+        <div class="work__slide" data-slide-status="idle" role="group"
+             aria-roledescription="slide" aria-label="1 of 4">
+          <picture >
+      <source type="image/avif" sizes="(min-width: 1296px) 1200px, calc(100vw - 2 * clamp(1.25rem, 5vw, 3rem))" srcset="/case/okx-personas-480.avif?v=c895978a 480w, /case/okx-personas-720.avif?v=c895978a 720w, /case/okx-personas-1200.avif?v=c895978a 1200w, /case/okx-personas-1600.avif?v=c895978a 1600w, /case/okx-personas-2400.avif?v=c895978a 2400w, /case/okx-personas-2605.avif?v=c895978a 2605w">
+      <source type="image/webp" sizes="(min-width: 1296px) 1200px, calc(100vw - 2 * clamp(1.25rem, 5vw, 3rem))" srcset="/case/okx-personas-480.webp?v=c895978a 480w, /case/okx-personas-1200.webp?v=c895978a 1200w, /case/okx-personas-2605.webp?v=c895978a 2605w">
+      <img class="work__shot" src="/case/okx-personas-2605.webp?v=c895978a"
+           width="2605" height="1407" alt="Personas, the problem map, and the modular trading workspace — 1 of 4"
+           loading="lazy" decoding="async" data-fold>
+    </picture>
+        </div>
+        <div class="work__slide" data-slide-status="idle" role="group"
+             aria-roledescription="slide" aria-label="2 of 4">
+          <picture >
+      <source type="image/avif" sizes="(min-width: 1296px) 1200px, calc(100vw - 2 * clamp(1.25rem, 5vw, 3rem))" srcset="/case/okx-persona-detail-480.avif?v=bb4f4cbc 480w, /case/okx-persona-detail-720.avif?v=bb4f4cbc 720w, /case/okx-persona-detail-1200.avif?v=bb4f4cbc 1200w, /case/okx-persona-detail-1600.avif?v=bb4f4cbc 1600w, /case/okx-persona-detail-2400.avif?v=bb4f4cbc 2400w, /case/okx-persona-detail-2605.avif?v=bb4f4cbc 2605w">
+      <source type="image/webp" sizes="(min-width: 1296px) 1200px, calc(100vw - 2 * clamp(1.25rem, 5vw, 3rem))" srcset="/case/okx-persona-detail-480.webp?v=bb4f4cbc 480w, /case/okx-persona-detail-1200.webp?v=bb4f4cbc 1200w, /case/okx-persona-detail-2605.webp?v=bb4f4cbc 2605w">
+      <img class="work__shot" src="/case/okx-persona-detail-2605.webp?v=bb4f4cbc"
+           width="2605" height="1407" alt="Personas, the problem map, and the modular trading workspace — 2 of 4"
+           loading="lazy" decoding="async" data-fold>
+    </picture>
+        </div>
+        <div class="work__slide" data-slide-status="idle" role="group"
+             aria-roledescription="slide" aria-label="3 of 4">
+          <picture >
+      <source type="image/avif" sizes="(min-width: 1296px) 1200px, calc(100vw - 2 * clamp(1.25rem, 5vw, 3rem))" srcset="/case/okx-problem-solution-480.avif?v=2dd45665 480w, /case/okx-problem-solution-720.avif?v=2dd45665 720w, /case/okx-problem-solution-1200.avif?v=2dd45665 1200w, /case/okx-problem-solution-1600.avif?v=2dd45665 1600w, /case/okx-problem-solution-2400.avif?v=2dd45665 2400w, /case/okx-problem-solution-3072.avif?v=2dd45665 3072w, /case/okx-problem-solution-3327.avif?v=2dd45665 3327w">
+      <source type="image/webp" sizes="(min-width: 1296px) 1200px, calc(100vw - 2 * clamp(1.25rem, 5vw, 3rem))" srcset="/case/okx-problem-solution-480.webp?v=2dd45665 480w, /case/okx-problem-solution-1200.webp?v=2dd45665 1200w, /case/okx-problem-solution-3327.webp?v=2dd45665 3327w">
+      <img class="work__shot" src="/case/okx-problem-solution-3327.webp?v=2dd45665"
+           width="3327" height="1688" alt="Personas, the problem map, and the modular trading workspace — 3 of 4"
+           loading="lazy" decoding="async" data-fold>
+    </picture>
+        </div>
+        <div class="work__slide" data-slide-status="idle" role="group"
+             aria-roledescription="slide" aria-label="4 of 4">
+          <picture >
+      <source type="image/avif" sizes="(min-width: 1296px) 1200px, calc(100vw - 2 * clamp(1.25rem, 5vw, 3rem))" srcset="/case/okx-trade-vision-480.avif?v=0d3e2971 480w, /case/okx-trade-vision-720.avif?v=0d3e2971 720w, /case/okx-trade-vision-1200.avif?v=0d3e2971 1200w, /case/okx-trade-vision-1600.avif?v=0d3e2971 1600w, /case/okx-trade-vision-2400.avif?v=0d3e2971 2400w, /case/okx-trade-vision-3072.avif?v=0d3e2971 3072w">
+      <source type="image/webp" sizes="(min-width: 1296px) 1200px, calc(100vw - 2 * clamp(1.25rem, 5vw, 3rem))" srcset="/case/okx-trade-vision-480.webp?v=0d3e2971 480w, /case/okx-trade-vision-1200.webp?v=0d3e2971 1200w, /case/okx-trade-vision-3072.webp?v=0d3e2971 3072w">
+      <img class="work__shot" src="/case/okx-trade-vision-3072.webp?v=0d3e2971"
+           width="3072" height="1659" alt="Personas, the problem map, and the modular trading workspace — 4 of 4"
+           loading="lazy" decoding="async" data-fold>
+    </picture>
+        </div>
+        </div>
+      </div>
+    </div>
+      </div>
+    </section>
+
+    <section class="band" id="european-x-perps">
+      <div class="wrap" data-reveal-group data-stagger="90" data-start="top 85%">
+        <p class="band__no" aria-hidden="true">02</p>
+        <h2 class="band__title">European X-Perps</h2>
+        <div class="duo">
+          <div><h3 class="feature__name">Problem</h3>
+        <p class="feature__body">Bringing derivatives to Europe wasn’t simply a matter of enabling futures trading. Under the new regulatory framework, existing Spot users had to become eligible, understand a significantly more complex product, pass compliance checks, activate the right account configuration, fund it correctly — and only then reach their first trade.</p>
+      <p class="feature__body">Every additional step created another opportunity to lose a trader before they ever placed an order.</p></div>
+          <div><h3 class="feature__name">Research</h3>
+        <p class="feature__body">At the 2026 Barcelona–Catalunya Grand Prix, we interviewed 34 KOLs, professional traders, and advanced retail traders to understand how they actually trade derivatives — from discovery and account setup to funding, execution, and position management.</p>
+      <p class="feature__body">One particularly damaging failure state was the “zero available balance” problem: users could hold funds on OKX yet arrive on the trading surface unable to place an order. The problem wasn’t just the Trade page — it was the entire journey before the first trade.</p></div>
+          <div><h3 class="feature__name">My role</h3>
+        <p class="feature__body">I led the end-to-end product design for X-Perps, from the first derivatives entry point to the first executed position: discovery and entry points, eligibility and appropriateness flows, Spot → Derivatives activation, funding states, a fix for the zero-available-balance failure, first-time onboarding, the Trade experience, order entry and position management.</p>
+      <p class="feature__body">Instead of treating regulation as a sequence of interruptions, I worked with Product, Compliance, Legal and Engineering to make it one progressive activation flow.</p></div>
+          <div><h3 class="feature__name">Outcome</h3>
+        <p class="feature__body">X-Perps launched across 30 EEA markets. Adoption consistently exceeded our initial expectations, and internal dashboards repeatedly reached new highs as traders activated derivatives accounts.</p>
+        <ul class="notes notes--dot notes--wide">
+      <li><span class="notes__mark" aria-hidden="true">•</span><span><b>120K+</b> activated traders</span></li>
+      <li><span class="notes__mark" aria-hidden="true">•</span><span><b>$450M+</b> peak daily volume</span></li>
+      <li><span class="notes__mark" aria-hidden="true">•</span><span><b>6 weeks</b> of consecutive trading-volume all-time highs</span></li>
+    </ul></div>
+        </div>
+        <div class="work__slider" data-slider-status="idle" role="region"
+      aria-roledescription="carousel" aria-label="Entry points, eligibility and the X-Perps trade experience">
+      <div class="work__viewport">
+        <div class="work__track" data-grab="idle">
+        <div class="work__slide" data-slide-status="idle" role="group"
+             aria-roledescription="slide" aria-label="1 of 8">
+          <picture >
+      <source type="image/avif" sizes="(min-width: 1296px) 1200px, calc(100vw - 2 * clamp(1.25rem, 5vw, 3rem))" srcset="/case/okx-xperps-1-480.avif?v=322cf26f 480w, /case/okx-xperps-1-720.avif?v=322cf26f 720w, /case/okx-xperps-1-1200.avif?v=322cf26f 1200w, /case/okx-xperps-1-1600.avif?v=322cf26f 1600w, /case/okx-xperps-1-2400.avif?v=322cf26f 2400w, /case/okx-xperps-1-3072.avif?v=322cf26f 3072w, /case/okx-xperps-1-4096.avif?v=322cf26f 4096w">
+      <source type="image/webp" sizes="(min-width: 1296px) 1200px, calc(100vw - 2 * clamp(1.25rem, 5vw, 3rem))" srcset="/case/okx-xperps-1-480.webp?v=322cf26f 480w, /case/okx-xperps-1-1200.webp?v=322cf26f 1200w, /case/okx-xperps-1-4096.webp?v=322cf26f 4096w">
+      <img class="work__shot" src="/case/okx-xperps-1-4096.webp?v=322cf26f"
+           width="4096" height="2212" alt="Entry points, eligibility and the X-Perps trade experience — 1 of 8"
+           loading="lazy" decoding="async" data-fold>
+    </picture>
+        </div>
+        <div class="work__slide" data-slide-status="idle" role="group"
+             aria-roledescription="slide" aria-label="2 of 8">
+          <picture >
+      <source type="image/avif" sizes="(min-width: 1296px) 1200px, calc(100vw - 2 * clamp(1.25rem, 5vw, 3rem))" srcset="/case/okx-xperps-2-480.avif?v=fb3e33b9 480w, /case/okx-xperps-2-720.avif?v=fb3e33b9 720w, /case/okx-xperps-2-1200.avif?v=fb3e33b9 1200w, /case/okx-xperps-2-1600.avif?v=fb3e33b9 1600w, /case/okx-xperps-2-2400.avif?v=fb3e33b9 2400w, /case/okx-xperps-2-3072.avif?v=fb3e33b9 3072w, /case/okx-xperps-2-4096.avif?v=fb3e33b9 4096w">
+      <source type="image/webp" sizes="(min-width: 1296px) 1200px, calc(100vw - 2 * clamp(1.25rem, 5vw, 3rem))" srcset="/case/okx-xperps-2-480.webp?v=fb3e33b9 480w, /case/okx-xperps-2-1200.webp?v=fb3e33b9 1200w, /case/okx-xperps-2-4096.webp?v=fb3e33b9 4096w">
+      <img class="work__shot" src="/case/okx-xperps-2-4096.webp?v=fb3e33b9"
+           width="4096" height="2212" alt="Entry points, eligibility and the X-Perps trade experience — 2 of 8"
+           loading="lazy" decoding="async" data-fold>
+    </picture>
+        </div>
+        <div class="work__slide" data-slide-status="idle" role="group"
+             aria-roledescription="slide" aria-label="3 of 8">
+          <picture >
+      <source type="image/avif" sizes="(min-width: 1296px) 1200px, calc(100vw - 2 * clamp(1.25rem, 5vw, 3rem))" srcset="/case/okx-xperps-3-480.avif?v=5ef16c84 480w, /case/okx-xperps-3-720.avif?v=5ef16c84 720w, /case/okx-xperps-3-1200.avif?v=5ef16c84 1200w, /case/okx-xperps-3-1600.avif?v=5ef16c84 1600w, /case/okx-xperps-3-2400.avif?v=5ef16c84 2400w, /case/okx-xperps-3-3072.avif?v=5ef16c84 3072w, /case/okx-xperps-3-4096.avif?v=5ef16c84 4096w">
+      <source type="image/webp" sizes="(min-width: 1296px) 1200px, calc(100vw - 2 * clamp(1.25rem, 5vw, 3rem))" srcset="/case/okx-xperps-3-480.webp?v=5ef16c84 480w, /case/okx-xperps-3-1200.webp?v=5ef16c84 1200w, /case/okx-xperps-3-4096.webp?v=5ef16c84 4096w">
+      <img class="work__shot" src="/case/okx-xperps-3-4096.webp?v=5ef16c84"
+           width="4096" height="2212" alt="Entry points, eligibility and the X-Perps trade experience — 3 of 8"
+           loading="lazy" decoding="async" data-fold>
+    </picture>
+        </div>
+        <div class="work__slide" data-slide-status="idle" role="group"
+             aria-roledescription="slide" aria-label="4 of 8">
+          <picture >
+      <source type="image/avif" sizes="(min-width: 1296px) 1200px, calc(100vw - 2 * clamp(1.25rem, 5vw, 3rem))" srcset="/case/okx-xperps-5-480.avif?v=c0c61d5b 480w, /case/okx-xperps-5-720.avif?v=c0c61d5b 720w, /case/okx-xperps-5-1200.avif?v=c0c61d5b 1200w, /case/okx-xperps-5-1600.avif?v=c0c61d5b 1600w, /case/okx-xperps-5-2400.avif?v=c0c61d5b 2400w, /case/okx-xperps-5-3072.avif?v=c0c61d5b 3072w, /case/okx-xperps-5-4096.avif?v=c0c61d5b 4096w">
+      <source type="image/webp" sizes="(min-width: 1296px) 1200px, calc(100vw - 2 * clamp(1.25rem, 5vw, 3rem))" srcset="/case/okx-xperps-5-480.webp?v=c0c61d5b 480w, /case/okx-xperps-5-1200.webp?v=c0c61d5b 1200w, /case/okx-xperps-5-4096.webp?v=c0c61d5b 4096w">
+      <img class="work__shot" src="/case/okx-xperps-5-4096.webp?v=c0c61d5b"
+           width="4096" height="2212" alt="Entry points, eligibility and the X-Perps trade experience — 4 of 8"
+           loading="lazy" decoding="async" data-fold>
+    </picture>
+        </div>
+        <div class="work__slide" data-slide-status="idle" role="group"
+             aria-roledescription="slide" aria-label="5 of 8">
+          <picture >
+      <source type="image/avif" sizes="(min-width: 1296px) 1200px, calc(100vw - 2 * clamp(1.25rem, 5vw, 3rem))" srcset="/case/okx-xperps-6-480.avif?v=3e1384c3 480w, /case/okx-xperps-6-720.avif?v=3e1384c3 720w, /case/okx-xperps-6-1200.avif?v=3e1384c3 1200w, /case/okx-xperps-6-1600.avif?v=3e1384c3 1600w, /case/okx-xperps-6-2400.avif?v=3e1384c3 2400w, /case/okx-xperps-6-3072.avif?v=3e1384c3 3072w, /case/okx-xperps-6-4096.avif?v=3e1384c3 4096w">
+      <source type="image/webp" sizes="(min-width: 1296px) 1200px, calc(100vw - 2 * clamp(1.25rem, 5vw, 3rem))" srcset="/case/okx-xperps-6-480.webp?v=3e1384c3 480w, /case/okx-xperps-6-1200.webp?v=3e1384c3 1200w, /case/okx-xperps-6-4096.webp?v=3e1384c3 4096w">
+      <img class="work__shot" src="/case/okx-xperps-6-4096.webp?v=3e1384c3"
+           width="4096" height="2212" alt="Entry points, eligibility and the X-Perps trade experience — 5 of 8"
+           loading="lazy" decoding="async" data-fold>
+    </picture>
+        </div>
+        <div class="work__slide" data-slide-status="idle" role="group"
+             aria-roledescription="slide" aria-label="6 of 8">
+          <picture >
+      <source type="image/avif" sizes="(min-width: 1296px) 1200px, calc(100vw - 2 * clamp(1.25rem, 5vw, 3rem))" srcset="/case/okx-xperps-7-480.avif?v=06ec1110 480w, /case/okx-xperps-7-720.avif?v=06ec1110 720w, /case/okx-xperps-7-1200.avif?v=06ec1110 1200w, /case/okx-xperps-7-1600.avif?v=06ec1110 1600w, /case/okx-xperps-7-2400.avif?v=06ec1110 2400w, /case/okx-xperps-7-3072.avif?v=06ec1110 3072w, /case/okx-xperps-7-4096.avif?v=06ec1110 4096w">
+      <source type="image/webp" sizes="(min-width: 1296px) 1200px, calc(100vw - 2 * clamp(1.25rem, 5vw, 3rem))" srcset="/case/okx-xperps-7-480.webp?v=06ec1110 480w, /case/okx-xperps-7-1200.webp?v=06ec1110 1200w, /case/okx-xperps-7-4096.webp?v=06ec1110 4096w">
+      <img class="work__shot" src="/case/okx-xperps-7-4096.webp?v=06ec1110"
+           width="4096" height="2212" alt="Entry points, eligibility and the X-Perps trade experience — 6 of 8"
+           loading="lazy" decoding="async" data-fold>
+    </picture>
+        </div>
+        <div class="work__slide" data-slide-status="idle" role="group"
+             aria-roledescription="slide" aria-label="7 of 8">
+          <picture >
+      <source type="image/avif" sizes="(min-width: 1296px) 1200px, calc(100vw - 2 * clamp(1.25rem, 5vw, 3rem))" srcset="/case/okx-xperps-8-480.avif?v=5a34502c 480w, /case/okx-xperps-8-720.avif?v=5a34502c 720w, /case/okx-xperps-8-1200.avif?v=5a34502c 1200w, /case/okx-xperps-8-1600.avif?v=5a34502c 1600w, /case/okx-xperps-8-2400.avif?v=5a34502c 2400w, /case/okx-xperps-8-3072.avif?v=5a34502c 3072w, /case/okx-xperps-8-4096.avif?v=5a34502c 4096w">
+      <source type="image/webp" sizes="(min-width: 1296px) 1200px, calc(100vw - 2 * clamp(1.25rem, 5vw, 3rem))" srcset="/case/okx-xperps-8-480.webp?v=5a34502c 480w, /case/okx-xperps-8-1200.webp?v=5a34502c 1200w, /case/okx-xperps-8-4096.webp?v=5a34502c 4096w">
+      <img class="work__shot" src="/case/okx-xperps-8-4096.webp?v=5a34502c"
+           width="4096" height="2212" alt="Entry points, eligibility and the X-Perps trade experience — 7 of 8"
+           loading="lazy" decoding="async" data-fold>
+    </picture>
+        </div>
+        <div class="work__slide" data-slide-status="idle" role="group"
+             aria-roledescription="slide" aria-label="8 of 8">
+          <picture >
+      <source type="image/avif" sizes="(min-width: 1296px) 1200px, calc(100vw - 2 * clamp(1.25rem, 5vw, 3rem))" srcset="/case/okx-xperps-9-480.avif?v=595bb9d2 480w, /case/okx-xperps-9-720.avif?v=595bb9d2 720w, /case/okx-xperps-9-1200.avif?v=595bb9d2 1200w, /case/okx-xperps-9-1600.avif?v=595bb9d2 1600w, /case/okx-xperps-9-2400.avif?v=595bb9d2 2400w, /case/okx-xperps-9-3072.avif?v=595bb9d2 3072w, /case/okx-xperps-9-4096.avif?v=595bb9d2 4096w">
+      <source type="image/webp" sizes="(min-width: 1296px) 1200px, calc(100vw - 2 * clamp(1.25rem, 5vw, 3rem))" srcset="/case/okx-xperps-9-480.webp?v=595bb9d2 480w, /case/okx-xperps-9-1200.webp?v=595bb9d2 1200w, /case/okx-xperps-9-4096.webp?v=595bb9d2 4096w">
+      <img class="work__shot" src="/case/okx-xperps-9-4096.webp?v=595bb9d2"
+           width="4096" height="2212" alt="Entry points, eligibility and the X-Perps trade experience — 8 of 8"
+           loading="lazy" decoding="async" data-fold>
+    </picture>
+        </div>
+        </div>
+      </div>
+    </div>
+      </div>
+    </section>
+
+    <section class="band" id="rethinking-web-for-advanced-traders">
+      <div class="wrap" data-reveal-group data-stagger="90" data-start="top 85%">
+        <p class="band__no" aria-hidden="true">03</p>
+        <h2 class="band__title">Rethinking web for advanced traders</h2>
+        <div class="duo">
+          <div><h3 class="feature__name">Problem</h3>
+        <p class="feature__body">Product data showed most OKX users were active on mobile, with only a small percentage on web. But after interviewing 34 advanced traders and KOLs across Europe, we uncovered a different story.</p>
+      <p class="feature__body">Traders weren’t choosing between mobile and web — they used them for different jobs. Mobile was for monitoring and managing positions; web was where they analyzed markets, made decisions and executed complex trades.</p></div>
+          <div><h3 class="feature__name">What I did</h3>
+        <p class="feature__body">Our web experience had been underinvested in. Navigation was overloaded and poorly personalized, logged-in users landed on essentially the same marketing homepage as logged-out visitors, and many patterns had diverged from mobile.</p>
+      <p class="feature__body">We reframed the role of web around one goal: turn OKX from a place where traders execute into a place where they analyze, decide and execute.</p></div>
+          <div><h3 class="feature__name">Work</h3>
+        <p class="feature__body">The logged-in homepage evolved from a marketing surface into a personalized trading dashboard — markets, assets, positions, watchlists and opportunities.</p>
+      <p class="feature__body">We redesigned around a modular system of widgets traders could add, remove, resize, rearrange and save, with predefined layouts or their own workspace across the homepage and Trade experience.</p></div>
+          <div><h3 class="feature__name">Outcome</h3>
+        <p class="feature__body">The broader strategy is to give advanced traders fewer reasons to leave OKX, transforming web into a customizable daily workspace for the entire trading lifecycle.</p>
+        <ul class="notes notes--dot notes--wide">
+      <li><span class="notes__mark" aria-hidden="true">•</span><span>Execution platform → advanced trading workspace.</span></li>
+      <li><span class="notes__mark" aria-hidden="true">•</span><span>Currently in development.</span></li>
+    </ul></div>
+        </div>
+        <div class="work__slider" data-slider-status="idle" role="region"
+      aria-roledescription="carousel" aria-label="Home and Trade before and after, the updated navigation, and the derivatives suite">
+      <div class="work__viewport">
+        <div class="work__track" data-grab="idle">
+        <div class="work__slide" data-slide-status="idle" role="group"
+             aria-roledescription="slide" aria-label="1 of 6">
+          <picture >
+      <source type="image/avif" sizes="(min-width: 1296px) 1200px, calc(100vw - 2 * clamp(1.25rem, 5vw, 3rem))" srcset="/case/okx-web-home-before-480.avif?v=b7ba07cf 480w, /case/okx-web-home-before-720.avif?v=b7ba07cf 720w, /case/okx-web-home-before-1200.avif?v=b7ba07cf 1200w, /case/okx-web-home-before-1600.avif?v=b7ba07cf 1600w, /case/okx-web-home-before-2400.avif?v=b7ba07cf 2400w, /case/okx-web-home-before-3072.avif?v=b7ba07cf 3072w, /case/okx-web-home-before-4096.avif?v=b7ba07cf 4096w">
+      <source type="image/webp" sizes="(min-width: 1296px) 1200px, calc(100vw - 2 * clamp(1.25rem, 5vw, 3rem))" srcset="/case/okx-web-home-before-480.webp?v=b7ba07cf 480w, /case/okx-web-home-before-1200.webp?v=b7ba07cf 1200w, /case/okx-web-home-before-4096.webp?v=b7ba07cf 4096w">
+      <img class="work__shot" src="/case/okx-web-home-before-4096.webp?v=b7ba07cf"
+           width="4096" height="2212" alt="Home and Trade before and after, the updated navigation, and the derivatives suite — 1 of 6"
+           loading="lazy" decoding="async" data-fold>
+    </picture>
+        </div>
+        <div class="work__slide" data-slide-status="idle" role="group"
+             aria-roledescription="slide" aria-label="2 of 6">
+          <picture >
+      <source type="image/avif" sizes="(min-width: 1296px) 1200px, calc(100vw - 2 * clamp(1.25rem, 5vw, 3rem))" srcset="/case/okx-web-home-after-480.avif?v=352cb066 480w, /case/okx-web-home-after-720.avif?v=352cb066 720w, /case/okx-web-home-after-1200.avif?v=352cb066 1200w, /case/okx-web-home-after-1600.avif?v=352cb066 1600w, /case/okx-web-home-after-2400.avif?v=352cb066 2400w, /case/okx-web-home-after-3072.avif?v=352cb066 3072w, /case/okx-web-home-after-4096.avif?v=352cb066 4096w">
+      <source type="image/webp" sizes="(min-width: 1296px) 1200px, calc(100vw - 2 * clamp(1.25rem, 5vw, 3rem))" srcset="/case/okx-web-home-after-480.webp?v=352cb066 480w, /case/okx-web-home-after-1200.webp?v=352cb066 1200w, /case/okx-web-home-after-4096.webp?v=352cb066 4096w">
+      <img class="work__shot" src="/case/okx-web-home-after-4096.webp?v=352cb066"
+           width="4096" height="2212" alt="Home and Trade before and after, the updated navigation, and the derivatives suite — 2 of 6"
+           loading="lazy" decoding="async" data-fold>
+    </picture>
+        </div>
+        <div class="work__slide" data-slide-status="idle" role="group"
+             aria-roledescription="slide" aria-label="3 of 6">
+          <picture >
+      <source type="image/avif" sizes="(min-width: 1296px) 1200px, calc(100vw - 2 * clamp(1.25rem, 5vw, 3rem))" srcset="/case/okx-web-nav-480.avif?v=a4064c52 480w, /case/okx-web-nav-720.avif?v=a4064c52 720w, /case/okx-web-nav-1200.avif?v=a4064c52 1200w, /case/okx-web-nav-1600.avif?v=a4064c52 1600w, /case/okx-web-nav-2400.avif?v=a4064c52 2400w, /case/okx-web-nav-3072.avif?v=a4064c52 3072w, /case/okx-web-nav-4096.avif?v=a4064c52 4096w">
+      <source type="image/webp" sizes="(min-width: 1296px) 1200px, calc(100vw - 2 * clamp(1.25rem, 5vw, 3rem))" srcset="/case/okx-web-nav-480.webp?v=a4064c52 480w, /case/okx-web-nav-1200.webp?v=a4064c52 1200w, /case/okx-web-nav-4096.webp?v=a4064c52 4096w">
+      <img class="work__shot" src="/case/okx-web-nav-4096.webp?v=a4064c52"
+           width="4096" height="2212" alt="Home and Trade before and after, the updated navigation, and the derivatives suite — 3 of 6"
+           loading="lazy" decoding="async" data-fold>
+    </picture>
+        </div>
+        <div class="work__slide" data-slide-status="idle" role="group"
+             aria-roledescription="slide" aria-label="4 of 6">
+          <picture >
+      <source type="image/avif" sizes="(min-width: 1296px) 1200px, calc(100vw - 2 * clamp(1.25rem, 5vw, 3rem))" srcset="/case/okx-web-trade-before-480.avif?v=03752dd2 480w, /case/okx-web-trade-before-720.avif?v=03752dd2 720w, /case/okx-web-trade-before-1200.avif?v=03752dd2 1200w, /case/okx-web-trade-before-1600.avif?v=03752dd2 1600w, /case/okx-web-trade-before-2400.avif?v=03752dd2 2400w, /case/okx-web-trade-before-3072.avif?v=03752dd2 3072w, /case/okx-web-trade-before-4096.avif?v=03752dd2 4096w">
+      <source type="image/webp" sizes="(min-width: 1296px) 1200px, calc(100vw - 2 * clamp(1.25rem, 5vw, 3rem))" srcset="/case/okx-web-trade-before-480.webp?v=03752dd2 480w, /case/okx-web-trade-before-1200.webp?v=03752dd2 1200w, /case/okx-web-trade-before-4096.webp?v=03752dd2 4096w">
+      <img class="work__shot" src="/case/okx-web-trade-before-4096.webp?v=03752dd2"
+           width="4096" height="2212" alt="Home and Trade before and after, the updated navigation, and the derivatives suite — 4 of 6"
+           loading="lazy" decoding="async" data-fold>
+    </picture>
+        </div>
+        <div class="work__slide" data-slide-status="idle" role="group"
+             aria-roledescription="slide" aria-label="5 of 6">
+          <picture >
+      <source type="image/avif" sizes="(min-width: 1296px) 1200px, calc(100vw - 2 * clamp(1.25rem, 5vw, 3rem))" srcset="/case/okx-web-trade-after-480.avif?v=299f38c9 480w, /case/okx-web-trade-after-720.avif?v=299f38c9 720w, /case/okx-web-trade-after-1200.avif?v=299f38c9 1200w, /case/okx-web-trade-after-1600.avif?v=299f38c9 1600w, /case/okx-web-trade-after-2400.avif?v=299f38c9 2400w, /case/okx-web-trade-after-3072.avif?v=299f38c9 3072w, /case/okx-web-trade-after-4096.avif?v=299f38c9 4096w">
+      <source type="image/webp" sizes="(min-width: 1296px) 1200px, calc(100vw - 2 * clamp(1.25rem, 5vw, 3rem))" srcset="/case/okx-web-trade-after-480.webp?v=299f38c9 480w, /case/okx-web-trade-after-1200.webp?v=299f38c9 1200w, /case/okx-web-trade-after-4096.webp?v=299f38c9 4096w">
+      <img class="work__shot" src="/case/okx-web-trade-after-4096.webp?v=299f38c9"
+           width="4096" height="2212" alt="Home and Trade before and after, the updated navigation, and the derivatives suite — 5 of 6"
+           loading="lazy" decoding="async" data-fold>
+    </picture>
+        </div>
+        <div class="work__slide" data-slide-status="idle" role="group"
+             aria-roledescription="slide" aria-label="6 of 6">
+          <picture >
+      <source type="image/avif" sizes="(min-width: 1296px) 1200px, calc(100vw - 2 * clamp(1.25rem, 5vw, 3rem))" srcset="/case/okx-web-derivatives-480.avif?v=14e22b75 480w, /case/okx-web-derivatives-720.avif?v=14e22b75 720w, /case/okx-web-derivatives-1200.avif?v=14e22b75 1200w, /case/okx-web-derivatives-1600.avif?v=14e22b75 1600w, /case/okx-web-derivatives-2400.avif?v=14e22b75 2400w, /case/okx-web-derivatives-3072.avif?v=14e22b75 3072w, /case/okx-web-derivatives-4096.avif?v=14e22b75 4096w">
+      <source type="image/webp" sizes="(min-width: 1296px) 1200px, calc(100vw - 2 * clamp(1.25rem, 5vw, 3rem))" srcset="/case/okx-web-derivatives-480.webp?v=14e22b75 480w, /case/okx-web-derivatives-1200.webp?v=14e22b75 1200w, /case/okx-web-derivatives-4096.webp?v=14e22b75 4096w">
+      <img class="work__shot" src="/case/okx-web-derivatives-4096.webp?v=14e22b75"
+           width="4096" height="2212" alt="Home and Trade before and after, the updated navigation, and the derivatives suite — 6 of 6"
+           loading="lazy" decoding="async" data-fold>
+    </picture>
+        </div>
+        </div>
+      </div>
+    </div>
+      </div>
+    </section>
+
+    <section class="band" id="simple-perps">
+      <div class="wrap" data-reveal-group data-stagger="90" data-start="top 85%">
+        <p class="band__no" aria-hidden="true">04</p>
+        <h2 class="band__title">Simple Perps</h2>
+        <div class="duo">
+          <div><h3 class="feature__name">Problem</h3>
+        <p class="feature__body">76.3% of OKX’s trading volume comes from perpetual contracts. But perps only exist inside Advanced mode — order books, isolated versus cross margin, manual funding transfers and position-mode toggles — which locks out the retail user base spot-side.</p>
+      <p class="feature__body">Users who deposit stablecoins, hold spot and have a directional view have no clean way to act on it. They convert opinions into Twitter posts, not positions. Meanwhile Kraken and Coinbase International were building simple-mode perps for exactly this user.</p></div>
+          <div><h3 class="feature__name">Business case</h3>
+        <ul class="notes notes--dot notes--wide">
+      <li><span class="notes__mark" aria-hidden="true">•</span><span><b>Anchored on OKX’s own data.</b> The internal EEA Simple/Advanced volume ratio as a proxy for retail perp adoption. In Feb–Apr 2026 it stabilised at 15.4%–16.7% — roughly one in six dollars of EEA derivatives volume already flows through the simpler surface, before we ship anything.</span></li>
+      <li><span class="notes__mark" aria-hidden="true">•</span><span><b>Applied the ratio to competitor benchmarks.</b> Kraken Total Perp TV from their public Futures API, Coinbase International from the perps dashboard.</span></li>
+      <li><span class="notes__mark" aria-hidden="true">•</span><span><b>Multiplied by published taker fees</b> for a defensible monthly revenue estimate per platform.</span></li>
+    </ul></div>
+          <div><h3 class="feature__name">Personas</h3>
+        <p class="feature__body"><b>Directional Daniel.</b> 25–40, UAE/SG/AU/EEA. Holds BTC/ETH/SOL spot. Opened Exchange mode once, got intimidated, closed it. “I want to express a directional view without losing money to UX confusion.”</p>
+      <p class="feature__body"><b>Sideline Sofia.</b> 27–42. Sits in $2K–$50K USDT. Won’t move funds into a separate futures account. Fears “a trade turning red while I’m not watching.”</p></div>
+          <div><h3 class="feature__name">Outcome</h3>
+        <ul class="notes notes--dot notes--wide">
+      <li><span class="notes__mark" aria-hidden="true">•</span><span><b>$208M/year</b> opportunity unlocked in roadmap reviews.</span></li>
+      <li><span class="notes__mark" aria-hidden="true">•</span><span><b>4-market MVP</b> scope aligned in one quarter — historically six.</span></li>
+      <li><span class="notes__mark" aria-hidden="true">•</span><span><b>Mandatory SL, 3× default, auto-transfer</b> codified as OKX’s house pattern for all regulated retail derivatives.</span></li>
+      <li><span class="notes__mark" aria-hidden="true">•</span><span>Ships <b>Q3 2026</b>.</span></li>
+    </ul></div>
+        </div>
+        <div class="work__slider" data-slider-status="idle" role="region"
+      aria-roledescription="carousel" aria-label="Entry points, onboarding, opening a position and managing it">
+      <div class="work__viewport">
+        <div class="work__track" data-grab="idle">
+        <div class="work__slide" data-slide-status="idle" role="group"
+             aria-roledescription="slide" aria-label="1 of 4">
+          <picture >
+      <source type="image/avif" sizes="(min-width: 1296px) 1200px, calc(100vw - 2 * clamp(1.25rem, 5vw, 3rem))" srcset="/case/okx-simple-entry-480.avif?v=c08b9358 480w, /case/okx-simple-entry-720.avif?v=c08b9358 720w, /case/okx-simple-entry-1200.avif?v=c08b9358 1200w, /case/okx-simple-entry-1600.avif?v=c08b9358 1600w, /case/okx-simple-entry-2400.avif?v=c08b9358 2400w, /case/okx-simple-entry-3072.avif?v=c08b9358 3072w">
+      <source type="image/webp" sizes="(min-width: 1296px) 1200px, calc(100vw - 2 * clamp(1.25rem, 5vw, 3rem))" srcset="/case/okx-simple-entry-480.webp?v=c08b9358 480w, /case/okx-simple-entry-1200.webp?v=c08b9358 1200w, /case/okx-simple-entry-3072.webp?v=c08b9358 3072w">
+      <img class="work__shot" src="/case/okx-simple-entry-3072.webp?v=c08b9358"
+           width="3072" height="1659" alt="Entry points, onboarding, opening a position and managing it — 1 of 4"
+           loading="lazy" decoding="async" data-fold>
+    </picture>
+        </div>
+        <div class="work__slide" data-slide-status="idle" role="group"
+             aria-roledescription="slide" aria-label="2 of 4">
+          <picture >
+      <source type="image/avif" sizes="(min-width: 1296px) 1200px, calc(100vw - 2 * clamp(1.25rem, 5vw, 3rem))" srcset="/case/okx-simple-onboarding-480.avif?v=42408e58 480w, /case/okx-simple-onboarding-720.avif?v=42408e58 720w, /case/okx-simple-onboarding-1200.avif?v=42408e58 1200w, /case/okx-simple-onboarding-1600.avif?v=42408e58 1600w, /case/okx-simple-onboarding-2400.avif?v=42408e58 2400w, /case/okx-simple-onboarding-3072.avif?v=42408e58 3072w, /case/okx-simple-onboarding-4096.avif?v=42408e58 4096w">
+      <source type="image/webp" sizes="(min-width: 1296px) 1200px, calc(100vw - 2 * clamp(1.25rem, 5vw, 3rem))" srcset="/case/okx-simple-onboarding-480.webp?v=42408e58 480w, /case/okx-simple-onboarding-1200.webp?v=42408e58 1200w, /case/okx-simple-onboarding-4096.webp?v=42408e58 4096w">
+      <img class="work__shot" src="/case/okx-simple-onboarding-4096.webp?v=42408e58"
+           width="4096" height="2212" alt="Entry points, onboarding, opening a position and managing it — 2 of 4"
+           loading="lazy" decoding="async" data-fold>
+    </picture>
+        </div>
+        <div class="work__slide" data-slide-status="idle" role="group"
+             aria-roledescription="slide" aria-label="3 of 4">
+          <picture >
+      <source type="image/avif" sizes="(min-width: 1296px) 1200px, calc(100vw - 2 * clamp(1.25rem, 5vw, 3rem))" srcset="/case/okx-simple-position-480.avif?v=e677ed1b 480w, /case/okx-simple-position-720.avif?v=e677ed1b 720w, /case/okx-simple-position-1200.avif?v=e677ed1b 1200w, /case/okx-simple-position-1600.avif?v=e677ed1b 1600w, /case/okx-simple-position-2400.avif?v=e677ed1b 2400w, /case/okx-simple-position-3072.avif?v=e677ed1b 3072w, /case/okx-simple-position-4096.avif?v=e677ed1b 4096w">
+      <source type="image/webp" sizes="(min-width: 1296px) 1200px, calc(100vw - 2 * clamp(1.25rem, 5vw, 3rem))" srcset="/case/okx-simple-position-480.webp?v=e677ed1b 480w, /case/okx-simple-position-1200.webp?v=e677ed1b 1200w, /case/okx-simple-position-4096.webp?v=e677ed1b 4096w">
+      <img class="work__shot" src="/case/okx-simple-position-4096.webp?v=e677ed1b"
+           width="4096" height="2212" alt="Entry points, onboarding, opening a position and managing it — 3 of 4"
+           loading="lazy" decoding="async" data-fold>
+    </picture>
+        </div>
+        <div class="work__slide" data-slide-status="idle" role="group"
+             aria-roledescription="slide" aria-label="4 of 4">
+          <picture >
+      <source type="image/avif" sizes="(min-width: 1296px) 1200px, calc(100vw - 2 * clamp(1.25rem, 5vw, 3rem))" srcset="/case/okx-simple-manage-480.avif?v=9ddb3735 480w, /case/okx-simple-manage-720.avif?v=9ddb3735 720w, /case/okx-simple-manage-1200.avif?v=9ddb3735 1200w, /case/okx-simple-manage-1600.avif?v=9ddb3735 1600w, /case/okx-simple-manage-2400.avif?v=9ddb3735 2400w, /case/okx-simple-manage-3072.avif?v=9ddb3735 3072w, /case/okx-simple-manage-4096.avif?v=9ddb3735 4096w">
+      <source type="image/webp" sizes="(min-width: 1296px) 1200px, calc(100vw - 2 * clamp(1.25rem, 5vw, 3rem))" srcset="/case/okx-simple-manage-480.webp?v=9ddb3735 480w, /case/okx-simple-manage-1200.webp?v=9ddb3735 1200w, /case/okx-simple-manage-4096.webp?v=9ddb3735 4096w">
+      <img class="work__shot" src="/case/okx-simple-manage-4096.webp?v=9ddb3735"
+           width="4096" height="2212" alt="Entry points, onboarding, opening a position and managing it — 4 of 4"
+           loading="lazy" decoding="async" data-fold>
+    </picture>
+        </div>
+        </div>
+      </div>
+    </div>
+      </div>
+    </section>
+
+    <section class="band" id="australian-retail-derivatives">
+      <div class="wrap" data-reveal-group data-stagger="90" data-start="top 85%">
+        <p class="band__no" aria-hidden="true">05</p>
+        <h2 class="band__title">Australian retail derivatives</h2>
+        <div class="duo">
+          <div><h3 class="feature__name">Problem</h3>
+        <p class="feature__body">Australia is a high-value, highly regulated crypto market. The goal: become the first ASIC-licensed exchange to offer regulated retail derivatives, without fracturing our global UI architecture.</p>
+      <p class="feature__body">ASIC guidelines mandated a strict 2× leverage cap and eligibility checks. Internal modeling showed Perpetual Contracts would drive 95% of retail volume, dictating a phased rollout.</p></div>
+          <div><h3 class="feature__name">The solution</h3>
+        <p class="feature__body">I led the end-to-end design of a two-phase rollout. Instead of treating compliance as a legal roadblock, I designed an eligibility onboarding flow that felt like a premium feature unlock.</p>
+      <p class="feature__body">Australia isn’t where we win on volume. It’s where we prove the architecture that lets us win on volume everywhere else.</p></div>
+          <div><h3 class="feature__name">Outcome</h3>
+        <ul class="notes notes--dot notes--wide">
+      <li><span class="notes__mark" aria-hidden="true">•</span><span>First-mover in regulated retail crypto derivatives in AU. Kraken can’t ship it without an ASIC retail licence, Coinbase can’t ship it globally, Binance can’t ship it in the market at all.</span></li>
+      <li><span class="notes__mark" aria-hidden="true">•</span><span>Architecture validated inside a regulator’s constraints — in the first 30 days Open Interest grew from zero to $23K+ and position holders 1 → 8, every one a fully KYC-cleared, ASIC-supervised retail trader. Small by design; the signal is that the surface works under regulation.</span></li>
+      <li><span class="notes__mark" aria-hidden="true">•</span><span>Single-codebase Simple Perps surface ships in four regions off the AU foundation.</span></li>
+    </ul></div>
+        </div>
+        <div class="work__slider" data-slider-status="idle" role="region"
+      aria-roledescription="carousel" aria-label="The eligibility journey: entry points, the assessment, and the trade experience">
+      <div class="work__viewport">
+        <div class="work__track" data-grab="idle">
+        <div class="work__slide" data-slide-status="idle" role="group"
+             aria-roledescription="slide" aria-label="1 of 3">
+          <picture >
+      <source type="image/avif" sizes="(min-width: 1296px) 1200px, calc(100vw - 2 * clamp(1.25rem, 5vw, 3rem))" srcset="/case/okx-au-entry-480.avif?v=16722dba 480w, /case/okx-au-entry-720.avif?v=16722dba 720w, /case/okx-au-entry-1200.avif?v=16722dba 1200w, /case/okx-au-entry-1600.avif?v=16722dba 1600w, /case/okx-au-entry-2400.avif?v=16722dba 2400w, /case/okx-au-entry-3072.avif?v=16722dba 3072w">
+      <source type="image/webp" sizes="(min-width: 1296px) 1200px, calc(100vw - 2 * clamp(1.25rem, 5vw, 3rem))" srcset="/case/okx-au-entry-480.webp?v=16722dba 480w, /case/okx-au-entry-1200.webp?v=16722dba 1200w, /case/okx-au-entry-3072.webp?v=16722dba 3072w">
+      <img class="work__shot" src="/case/okx-au-entry-3072.webp?v=16722dba"
+           width="3072" height="1659" alt="The eligibility journey: entry points, the assessment, and the trade experience — 1 of 3"
+           loading="lazy" decoding="async" data-fold>
+    </picture>
+        </div>
+        <div class="work__slide" data-slide-status="idle" role="group"
+             aria-roledescription="slide" aria-label="2 of 3">
+          <picture >
+      <source type="image/avif" sizes="(min-width: 1296px) 1200px, calc(100vw - 2 * clamp(1.25rem, 5vw, 3rem))" srcset="/case/okx-au-assessment-480.avif?v=3faebb4d 480w, /case/okx-au-assessment-720.avif?v=3faebb4d 720w, /case/okx-au-assessment-1200.avif?v=3faebb4d 1200w, /case/okx-au-assessment-1600.avif?v=3faebb4d 1600w, /case/okx-au-assessment-2400.avif?v=3faebb4d 2400w, /case/okx-au-assessment-2952.avif?v=3faebb4d 2952w">
+      <source type="image/webp" sizes="(min-width: 1296px) 1200px, calc(100vw - 2 * clamp(1.25rem, 5vw, 3rem))" srcset="/case/okx-au-assessment-480.webp?v=3faebb4d 480w, /case/okx-au-assessment-1200.webp?v=3faebb4d 1200w, /case/okx-au-assessment-2952.webp?v=3faebb4d 2952w">
+      <img class="work__shot" src="/case/okx-au-assessment-2952.webp?v=3faebb4d"
+           width="2952" height="1618" alt="The eligibility journey: entry points, the assessment, and the trade experience — 2 of 3"
+           loading="lazy" decoding="async" data-fold>
+    </picture>
+        </div>
+        <div class="work__slide" data-slide-status="idle" role="group"
+             aria-roledescription="slide" aria-label="3 of 3">
+          <picture >
+      <source type="image/avif" sizes="(min-width: 1296px) 1200px, calc(100vw - 2 * clamp(1.25rem, 5vw, 3rem))" srcset="/case/okx-au-trade-480.avif?v=57e755bf 480w, /case/okx-au-trade-720.avif?v=57e755bf 720w, /case/okx-au-trade-1200.avif?v=57e755bf 1200w, /case/okx-au-trade-1600.avif?v=57e755bf 1600w, /case/okx-au-trade-2400.avif?v=57e755bf 2400w, /case/okx-au-trade-3072.avif?v=57e755bf 3072w">
+      <source type="image/webp" sizes="(min-width: 1296px) 1200px, calc(100vw - 2 * clamp(1.25rem, 5vw, 3rem))" srcset="/case/okx-au-trade-480.webp?v=57e755bf 480w, /case/okx-au-trade-1200.webp?v=57e755bf 1200w, /case/okx-au-trade-3072.webp?v=57e755bf 3072w">
+      <img class="work__shot" src="/case/okx-au-trade-3072.webp?v=57e755bf"
+           width="3072" height="1659" alt="The eligibility journey: entry points, the assessment, and the trade experience — 3 of 3"
+           loading="lazy" decoding="async" data-fold>
+    </picture>
+        </div>
+        </div>
+      </div>
+    </div>
+      </div>
+    </section>
+
+    <section class="band" id="usdg-us-adoption">
+      <div class="wrap" data-reveal-group data-stagger="90" data-start="top 85%">
+        <p class="band__no" aria-hidden="true">06</p>
+        <h2 class="band__title">USDG US adoption</h2>
+        <div class="duo">
+          <div><h3 class="feature__name">Problem</h3>
+        <p class="feature__body">Despite offering a 4.1% APY (boosted to 5%), USDG adoption was stalling. The root cause: users didn’t know the yield existed until they actively sought out the Earn product. Yield was invisible at the point of deposit.</p></div>
+          <div><h3 class="feature__name">What I did</h3>
+        <p class="feature__body">The objective: increase USDG holdings (target 10× AUM) and OKX’s revenue share from the underlying Earn product (target +15% CTR).</p>
+      <p class="feature__body">I brought the Earn value proposition into the core deposit flow and led the UX/UI for a cross-platform integration.</p></div>
+          <div><h3 class="feature__name">Outcome</h3>
+        <p class="feature__body">The deposit-flow integration drove a <b>15× increase in USDG AUM</b> and increased the baseline CTR on USDG placements by <b>32%</b>, directly increasing OKX’s Earn revenue.</p></div>
+        </div>
+        <div class="work__slider" data-slider-status="idle" role="region"
+      aria-roledescription="carousel" aria-label="Yield brought into the deposit flow, in Simple and Exchange modes">
+      <div class="work__viewport">
+        <div class="work__track" data-grab="idle">
+        <div class="work__slide" data-slide-status="idle" role="group"
+             aria-roledescription="slide" aria-label="1 of 2">
+          <picture >
+      <source type="image/avif" sizes="(min-width: 1296px) 1200px, calc(100vw - 2 * clamp(1.25rem, 5vw, 3rem))" srcset="/case/okx-usdg-simple-480.avif?v=4123fd42 480w, /case/okx-usdg-simple-720.avif?v=4123fd42 720w, /case/okx-usdg-simple-1200.avif?v=4123fd42 1200w, /case/okx-usdg-simple-1600.avif?v=4123fd42 1600w, /case/okx-usdg-simple-2400.avif?v=4123fd42 2400w, /case/okx-usdg-simple-3072.avif?v=4123fd42 3072w">
+      <source type="image/webp" sizes="(min-width: 1296px) 1200px, calc(100vw - 2 * clamp(1.25rem, 5vw, 3rem))" srcset="/case/okx-usdg-simple-480.webp?v=4123fd42 480w, /case/okx-usdg-simple-1200.webp?v=4123fd42 1200w, /case/okx-usdg-simple-3072.webp?v=4123fd42 3072w">
+      <img class="work__shot" src="/case/okx-usdg-simple-3072.webp?v=4123fd42"
+           width="3072" height="1659" alt="Yield brought into the deposit flow, in Simple and Exchange modes — 1 of 2"
+           loading="lazy" decoding="async" data-fold>
+    </picture>
+        </div>
+        <div class="work__slide" data-slide-status="idle" role="group"
+             aria-roledescription="slide" aria-label="2 of 2">
+          <picture >
+      <source type="image/avif" sizes="(min-width: 1296px) 1200px, calc(100vw - 2 * clamp(1.25rem, 5vw, 3rem))" srcset="/case/okx-usdg-exchange-480.avif?v=07e2c5e4 480w, /case/okx-usdg-exchange-720.avif?v=07e2c5e4 720w, /case/okx-usdg-exchange-1200.avif?v=07e2c5e4 1200w, /case/okx-usdg-exchange-1600.avif?v=07e2c5e4 1600w, /case/okx-usdg-exchange-2400.avif?v=07e2c5e4 2400w, /case/okx-usdg-exchange-3072.avif?v=07e2c5e4 3072w">
+      <source type="image/webp" sizes="(min-width: 1296px) 1200px, calc(100vw - 2 * clamp(1.25rem, 5vw, 3rem))" srcset="/case/okx-usdg-exchange-480.webp?v=07e2c5e4 480w, /case/okx-usdg-exchange-1200.webp?v=07e2c5e4 1200w, /case/okx-usdg-exchange-3072.webp?v=07e2c5e4 3072w">
+      <img class="work__shot" src="/case/okx-usdg-exchange-3072.webp?v=07e2c5e4"
+           width="3072" height="1659" alt="Yield brought into the deposit flow, in Simple and Exchange modes — 2 of 2"
+           loading="lazy" decoding="async" data-fold>
+    </picture>
+        </div>
+        </div>
+      </div>
+    </div>
+      </div>
+    </section>
+
+    <section class="band" id="okx-intelligence">
+      <div class="wrap" data-reveal-group data-stagger="90" data-start="top 85%">
+        <p class="band__no" aria-hidden="true">07</p>
+        <h2 class="band__title">OKX Intelligence</h2>
+        <div class="duo">
+          <div><h3 class="feature__name">Problem</h3>
+        <p class="feature__body">Research revealed a critical bottleneck: 60–70% of retail users cited “lack of understanding” as their #1 blocker. While competitors added standalone chatbots, nobody was building a unified intelligence layer — against a 200M+ digital finance user base.</p></div>
+          <div><h3 class="feature__name">Six pillars</h3>
+        <p class="feature__body">Every AI feature has to map to one of six intelligence pillars — Adaptive Personalization, Proactive Guidance, Predictive Analytics, Progressive Automation, Portfolio Intelligence, Behavioral Learning — otherwise we build the same plumbing twice.</p></div>
+          <div><h3 class="feature__name">Solution</h3>
+        <ul class="notes notes--dot notes--wide">
+      <li><span class="notes__mark" aria-hidden="true">•</span><span><b>Data layer</b> — exchange data plus cross-chain wallet data across 70+ blockchains and third-party feeds. One schema.</span></li>
+      <li><span class="notes__mark" aria-hidden="true">•</span><span><b>Intelligence layer</b> — six runtime engines on an intent / reasoning / memory / learning architecture.</span></li>
+      <li><span class="notes__mark" aria-hidden="true">•</span><span><b>Presentation layer</b> — eight adaptive surfaces: Home, Earn, Invest, Borrow, Pay, Search, Settings, Onboarding.</span></li>
+    </ul></div>
+          <div><h3 class="feature__name">Outcome</h3>
+        <ul class="notes notes--dot notes--wide">
+      <li><span class="notes__mark" aria-hidden="true">•</span><span>3-layer architecture adopted as OKX’s reference model for every AI feature — AI investment compounds across squads instead of duplicating.</span></li>
+      <li><span class="notes__mark" aria-hidden="true">•</span><span>Repositioned OKX internally: from reactive trading platform to proactive financial intelligence engine.</span></li>
+      <li><span class="notes__mark" aria-hidden="true">•</span><span>The data substrate — exchange data plus 70+ chains of wallet data — is something competitors cannot replicate by writing better prompts.</span></li>
+    </ul></div>
+        </div>
+        <div class="work__slider" data-slider-status="idle" role="region"
+      aria-roledescription="carousel" aria-label="The strategy, and intelligence in the product">
+      <div class="work__viewport">
+        <div class="work__track" data-grab="idle">
+        <div class="work__slide" data-slide-status="idle" role="group"
+             aria-roledescription="slide" aria-label="1 of 11">
+          <picture >
+      <source type="image/avif" sizes="(min-width: 1296px) 1200px, calc(100vw - 2 * clamp(1.25rem, 5vw, 3rem))" srcset="/case/okx-ai-evidence-480.avif?v=50d9d82a 480w, /case/okx-ai-evidence-720.avif?v=50d9d82a 720w, /case/okx-ai-evidence-1200.avif?v=50d9d82a 1200w, /case/okx-ai-evidence-1352.avif?v=50d9d82a 1352w">
+      <source type="image/webp" sizes="(min-width: 1296px) 1200px, calc(100vw - 2 * clamp(1.25rem, 5vw, 3rem))" srcset="/case/okx-ai-evidence-480.webp?v=50d9d82a 480w, /case/okx-ai-evidence-1200.webp?v=50d9d82a 1200w, /case/okx-ai-evidence-1352.webp?v=50d9d82a 1352w">
+      <img class="work__shot" src="/case/okx-ai-evidence-1352.webp?v=50d9d82a"
+           width="1352" height="847" alt="The strategy, and intelligence in the product — 1 of 11"
+           loading="lazy" decoding="async" data-fold>
+    </picture>
+        </div>
+        <div class="work__slide" data-slide-status="idle" role="group"
+             aria-roledescription="slide" aria-label="2 of 11">
+          <picture >
+      <source type="image/avif" sizes="(min-width: 1296px) 1200px, calc(100vw - 2 * clamp(1.25rem, 5vw, 3rem))" srcset="/case/okx-ai-funnel-480.avif?v=23596286 480w, /case/okx-ai-funnel-720.avif?v=23596286 720w, /case/okx-ai-funnel-1200.avif?v=23596286 1200w, /case/okx-ai-funnel-1352.avif?v=23596286 1352w">
+      <source type="image/webp" sizes="(min-width: 1296px) 1200px, calc(100vw - 2 * clamp(1.25rem, 5vw, 3rem))" srcset="/case/okx-ai-funnel-480.webp?v=23596286 480w, /case/okx-ai-funnel-1200.webp?v=23596286 1200w, /case/okx-ai-funnel-1352.webp?v=23596286 1352w">
+      <img class="work__shot" src="/case/okx-ai-funnel-1352.webp?v=23596286"
+           width="1352" height="847" alt="The strategy, and intelligence in the product — 2 of 11"
+           loading="lazy" decoding="async" data-fold>
+    </picture>
+        </div>
+        <div class="work__slide" data-slide-status="idle" role="group"
+             aria-roledescription="slide" aria-label="3 of 11">
+          <picture >
+      <source type="image/avif" sizes="(min-width: 1296px) 1200px, calc(100vw - 2 * clamp(1.25rem, 5vw, 3rem))" srcset="/case/okx-ai-architecture-480.avif?v=520c8045 480w, /case/okx-ai-architecture-720.avif?v=520c8045 720w, /case/okx-ai-architecture-1200.avif?v=520c8045 1200w, /case/okx-ai-architecture-1352.avif?v=520c8045 1352w">
+      <source type="image/webp" sizes="(min-width: 1296px) 1200px, calc(100vw - 2 * clamp(1.25rem, 5vw, 3rem))" srcset="/case/okx-ai-architecture-480.webp?v=520c8045 480w, /case/okx-ai-architecture-1200.webp?v=520c8045 1200w, /case/okx-ai-architecture-1352.webp?v=520c8045 1352w">
+      <img class="work__shot" src="/case/okx-ai-architecture-1352.webp?v=520c8045"
+           width="1352" height="847" alt="The strategy, and intelligence in the product — 3 of 11"
+           loading="lazy" decoding="async" data-fold>
+    </picture>
+        </div>
+        <div class="work__slide" data-slide-status="idle" role="group"
+             aria-roledescription="slide" aria-label="4 of 11">
+          <picture >
+      <source type="image/avif" sizes="(min-width: 1296px) 1200px, calc(100vw - 2 * clamp(1.25rem, 5vw, 3rem))" srcset="/case/okx-ai-phase0-480.avif?v=ce4130dd 480w, /case/okx-ai-phase0-720.avif?v=ce4130dd 720w, /case/okx-ai-phase0-1200.avif?v=ce4130dd 1200w, /case/okx-ai-phase0-1600.avif?v=ce4130dd 1600w">
+      <source type="image/webp" sizes="(min-width: 1296px) 1200px, calc(100vw - 2 * clamp(1.25rem, 5vw, 3rem))" srcset="/case/okx-ai-phase0-480.webp?v=ce4130dd 480w, /case/okx-ai-phase0-1200.webp?v=ce4130dd 1200w, /case/okx-ai-phase0-1600.webp?v=ce4130dd 1600w">
+      <img class="work__shot" src="/case/okx-ai-phase0-1600.webp?v=ce4130dd"
+           width="1670" height="935" alt="The strategy, and intelligence in the product — 4 of 11"
+           loading="lazy" decoding="async" data-fold>
+    </picture>
+        </div>
+        <div class="work__slide" data-slide-status="idle" role="group"
+             aria-roledescription="slide" aria-label="5 of 11">
+          <picture >
+      <source type="image/avif" sizes="(min-width: 1296px) 1200px, calc(100vw - 2 * clamp(1.25rem, 5vw, 3rem))" srcset="/case/okx-ai-phase1-480.avif?v=a884a8aa 480w, /case/okx-ai-phase1-720.avif?v=a884a8aa 720w, /case/okx-ai-phase1-1200.avif?v=a884a8aa 1200w, /case/okx-ai-phase1-1600.avif?v=a884a8aa 1600w">
+      <source type="image/webp" sizes="(min-width: 1296px) 1200px, calc(100vw - 2 * clamp(1.25rem, 5vw, 3rem))" srcset="/case/okx-ai-phase1-480.webp?v=a884a8aa 480w, /case/okx-ai-phase1-1200.webp?v=a884a8aa 1200w, /case/okx-ai-phase1-1600.webp?v=a884a8aa 1600w">
+      <img class="work__shot" src="/case/okx-ai-phase1-1600.webp?v=a884a8aa"
+           width="1670" height="935" alt="The strategy, and intelligence in the product — 5 of 11"
+           loading="lazy" decoding="async" data-fold>
+    </picture>
+        </div>
+        <div class="work__slide" data-slide-status="idle" role="group"
+             aria-roledescription="slide" aria-label="6 of 11">
+          <picture >
+      <source type="image/avif" sizes="(min-width: 1296px) 1200px, calc(100vw - 2 * clamp(1.25rem, 5vw, 3rem))" srcset="/case/okx-ai-phase23-480.avif?v=5a2e0bd1 480w, /case/okx-ai-phase23-720.avif?v=5a2e0bd1 720w, /case/okx-ai-phase23-1200.avif?v=5a2e0bd1 1200w, /case/okx-ai-phase23-1600.avif?v=5a2e0bd1 1600w">
+      <source type="image/webp" sizes="(min-width: 1296px) 1200px, calc(100vw - 2 * clamp(1.25rem, 5vw, 3rem))" srcset="/case/okx-ai-phase23-480.webp?v=5a2e0bd1 480w, /case/okx-ai-phase23-1200.webp?v=5a2e0bd1 1200w, /case/okx-ai-phase23-1600.webp?v=5a2e0bd1 1600w">
+      <img class="work__shot" src="/case/okx-ai-phase23-1600.webp?v=5a2e0bd1"
+           width="1670" height="935" alt="The strategy, and intelligence in the product — 6 of 11"
+           loading="lazy" decoding="async" data-fold>
+    </picture>
+        </div>
+        <div class="work__slide" data-slide-status="idle" role="group"
+             aria-roledescription="slide" aria-label="7 of 11">
+          <picture >
+      <source type="image/avif" sizes="(min-width: 1296px) 1200px, calc(100vw - 2 * clamp(1.25rem, 5vw, 3rem))" srcset="/case/okx-ai-impact-480.avif?v=51768d4e 480w, /case/okx-ai-impact-720.avif?v=51768d4e 720w, /case/okx-ai-impact-1200.avif?v=51768d4e 1200w, /case/okx-ai-impact-1600.avif?v=51768d4e 1600w">
+      <source type="image/webp" sizes="(min-width: 1296px) 1200px, calc(100vw - 2 * clamp(1.25rem, 5vw, 3rem))" srcset="/case/okx-ai-impact-480.webp?v=51768d4e 480w, /case/okx-ai-impact-1200.webp?v=51768d4e 1200w, /case/okx-ai-impact-1600.webp?v=51768d4e 1600w">
+      <img class="work__shot" src="/case/okx-ai-impact-1600.webp?v=51768d4e"
+           width="1670" height="935" alt="The strategy, and intelligence in the product — 7 of 11"
+           loading="lazy" decoding="async" data-fold>
+    </picture>
+        </div>
+        <div class="work__slide" data-slide-status="idle" role="group"
+             aria-roledescription="slide" aria-label="8 of 11">
+          <picture >
+      <source type="image/avif" sizes="(min-width: 1296px) 1200px, calc(100vw - 2 * clamp(1.25rem, 5vw, 3rem))" srcset="/case/okx-ai-ecosystem-480.avif?v=dcc46992 480w, /case/okx-ai-ecosystem-720.avif?v=dcc46992 720w, /case/okx-ai-ecosystem-1200.avif?v=dcc46992 1200w, /case/okx-ai-ecosystem-1600.avif?v=dcc46992 1600w">
+      <source type="image/webp" sizes="(min-width: 1296px) 1200px, calc(100vw - 2 * clamp(1.25rem, 5vw, 3rem))" srcset="/case/okx-ai-ecosystem-480.webp?v=dcc46992 480w, /case/okx-ai-ecosystem-1200.webp?v=dcc46992 1200w, /case/okx-ai-ecosystem-1600.webp?v=dcc46992 1600w">
+      <img class="work__shot" src="/case/okx-ai-ecosystem-1600.webp?v=dcc46992"
+           width="1670" height="935" alt="The strategy, and intelligence in the product — 8 of 11"
+           loading="lazy" decoding="async" data-fold>
+    </picture>
+        </div>
+        <div class="work__slide" data-slide-status="idle" role="group"
+             aria-roledescription="slide" aria-label="9 of 11">
+          <picture >
+      <source type="image/avif" sizes="(min-width: 1296px) 1200px, calc(100vw - 2 * clamp(1.25rem, 5vw, 3rem))" srcset="/case/okx-ai-assist-480.avif?v=199e310f 480w, /case/okx-ai-assist-720.avif?v=199e310f 720w, /case/okx-ai-assist-1200.avif?v=199e310f 1200w, /case/okx-ai-assist-1600.avif?v=199e310f 1600w">
+      <source type="image/webp" sizes="(min-width: 1296px) 1200px, calc(100vw - 2 * clamp(1.25rem, 5vw, 3rem))" srcset="/case/okx-ai-assist-480.webp?v=199e310f 480w, /case/okx-ai-assist-1200.webp?v=199e310f 1200w, /case/okx-ai-assist-1600.webp?v=199e310f 1600w">
+      <img class="work__shot" src="/case/okx-ai-assist-1600.webp?v=199e310f"
+           width="1670" height="935" alt="The strategy, and intelligence in the product — 9 of 11"
+           loading="lazy" decoding="async" data-fold>
+    </picture>
+        </div>
+        <div class="work__slide" data-slide-status="idle" role="group"
+             aria-roledescription="slide" aria-label="10 of 11">
+          <picture >
+      <source type="image/avif" sizes="(min-width: 1296px) 1200px, calc(100vw - 2 * clamp(1.25rem, 5vw, 3rem))" srcset="/case/okx-ai-synthesis-480.avif?v=8cb72058 480w, /case/okx-ai-synthesis-720.avif?v=8cb72058 720w, /case/okx-ai-synthesis-1200.avif?v=8cb72058 1200w, /case/okx-ai-synthesis-1600.avif?v=8cb72058 1600w">
+      <source type="image/webp" sizes="(min-width: 1296px) 1200px, calc(100vw - 2 * clamp(1.25rem, 5vw, 3rem))" srcset="/case/okx-ai-synthesis-480.webp?v=8cb72058 480w, /case/okx-ai-synthesis-1200.webp?v=8cb72058 1200w, /case/okx-ai-synthesis-1600.webp?v=8cb72058 1600w">
+      <img class="work__shot" src="/case/okx-ai-synthesis-1600.webp?v=8cb72058"
+           width="1670" height="935" alt="The strategy, and intelligence in the product — 10 of 11"
+           loading="lazy" decoding="async" data-fold>
+    </picture>
+        </div>
+        <div class="work__slide" data-slide-status="idle" role="group"
+             aria-roledescription="slide" aria-label="11 of 11">
+          <picture >
+      <source type="image/avif" sizes="(min-width: 1296px) 1200px, calc(100vw - 2 * clamp(1.25rem, 5vw, 3rem))" srcset="/case/okx-ai-guardrails-480.avif?v=52ec34a7 480w, /case/okx-ai-guardrails-720.avif?v=52ec34a7 720w, /case/okx-ai-guardrails-1200.avif?v=52ec34a7 1200w, /case/okx-ai-guardrails-1600.avif?v=52ec34a7 1600w">
+      <source type="image/webp" sizes="(min-width: 1296px) 1200px, calc(100vw - 2 * clamp(1.25rem, 5vw, 3rem))" srcset="/case/okx-ai-guardrails-480.webp?v=52ec34a7 480w, /case/okx-ai-guardrails-1200.webp?v=52ec34a7 1200w, /case/okx-ai-guardrails-1600.webp?v=52ec34a7 1600w">
+      <img class="work__shot" src="/case/okx-ai-guardrails-1600.webp?v=52ec34a7"
+           width="1670" height="935" alt="The strategy, and intelligence in the product — 11 of 11"
+           loading="lazy" decoding="async" data-fold>
+    </picture>
+        </div>
+        </div>
+      </div>
+    </div>
+      </div>
+    </section>
+
+    <section class="band" id="exchange-mode-revamp">
+      <div class="wrap" data-reveal-group data-stagger="90" data-start="top 85%">
+        <p class="band__no" aria-hidden="true">08</p>
+        <h2 class="band__title">Exchange mode revamp</h2>
+        <div class="duo">
+          <div><h3 class="feature__name">Problem</h3>
+        <p class="feature__body">Exchange Mode is the surface 70%+ of mobile users open daily. The five tabs drifted — Home became a campaign dump, Explore lost its job, Trade and Portfolio fell out of sync, Activity flattened into a log.</p></div>
+          <div><h3 class="feature__name">What I did</h3>
+        <p class="feature__body">Using the User Feedback Intelligence Dashboard I shipped earlier in the year, I pulled 3,100 active tickets and surfaced 22 prioritized pain points — addressed in one coordinated release, not 22 squad-local fixes.</p></div>
+          <div><h3 class="feature__name">Outcome</h3>
+        <ul class="notes notes--dot notes--wide">
+      <li><span class="notes__mark" aria-hidden="true">•</span><span>Projected <b>−35% Exchange Mode tickets</b> within 90 days post-launch.</span></li>
+      <li><span class="notes__mark" aria-hidden="true">•</span><span><b>“One tab, one job”</b> adopted as the org-wide IA principle for OKX Pay, Earn and Invest revamps.</span></li>
+    </ul></div>
+        </div>
+        <div class="work__slider" data-slider-status="idle" role="region"
+      aria-roledescription="carousel" aria-label="Existing against proposed, tab by tab: Home, Explore and Activity">
+      <div class="work__viewport">
+        <div class="work__track" data-grab="idle">
+        <div class="work__slide" data-slide-status="idle" role="group"
+             aria-roledescription="slide" aria-label="1 of 2">
+          <picture >
+      <source type="image/avif" sizes="(min-width: 1296px) 1200px, calc(100vw - 2 * clamp(1.25rem, 5vw, 3rem))" srcset="/case/okx-exchange-1-480.avif?v=5ca6aa34 480w, /case/okx-exchange-1-720.avif?v=5ca6aa34 720w, /case/okx-exchange-1-1200.avif?v=5ca6aa34 1200w, /case/okx-exchange-1-1600.avif?v=5ca6aa34 1600w, /case/okx-exchange-1-2400.avif?v=5ca6aa34 2400w, /case/okx-exchange-1-3072.avif?v=5ca6aa34 3072w">
+      <source type="image/webp" sizes="(min-width: 1296px) 1200px, calc(100vw - 2 * clamp(1.25rem, 5vw, 3rem))" srcset="/case/okx-exchange-1-480.webp?v=5ca6aa34 480w, /case/okx-exchange-1-1200.webp?v=5ca6aa34 1200w, /case/okx-exchange-1-3072.webp?v=5ca6aa34 3072w">
+      <img class="work__shot" src="/case/okx-exchange-1-3072.webp?v=5ca6aa34"
+           width="3182" height="1811" alt="Existing against proposed, tab by tab: Home, Explore and Activity — 1 of 2"
+           loading="lazy" decoding="async" data-fold>
+    </picture>
+        </div>
+        <div class="work__slide" data-slide-status="idle" role="group"
+             aria-roledescription="slide" aria-label="2 of 2">
+          <picture >
+      <source type="image/avif" sizes="(min-width: 1296px) 1200px, calc(100vw - 2 * clamp(1.25rem, 5vw, 3rem))" srcset="/case/okx-exchange-2-480.avif?v=81030e8d 480w, /case/okx-exchange-2-720.avif?v=81030e8d 720w, /case/okx-exchange-2-1200.avif?v=81030e8d 1200w, /case/okx-exchange-2-1600.avif?v=81030e8d 1600w, /case/okx-exchange-2-2400.avif?v=81030e8d 2400w, /case/okx-exchange-2-3072.avif?v=81030e8d 3072w">
+      <source type="image/webp" sizes="(min-width: 1296px) 1200px, calc(100vw - 2 * clamp(1.25rem, 5vw, 3rem))" srcset="/case/okx-exchange-2-480.webp?v=81030e8d 480w, /case/okx-exchange-2-1200.webp?v=81030e8d 1200w, /case/okx-exchange-2-3072.webp?v=81030e8d 3072w">
+      <img class="work__shot" src="/case/okx-exchange-2-3072.webp?v=81030e8d"
+           width="3182" height="1811" alt="Existing against proposed, tab by tab: Home, Explore and Activity — 2 of 2"
+           loading="lazy" decoding="async" data-fold>
+    </picture>
+        </div>
+        </div>
+      </div>
+    </div>
+      </div>
+    </section>
+
+    <section class="band" id="design-tooling">
+      <div class="wrap" data-reveal-group data-stagger="90" data-start="top 85%">
+        <p class="band__no" aria-hidden="true">09</p>
+        <h2 class="band__title">Design tooling</h2>
+        <div class="duo">
+          <div><h3 class="feature__name">What I did</h3>
+        <p class="feature__body">Internal tools built alongside the product work — an agentic trading system, an automated iOS design-QA skill, and an embedded critique partner that reviews from the user, business and system-consistency lenses at once.</p></div>
+        </div>
+        <div class="work__slider" data-slider-status="idle" role="region"
+      aria-roledescription="carousel" aria-label="OKX Autopilot, iOS QA, the Embedded Critique Partner, and the feedback dashboard behind the Exchange Mode revamp">
+      <div class="work__viewport">
+        <div class="work__track" data-grab="idle">
+        <div class="work__slide" data-slide-status="idle" role="group"
+             aria-roledescription="slide" aria-label="1 of 6">
+          <picture >
+      <source type="image/avif" sizes="(min-width: 1296px) 1200px, calc(100vw - 2 * clamp(1.25rem, 5vw, 3rem))" srcset="/case/okx-tool-autopilot-480.avif?v=1f909a3f 480w, /case/okx-tool-autopilot-720.avif?v=1f909a3f 720w, /case/okx-tool-autopilot-1200.avif?v=1f909a3f 1200w, /case/okx-tool-autopilot-1600.avif?v=1f909a3f 1600w, /case/okx-tool-autopilot-1920.avif?v=1f909a3f 1920w">
+      <source type="image/webp" sizes="(min-width: 1296px) 1200px, calc(100vw - 2 * clamp(1.25rem, 5vw, 3rem))" srcset="/case/okx-tool-autopilot-480.webp?v=1f909a3f 480w, /case/okx-tool-autopilot-1200.webp?v=1f909a3f 1200w, /case/okx-tool-autopilot-1920.webp?v=1f909a3f 1920w">
+      <img class="work__shot" src="/case/okx-tool-autopilot-1920.webp?v=1f909a3f"
+           width="1920" height="1080" alt="OKX Autopilot, iOS QA, the Embedded Critique Partner, and the feedback dashboard behind the Exchange Mode revamp — 1 of 6"
+           loading="lazy" decoding="async" data-fold>
+    </picture>
+        </div>
+        <div class="work__slide" data-slide-status="idle" role="group"
+             aria-roledescription="slide" aria-label="2 of 6">
+          <picture >
+      <source type="image/avif" sizes="(min-width: 1296px) 1200px, calc(100vw - 2 * clamp(1.25rem, 5vw, 3rem))" srcset="/case/okx-tool-autopilot-ui-480.avif?v=dd819a30 480w, /case/okx-tool-autopilot-ui-720.avif?v=dd819a30 720w, /case/okx-tool-autopilot-ui-1200.avif?v=dd819a30 1200w, /case/okx-tool-autopilot-ui-1600.avif?v=dd819a30 1600w, /case/okx-tool-autopilot-ui-2400.avif?v=dd819a30 2400w">
+      <source type="image/webp" sizes="(min-width: 1296px) 1200px, calc(100vw - 2 * clamp(1.25rem, 5vw, 3rem))" srcset="/case/okx-tool-autopilot-ui-480.webp?v=dd819a30 480w, /case/okx-tool-autopilot-ui-1200.webp?v=dd819a30 1200w, /case/okx-tool-autopilot-ui-2400.webp?v=dd819a30 2400w">
+      <img class="work__shot" src="/case/okx-tool-autopilot-ui-2400.webp?v=dd819a30"
+           width="2420" height="1428" alt="OKX Autopilot, iOS QA, the Embedded Critique Partner, and the feedback dashboard behind the Exchange Mode revamp — 2 of 6"
+           loading="lazy" decoding="async" data-fold>
+    </picture>
+        </div>
+        <div class="work__slide" data-slide-status="idle" role="group"
+             aria-roledescription="slide" aria-label="3 of 6">
+          <picture >
+      <source type="image/avif" sizes="(min-width: 1296px) 1200px, calc(100vw - 2 * clamp(1.25rem, 5vw, 3rem))" srcset="/case/okx-tool-ios-qa-480.avif?v=77cf983e 480w, /case/okx-tool-ios-qa-720.avif?v=77cf983e 720w, /case/okx-tool-ios-qa-1200.avif?v=77cf983e 1200w, /case/okx-tool-ios-qa-1600.avif?v=77cf983e 1600w, /case/okx-tool-ios-qa-1920.avif?v=77cf983e 1920w">
+      <source type="image/webp" sizes="(min-width: 1296px) 1200px, calc(100vw - 2 * clamp(1.25rem, 5vw, 3rem))" srcset="/case/okx-tool-ios-qa-480.webp?v=77cf983e 480w, /case/okx-tool-ios-qa-1200.webp?v=77cf983e 1200w, /case/okx-tool-ios-qa-1920.webp?v=77cf983e 1920w">
+      <img class="work__shot" src="/case/okx-tool-ios-qa-1920.webp?v=77cf983e"
+           width="1920" height="1080" alt="OKX Autopilot, iOS QA, the Embedded Critique Partner, and the feedback dashboard behind the Exchange Mode revamp — 3 of 6"
+           loading="lazy" decoding="async" data-fold>
+    </picture>
+        </div>
+        <div class="work__slide" data-slide-status="idle" role="group"
+             aria-roledescription="slide" aria-label="4 of 6">
+          <picture >
+      <source type="image/avif" sizes="(min-width: 1296px) 1200px, calc(100vw - 2 * clamp(1.25rem, 5vw, 3rem))" srcset="/case/okx-tool-critique-480.avif?v=ca3dc93a 480w, /case/okx-tool-critique-720.avif?v=ca3dc93a 720w, /case/okx-tool-critique-1200.avif?v=ca3dc93a 1200w, /case/okx-tool-critique-1600.avif?v=ca3dc93a 1600w, /case/okx-tool-critique-1920.avif?v=ca3dc93a 1920w">
+      <source type="image/webp" sizes="(min-width: 1296px) 1200px, calc(100vw - 2 * clamp(1.25rem, 5vw, 3rem))" srcset="/case/okx-tool-critique-480.webp?v=ca3dc93a 480w, /case/okx-tool-critique-1200.webp?v=ca3dc93a 1200w, /case/okx-tool-critique-1920.webp?v=ca3dc93a 1920w">
+      <img class="work__shot" src="/case/okx-tool-critique-1920.webp?v=ca3dc93a"
+           width="1920" height="1080" alt="OKX Autopilot, iOS QA, the Embedded Critique Partner, and the feedback dashboard behind the Exchange Mode revamp — 4 of 6"
+           loading="lazy" decoding="async" data-fold>
+    </picture>
+        </div>
+        <div class="work__slide" data-slide-status="idle" role="group"
+             aria-roledescription="slide" aria-label="5 of 6">
+          <picture >
+      <source type="image/avif" sizes="(min-width: 1296px) 1200px, calc(100vw - 2 * clamp(1.25rem, 5vw, 3rem))" srcset="/case/okx-tool-feedback-480.avif?v=cf7267d4 480w, /case/okx-tool-feedback-720.avif?v=cf7267d4 720w, /case/okx-tool-feedback-1200.avif?v=cf7267d4 1200w, /case/okx-tool-feedback-1600.avif?v=cf7267d4 1600w, /case/okx-tool-feedback-1920.avif?v=cf7267d4 1920w">
+      <source type="image/webp" sizes="(min-width: 1296px) 1200px, calc(100vw - 2 * clamp(1.25rem, 5vw, 3rem))" srcset="/case/okx-tool-feedback-480.webp?v=cf7267d4 480w, /case/okx-tool-feedback-1200.webp?v=cf7267d4 1200w, /case/okx-tool-feedback-1920.webp?v=cf7267d4 1920w">
+      <img class="work__shot" src="/case/okx-tool-feedback-1920.webp?v=cf7267d4"
+           width="1920" height="1080" alt="OKX Autopilot, iOS QA, the Embedded Critique Partner, and the feedback dashboard behind the Exchange Mode revamp — 5 of 6"
+           loading="lazy" decoding="async" data-fold>
+    </picture>
+        </div>
+        <div class="work__slide" data-slide-status="idle" role="group"
+             aria-roledescription="slide" aria-label="6 of 6">
+          <picture >
+      <source type="image/avif" sizes="(min-width: 1296px) 1200px, calc(100vw - 2 * clamp(1.25rem, 5vw, 3rem))" srcset="/case/okx-feedback-dashboard-480.avif?v=e51181f7 480w, /case/okx-feedback-dashboard-720.avif?v=e51181f7 720w, /case/okx-feedback-dashboard-1200.avif?v=e51181f7 1200w, /case/okx-feedback-dashboard-1600.avif?v=e51181f7 1600w, /case/okx-feedback-dashboard-1920.avif?v=e51181f7 1920w">
+      <source type="image/webp" sizes="(min-width: 1296px) 1200px, calc(100vw - 2 * clamp(1.25rem, 5vw, 3rem))" srcset="/case/okx-feedback-dashboard-480.webp?v=e51181f7 480w, /case/okx-feedback-dashboard-1200.webp?v=e51181f7 1200w, /case/okx-feedback-dashboard-1920.webp?v=e51181f7 1920w">
+      <img class="work__shot" src="/case/okx-feedback-dashboard-1920.webp?v=e51181f7"
+           width="1920" height="1080" alt="OKX Autopilot, iOS QA, the Embedded Critique Partner, and the feedback dashboard behind the Exchange Mode revamp — 6 of 6"
+           loading="lazy" decoding="async" data-fold>
+    </picture>
+        </div>
+        </div>
+      </div>
+    </div>
+      </div>
+    </section>
+
+    <section class="band" id="advanced-trading-master-class">
+      <div class="wrap" data-reveal-group data-stagger="90" data-start="top 85%">
+        <p class="band__no" aria-hidden="true">10</p>
+        <h2 class="band__title">Advanced trading master class</h2>
+        <div class="duo">
+          <div><h3 class="feature__name">Problem</h3>
+        <p class="feature__body">Understanding advanced traders from research is one thing. Trading like one is different.</p></div>
+          <div><h3 class="feature__name">What I did</h3>
+        <p class="feature__body">I hosted two hands-on trading masterclasses for our Design, Research and Product teams, to bring them closer to the people we were designing for.</p>
+      <p class="feature__body">We started with the fundamentals — who moves the market, market structure, price action and liquidity — then went much deeper into how professional traders actually read the market.</p></div>
+          <div><h3 class="feature__name">Work</h3>
+        <p class="feature__body">Together we worked with Volume, Open Interest, Footprint Charts, DOM, Order Book Heatmaps, CVD across exchanges and Fibonacci levels, connecting the signals to understand where traders are positioned, where they’re trapped, and where larger players may be entering.</p>
+      <p class="feature__body">No slides full of personas. We opened the charts and traded together.</p></div>
+          <div><h3 class="feature__name">Outcome</h3>
+        <p class="feature__body">We ran two sessions, in-person and remote, and the response was amazing. People kept asking questions, experimenting with the tools, and a few teammates even started actively trading afterward — with some surprisingly good results.</p>
+      <p class="feature__body">For me it became another way to bring the team closer to our users: don’t just study how traders work — experience it.</p></div>
+        </div>
+        <div class="work__slider" data-slider-status="idle" role="region"
+      aria-roledescription="carousel" aria-label="The sessions, and the charts we read together">
+      <div class="work__viewport">
+        <div class="work__track" data-grab="idle">
+        <div class="work__slide" data-slide-status="idle" role="group"
+             aria-roledescription="slide" aria-label="1 of 5">
+          <picture >
+      <source type="image/avif" sizes="(min-width: 1296px) 1200px, calc(100vw - 2 * clamp(1.25rem, 5vw, 3rem))" srcset="/case/okx-class-desk-480.avif?v=0aaccf51 480w, /case/okx-class-desk-720.avif?v=0aaccf51 720w, /case/okx-class-desk-1200.avif?v=0aaccf51 1200w">
+      <source type="image/webp" sizes="(min-width: 1296px) 1200px, calc(100vw - 2 * clamp(1.25rem, 5vw, 3rem))" srcset="/case/okx-class-desk-480.webp?v=0aaccf51 480w, /case/okx-class-desk-1200.webp?v=0aaccf51 1200w">
+      <img class="work__shot" src="/case/okx-class-desk-1200.webp?v=0aaccf51"
+           width="1448" height="1086" alt="The sessions, and the charts we read together — 1 of 5"
+           loading="lazy" decoding="async" data-fold>
+    </picture>
+        </div>
+        <div class="work__slide" data-slide-status="idle" role="group"
+             aria-roledescription="slide" aria-label="2 of 5">
+          <picture >
+      <source type="image/avif" sizes="(min-width: 1296px) 1200px, calc(100vw - 2 * clamp(1.25rem, 5vw, 3rem))" srcset="/case/okx-class-room-480.avif?v=3ad6bf98 480w, /case/okx-class-room-720.avif?v=3ad6bf98 720w, /case/okx-class-room-1200.avif?v=3ad6bf98 1200w, /case/okx-class-room-1600.avif?v=3ad6bf98 1600w, /case/okx-class-room-2400.avif?v=3ad6bf98 2400w">
+      <source type="image/webp" sizes="(min-width: 1296px) 1200px, calc(100vw - 2 * clamp(1.25rem, 5vw, 3rem))" srcset="/case/okx-class-room-480.webp?v=3ad6bf98 480w, /case/okx-class-room-1200.webp?v=3ad6bf98 1200w, /case/okx-class-room-2400.webp?v=3ad6bf98 2400w">
+      <img class="work__shot" src="/case/okx-class-room-2400.webp?v=3ad6bf98"
+           width="2560" height="1920" alt="The sessions, and the charts we read together — 2 of 5"
+           loading="lazy" decoding="async" data-fold>
+    </picture>
+        </div>
+        <div class="work__slide" data-slide-status="idle" role="group"
+             aria-roledescription="slide" aria-label="3 of 5">
+          <picture >
+      <source type="image/avif" sizes="(min-width: 1296px) 1200px, calc(100vw - 2 * clamp(1.25rem, 5vw, 3rem))" srcset="/case/okx-class-chart-1-480.avif?v=9abde8f8 480w, /case/okx-class-chart-1-720.avif?v=9abde8f8 720w, /case/okx-class-chart-1-1200.avif?v=9abde8f8 1200w, /case/okx-class-chart-1-1600.avif?v=9abde8f8 1600w">
+      <source type="image/webp" sizes="(min-width: 1296px) 1200px, calc(100vw - 2 * clamp(1.25rem, 5vw, 3rem))" srcset="/case/okx-class-chart-1-480.webp?v=9abde8f8 480w, /case/okx-class-chart-1-1200.webp?v=9abde8f8 1200w, /case/okx-class-chart-1-1600.webp?v=9abde8f8 1600w">
+      <img class="work__shot" src="/case/okx-class-chart-1-1600.webp?v=9abde8f8"
+           width="2080" height="1141" alt="The sessions, and the charts we read together — 3 of 5"
+           loading="lazy" decoding="async" data-fold>
+    </picture>
+        </div>
+        <div class="work__slide" data-slide-status="idle" role="group"
+             aria-roledescription="slide" aria-label="4 of 5">
+          <picture >
+      <source type="image/avif" sizes="(min-width: 1296px) 1200px, calc(100vw - 2 * clamp(1.25rem, 5vw, 3rem))" srcset="/case/okx-class-chart-2-480.avif?v=bdab0bb6 480w, /case/okx-class-chart-2-720.avif?v=bdab0bb6 720w, /case/okx-class-chart-2-1200.avif?v=bdab0bb6 1200w, /case/okx-class-chart-2-1600.avif?v=bdab0bb6 1600w">
+      <source type="image/webp" sizes="(min-width: 1296px) 1200px, calc(100vw - 2 * clamp(1.25rem, 5vw, 3rem))" srcset="/case/okx-class-chart-2-480.webp?v=bdab0bb6 480w, /case/okx-class-chart-2-1200.webp?v=bdab0bb6 1200w, /case/okx-class-chart-2-1600.webp?v=bdab0bb6 1600w">
+      <img class="work__shot" src="/case/okx-class-chart-2-1600.webp?v=bdab0bb6"
+           width="2089" height="1263" alt="The sessions, and the charts we read together — 4 of 5"
+           loading="lazy" decoding="async" data-fold>
+    </picture>
+        </div>
+        <div class="work__slide" data-slide-status="idle" role="group"
+             aria-roledescription="slide" aria-label="5 of 5">
+          <picture >
+      <source type="image/avif" sizes="(min-width: 1296px) 1200px, calc(100vw - 2 * clamp(1.25rem, 5vw, 3rem))" srcset="/case/okx-class-chart-3-480.avif?v=0063beb5 480w, /case/okx-class-chart-3-720.avif?v=0063beb5 720w, /case/okx-class-chart-3-1200.avif?v=0063beb5 1200w, /case/okx-class-chart-3-1600.avif?v=0063beb5 1600w">
+      <source type="image/webp" sizes="(min-width: 1296px) 1200px, calc(100vw - 2 * clamp(1.25rem, 5vw, 3rem))" srcset="/case/okx-class-chart-3-480.webp?v=0063beb5 480w, /case/okx-class-chart-3-1200.webp?v=0063beb5 1200w, /case/okx-class-chart-3-1600.webp?v=0063beb5 1600w">
+      <img class="work__shot" src="/case/okx-class-chart-3-1600.webp?v=0063beb5"
+           width="2089" height="1246" alt="The sessions, and the charts we read together — 5 of 5"
+           loading="lazy" decoding="async" data-fold>
+    </picture>
+        </div>
+        </div>
+      </div>
+    </div>
+      </div>
+    </section>
+
+    <nav data-section-dock-init aria-label="On this page" class="section-dock">
+      <div data-section-dock-pill class="section-dock__pill">
+        <button data-section-dock-toggle aria-expanded="false" aria-controls="section-dock-list" class="section-dock__toggle">
+          <span data-section-dock-label-wrap class="section-dock__label-wrap">
+            <span class="section-dock__label">
+              <span class="section-dock__link-num">01</span>
+              <span>Trade page revamp</span>
+            </span>
+          </span>
+        </button>
+        <div data-section-dock-list id="section-dock-list" class="section-dock__list">
+          <div data-section-dock-indicator class="section-dock__indicator"></div>
+          <ul class="section-dock__items">
+        <li>
+          <a data-active data-section-dock-link href="#trade-page-revamp" class="section-dock__link">
+            <span class="section-dock__link-num">01</span>
+            <span>Trade page revamp</span>
+          </a>
+        </li>
+        <li>
+          <a data-section-dock-link href="#european-x-perps" class="section-dock__link">
+            <span class="section-dock__link-num">02</span>
+            <span>European X-Perps</span>
+          </a>
+        </li>
+        <li>
+          <a data-section-dock-link href="#rethinking-web-for-advanced-traders" class="section-dock__link">
+            <span class="section-dock__link-num">03</span>
+            <span>Rethinking web for advanced traders</span>
+          </a>
+        </li>
+        <li>
+          <a data-section-dock-link href="#simple-perps" class="section-dock__link">
+            <span class="section-dock__link-num">04</span>
+            <span>Simple Perps</span>
+          </a>
+        </li>
+        <li>
+          <a data-section-dock-link href="#australian-retail-derivatives" class="section-dock__link">
+            <span class="section-dock__link-num">05</span>
+            <span>Australian retail derivatives</span>
+          </a>
+        </li>
+        <li>
+          <a data-section-dock-link href="#usdg-us-adoption" class="section-dock__link">
+            <span class="section-dock__link-num">06</span>
+            <span>USDG US adoption</span>
+          </a>
+        </li>
+        <li>
+          <a data-section-dock-link href="#okx-intelligence" class="section-dock__link">
+            <span class="section-dock__link-num">07</span>
+            <span>OKX Intelligence</span>
+          </a>
+        </li>
+        <li>
+          <a data-section-dock-link href="#exchange-mode-revamp" class="section-dock__link">
+            <span class="section-dock__link-num">08</span>
+            <span>Exchange mode revamp</span>
+          </a>
+        </li>
+        <li>
+          <a data-section-dock-link href="#design-tooling" class="section-dock__link">
+            <span class="section-dock__link-num">09</span>
+            <span>Design tooling</span>
+          </a>
+        </li>
+        <li>
+          <a data-section-dock-link href="#advanced-trading-master-class" class="section-dock__link">
+            <span class="section-dock__link-num">10</span>
+            <span>Advanced trading master class</span>
+          </a>
+        </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="wrap">
+      <a class="next" href="/pangeam">
+        <span>Next case study<strong>Pangeam</strong></span>
+        <span aria-hidden="true">→</span>
+      </a>
+    </div>
+
+    <footer class="section outro" aria-labelledby="outro-title" data-section-dock-hide>
+      
+      <div class="outro__fx" aria-hidden="true"
+           data-us-project="HfdY3nAq99Kc0BCtuBfP"
+           data-us-scale="1" data-us-dpi="1" data-us-fps="30"></div>
+      <div class="outro__inner">
+        
+        <h2 class="outro__title" id="outro-title" aria-label="Let’s talk about the next big thing"><span>Let&rsquo;s talk about</span><span>the next big thing</span></h2>
+
+        <a class="outro__social" href="https://www.linkedin.com/in/iamvisp/"
+           target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><span class="outro__roll" aria-hidden="true"><span class="outro__roll-ch" style="--i:0"><span>L</span><span>L</span></span><span class="outro__roll-ch" style="--i:1"><span>i</span><span>i</span></span><span class="outro__roll-ch" style="--i:2"><span>n</span><span>n</span></span><span class="outro__roll-ch" style="--i:3"><span>k</span><span>k</span></span><span class="outro__roll-ch" style="--i:4"><span>e</span><span>e</span></span><span class="outro__roll-ch" style="--i:5"><span>d</span><span>d</span></span><span class="outro__roll-ch" style="--i:6"><span>I</span><span>I</span></span><span class="outro__roll-ch" style="--i:7"><span>n</span><span>n</span></span></span><svg class="outro__arrow" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M7 17L17 7M17 17V7H7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        <a class="outro__mail" href="mailto:iamvisp@gmail.com"
+           aria-label="Copy email to clipboard" data-copy-button data-copy-email="iamvisp@gmail.com">
+          <span class="copy-email-icon copy-email-icon--lg" aria-hidden="true">
+            <span class="copy-email-icon__el"></span>
+            <span class="copy-email-icon__el"><svg viewBox="0 0 36 36" fill="none"><path d="M7.5 22.5H6C5.20435 22.5 4.44129 22.1839 3.87868 21.6213C3.31607 21.0587 3 20.2956 3 19.5V6C3 5.20435 3.31607 4.44129 3.87868 3.87868C4.44129 3.31607 5.20435 3 6 3H19.5C20.2956 3 21.0587 3.31607 21.6213 3.87868C22.1839 4.44129 22.5 5.20435 22.5 6V7.5M16.5 13.5H30C31.6569 13.5 33 14.8431 33 16.5V30C33 31.6569 31.6569 33 30 33H16.5C14.8431 33 13.5 31.6569 13.5 30V16.5C13.5 14.8431 14.8431 13.5 16.5 13.5Z" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+            <span class="copy-email-icon__el"><svg viewBox="0 0 36 36" fill="none"><path d="M30 9L13.5 25.5L6 18" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+          </span>
+          <span class="copy-email-text__wrap">
+            <span data-copy-email-element class="copy-email-text__el">iamvisp@gmail.com</span>
+            <span class="copy-email-text__el">Click to copy email</span>
+            <span class="copy-email-text__el">Copied to clipboard!</span>
+          </span>
+        </a>
+
+      </div>
+
+      <div class="outro__meta">
+        <span>&copy; 2026</span>
+      </div>
+    </footer>
+  </main>
+
+</body>
+</html>

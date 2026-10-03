@@ -1,0 +1,15 @@
+{
+  "name": "sashamartynchuk-portfolio-clone",
+  "version": "1.0.0",
+  "description": "Exact pixel-perfect clone of Sasha Martynchuk Portfolio with all shaders, WebGL, GSAP animations, Lenis smooth scrolling, Matter.js physics, responsive WebP/AVIF imagery, and complete case studies.",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "serve": "serve -s . -p 3000"
+  },
+  "devDependencies": {
+    "serve": "^14.2.4",
+    "vite": "^5.4.8"
+  }
+}

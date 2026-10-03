@@ -1,0 +1,674 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Keyword.com — Case Study</title>
+  <meta name="description" content="An end-to-end UX and UI redesign of an SEO rank tracking platform, plus a modular design system that became the visual foundation for four other products — and contributed to the company’s acquisition by saas.group.">
+  
+  <link rel="preload" as="image"
+        type="image/avif"
+        href="/case/keyword-hero-1200.avif?v=7339b0c2"
+        imagesrcset="/case/keyword-hero-480.avif?v=7339b0c2 480w, /case/keyword-hero-720.avif?v=7339b0c2 720w, /case/keyword-hero-1200.avif?v=7339b0c2 1200w, /case/keyword-hero-1600.avif?v=7339b0c2 1600w, /case/keyword-hero-2400.avif?v=7339b0c2 2400w"
+        imagesizes="100vw">
+  
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="/favicon-32.png" sizes="32x32" type="image/png">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "CreativeWork",
+    "name": "Keyword.com — Case Study",
+    "headline": "Keyword.com",
+    "description": "An end-to-end UX and UI redesign of an SEO rank tracking platform, plus a modular design system that became the visual foundation for four other products — and contributed to the company’s acquisition by saas.group.",
+    "url": "https://sashamartynchuk.com/keyword",
+    "image": "https://sashamartynchuk.com/case/keyword-hero-1200.webp",
+    "author": {
+      "@type": "Person",
+      "name": "Sasha Martynchuk",
+      "url": "https://sashamartynchuk.com/"
+    },
+    "inLanguage": "en"
+  }
+  </script>
+  <link rel="canonical" href="https://sashamartynchuk.com/keyword">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Keyword.com — Case Study">
+  <meta property="og:description" content="An end-to-end UX and UI redesign of an SEO rank tracking platform, plus a modular design system that became the visual foundation for four other products — and contributed to the company’s acquisition by saas.group.">
+  <meta property="og:url" content="https://sashamartynchuk.com/keyword">
+  
+  <meta property="og:image" content="https://sashamartynchuk.com/case/keyword-hero-1200.webp">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Keyword.com — Case Study">
+  <meta name="twitter:description" content="An end-to-end UX and UI redesign of an SEO rank tracking platform, plus a modular design system that became the visual foundation for four other products — and contributed to the company’s acquisition by saas.group.">
+  <meta name="twitter:image" content="https://sashamartynchuk.com/case/keyword-hero-1200.webp">
+  <meta name="theme-color" content="#000000">
+
+  <link rel="preload" href="/fonts/NeueMontreal-Regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/fonts/NeueMontreal-Bold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/fonts/Arges-Black.woff2" as="font" type="font/woff2" crossorigin>
+
+  <script>
+  (function () {
+    function startAnalytics() {
+      var g = document.createElement('script');
+      g.async = true;
+      g.src = 'https://www.googletagmanager.com/gtag/js?id=G-FXJ8ZVD01Y';
+      document.head.appendChild(g);
+      window.dataLayer = window.dataLayer || [];
+      window.gtag = function () { window.dataLayer.push(arguments); };
+      window.gtag('js', new Date());
+      window.gtag('config', 'G-FXJ8ZVD01Y');
+
+      (function (c, l, a, r, i, t, y) {
+        c[a] = c[a] || function () { (c[a].q = c[a].q || []).push(arguments) };
+        t = l.createElement(r); t.async = 1; t.src = 'https://www.clarity.ms/tag/' + i;
+        y = l.getElementsByTagName(r)[0]; y.parentNode.insertBefore(t, y);
+      })(window, document, 'clarity', 'script', 'y0ua8k1qhj');
+
+      /*
+       * Contentsquare, tag 238705649a093.
+       *
+       * Their install doc gives a plain <script defer> in <head> for a project
+       * with no JS framework, which this is. It goes HERE instead, inside the
+       * same activation gate, for the reason the gate exists: a prerendered
+       * document runs its head scripts immediately, so a reader who merely
+       * HOVERED a case-study link would have opened a Contentsquare session for
+       * a page they never visited. Same URL, same tag, deferred to the moment
+       * the visit becomes a visit.
+       *
+       * The _uxa queue is declared before the script so anything the page ever
+       * pushes is buffered rather than dropped — the doc's IIFE loader pattern,
+       * which is the variant to use when _uxa is called directly.
+       */
+      window._uxa = window._uxa || [];
+      var cs = document.createElement('script');
+      cs.async = true;
+      cs.src = 'https://t.contentsquare.net/uxa/238705649a093.js';
+      document.head.appendChild(cs);
+    }
+
+    /*
+     * Even an activated visit waits for the page to settle: three trackers
+     * traced as 360ms of throttled main-thread time during boot. They start
+     * on the reader's first gesture, or a few seconds after load - whichever
+     * comes first. Same shape as index.html's copy.
+     */
+    function whenSettled() {
+      var fired = false;
+      var go = function () { if (fired) return; fired = true; startAnalytics(); };
+      var kinds = ['pointerdown', 'keydown', 'touchstart', 'wheel', 'scroll'];
+      for (var i = 0; i < kinds.length; i++) {
+        addEventListener(kinds[i], go, { once: true, passive: true, capture: true });
+      }
+      if (document.readyState === 'complete') setTimeout(go, 3500);
+      else addEventListener('load', function () { setTimeout(go, 3500); }, { once: true });
+    }
+
+    if (document.prerendering) {
+      document.addEventListener('prerenderingchange', whenSettled, { once: true });
+    } else {
+      whenSettled();
+    }
+  })();
+  </script>
+  <script>
+  /* Service worker: see public/sw.js for what it caches and why.
+
+     The kill switch is the important part of this snippet. A bad worker is
+     sticky - it can keep serving a broken site to anyone who has already
+     visited, and they have no way to ask for the real one. So:
+
+       ?nosw   unregisters it, clears its caches, and REMEMBERS that, so the
+               next load does not simply register it again - which is what the
+               first version of this did, one line after unregistering.
+       ?sw     turns it back on.
+
+     The flag lives in localStorage because it has to outlive the reload. */
+  (function () {
+    if (!('serviceWorker' in navigator)) return;
+    var OFF = 'sw-disabled';
+    var q = location.search;
+
+    if (q.indexOf('sw=1') > -1) { try { localStorage.removeItem(OFF); } catch (e) {} }
+
+    if (q.indexOf('nosw') > -1) {
+      try { localStorage.setItem(OFF, '1'); } catch (e) {}
+      navigator.serviceWorker.getRegistrations()
+        .then(function (rs) { return Promise.all(rs.map(function (r) { return r.unregister(); })); })
+        .then(function () { return window.caches ? caches.keys() : []; })
+        .then(function (ks) { return Promise.all(ks.map(function (k) { return caches.delete(k); })); })
+        .then(function () {
+          /* Uncontrolled on the way back, or the worker still serving this page
+             refills the caches that were just deleted. */
+          location.replace(location.pathname);
+        })
+        .catch(function () {});
+      return;
+    }
+
+    var off = false;
+    try { off = localStorage.getItem(OFF) === '1'; } catch (e) {}
+    if (off) {
+      /* Sweep on every disabled load, not only on the one that flipped the
+         switch. The worker that was still controlling the page during that
+         first pass refilled the caches after they were deleted; this load is
+         uncontrolled, so now the delete sticks. Costs nothing once empty. */
+      if (window.caches) {
+        caches.keys().then(function (ks) {
+          ks.forEach(function (k) { caches.delete(k); });
+        }).catch(function () {});
+      }
+      return;
+    }
+
+    addEventListener('load', function () {
+      navigator.serviceWorker.register('/sw.js').catch(function () {});
+    });
+  })();
+  </script>
+  <script type="speculationrules">
+  {
+    "prerender": [{
+      "where": { "href_matches": "/*" },
+      "eagerness": "moderate"
+    }]
+  }
+  </script>
+  <script>/* A skipped view transition (hidden tab, rapid re-navigation) rejects its
+     own ready/finished promises. Adopting them via pagereveal/pageswap covers
+     the case where the event still carries a transition object; when the skip
+     happens BEFORE pagereveal there is nothing to adopt, and only the global
+     handler can stop it surfacing as an uncaught error. Both, therefore. */
+    addEventListener("pagereveal",e=>{const t=e.viewTransition;if(t){t.ready&&t.ready.catch(()=>{});t.finished&&t.finished.catch(()=>{})}});
+    addEventListener("pageswap",e=>{const t=e.viewTransition;if(t&&t.finished)t.finished.catch(()=>{})});
+    addEventListener("unhandledrejection",e=>{const r=e.reason;
+      if(r&&r.name==="AbortError"&&/transition/i.test(r.message||""))e.preventDefault();});</script>
+  <script type="module" crossorigin src="/assets/index-CzGW6FVa.js"></script>
+  <script type="module" crossorigin src="/assets/fold-mode-DbKzrdIL.js"></script>
+  <script type="module" crossorigin src="/assets/elastic-pulse-CKgubG0W.js"></script>
+  <script type="module" crossorigin src="/assets/ScrollTrigger-DNECHiyU.js"></script>
+  <script type="module" crossorigin src="/assets/lightbox-08EUTKND.js"></script>
+  <script type="module" crossorigin src="/assets/main-BIwZVA1e.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/main-ClT0MItD.css">
+</head>
+<body>
+<!--
+
+     ┌───────────────────────────────────────────────────────────────┐
+     │   Hello, View Source.                                         │
+     └───────────────────────────────────────────────────────────────┘
+
+     You have found a very tidy document, and that is a little bit of a lie.
+
+     Every page on this site is written with its reasoning in the margin —
+     why Arges is preloaded and Neue Montreal is not, why the analytics tags
+     wait for a prerendered page to actually be activated, why the sign-off's
+     WebGL scene must not declare its lazy-load attribute (the SDK reads it as
+     a string, and "false" is truthy — that one cost an afternoon).
+
+     On this page that came to 16kB of prose against 19kB of actual markup.
+     Wonderful to work on. Rude to make you download. So a build step lifts it
+     out on the way to the server, and it all still lives one step upstream.
+
+     If you like this sort of thing, the whole of it is readable at:
+     github.com/iamvisp  ·  and I am reachable at iamvisp@gmail.com
+
+     Built with Vite, GSAP, Lenis, Matter.js, hand-written WebGL2, and a
+     number of Osmo Supply resources that are credited where they are used.
+
+-->
+
+  <a class="skip" href="#main">Skip to content</a>
+
+  <div class="rail" aria-hidden="true"><span class="rail__fill" data-rail></span></div>
+
+  <header class="topbar">
+    <a class="topbar__me" href="/" data-inkbleed aria-label="Sasha Martynchuk — home">
+      <img class="topbar__logo" src="/sasha-logo.svg" alt="Sasha Martynchuk" width="145" height="32" fetchpriority="high">
+    </a>
+
+    <a class="hero__mail copy-email-button" href="mailto:iamvisp@gmail.com"
+       aria-label="Copy email to clipboard" data-copy-button data-copy-email="iamvisp@gmail.com">
+      <span class="copy-email-icon" aria-hidden="true">
+        <span class="copy-email-icon__el"></span>
+        <span class="copy-email-icon__el"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3.33301 10H2.66634C2.31272 10 1.97358 9.85952 1.72353 9.60947C1.47348 9.35943 1.33301 9.02029 1.33301 8.66666V2.66667C1.33301 2.31304 1.47348 1.9739 1.72353 1.72386C1.97358 1.47381 2.31272 1.33333 2.66634 1.33333H8.66634C9.01996 1.33333 9.3591 1.47381 9.60915 1.72386C9.8592 1.9739 9.99967 2.31304 9.99967 2.66667V3.33333M7.33301 6H13.333C14.0694 6 14.6663 6.59695 14.6663 7.33333V13.3333C14.6663 14.0697 14.0694 14.6667 13.333 14.6667H7.33301C6.59663 14.6667 5.99967 14.0697 5.99967 13.3333V7.33333C5.99967 6.59695 6.59663 6 7.33301 6Z" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+        <span class="copy-email-icon__el"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M6.79985 9.9032L11.8909 4.81164C12.1252 4.57732 12.505 4.57724 12.7394 4.81146C12.9739 5.04579 12.974 5.42588 12.7396 5.66029L7.14697 11.2529C6.95526 11.4446 6.64443 11.4446 6.45272 11.2529L3.40565 8.2058C3.17137 7.97152 3.17137 7.59168 3.40565 7.3574C3.63992 7.12312 4.01977 7.12312 4.25405 7.3574L6.79985 9.9032Z" fill="currentColor"/></svg></span>
+      </span>
+      <span class="copy-email-text__wrap">
+        <span data-copy-email-element class="copy-email-text__el">iamvisp@gmail.com</span>
+        <span class="copy-email-text__el">Click to copy email</span>
+        <span class="copy-email-text__el">Copied to clipboard!</span>
+      </span>
+    </a>
+  </header>
+
+  <main id="main">
+    <section class="intro">
+      <div class="wrap" data-reveal-group data-stagger="90" data-start="top 85%" data-start="top 95%">
+        <h1 class="intro__title">Keyword.com</h1>
+        <div class="intro__grid" data-reveal-group-nested data-stagger="110" data-ignore="false">
+          <div class="intro__lede">
+            <p>Keyword.com is a leading SEO rank tracking platform designed for agencies, in-house teams, and enterprises aiming for precision and scalability in their search strategies. It offers accurate, real-time keyword tracking across multiple locations and devices, including mobile and desktop, with a verified accuracy rate of 96.86%.</p>
+          </div>
+          <dl class="facts">
+            <dt>My role</dt><dd>Product Designer</dd>
+            <dt>Timeline</dt><dd>Jul 2019 – Nov 2019 (5 months)</dd>
+            <dt>Team</dt><dd>Product Owner, Front-end Engineer, Software Engineer</dd>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <div class="hero" style="--hero-ar: 1756 / 700">
+      <div class="hero__plate">
+        <picture >
+      <source type="image/avif" sizes="100vw" srcset="/case/keyword-hero-480.avif?v=7339b0c2 480w, /case/keyword-hero-720.avif?v=7339b0c2 720w, /case/keyword-hero-1200.avif?v=7339b0c2 1200w, /case/keyword-hero-1600.avif?v=7339b0c2 1600w, /case/keyword-hero-2400.avif?v=7339b0c2 2400w">
+      <source type="image/webp" sizes="100vw" srcset="/case/keyword-hero-480.webp?v=7339b0c2 480w, /case/keyword-hero-720.webp?v=7339b0c2 720w, /case/keyword-hero-1200.webp?v=7339b0c2 1200w, /case/keyword-hero-2400.webp?v=7339b0c2 2400w">
+      <img class="hero__img" src="/case/keyword-hero-2400.webp?v=7339b0c2"
+           width="3000" height="1194" alt="Keyword.com — product imagery"
+           fetchpriority="high" decoding="async">
+    </picture>
+      </div>
+    </div>
+
+    <section class="band" id="challenge">
+      <div class="wrap" data-reveal-group data-stagger="90" data-start="top 85%">
+        <p class="band__no" aria-hidden="true">01</p>
+        <h2 class="band__title">Challenge</h2>
+        <p class="band__lede">Keyword.com had a strong product and loyal user base, but its interface hadn’t kept pace with its growth. Key workflows felt dated, and new users often struggled to understand the product’s value quickly. Internally, the design lacked consistency, making it harder to scale or evolve the experience.</p>
+      <p class="band__lede">The goal was ambitious: redesign the entire product to feel faster, clearer, and more modern — without alienating long-time users. And to create a scalable design foundation that could unify a growing family of SEO tools.</p>
+        <p><a class="btn btn--ghost" href="https://keyword.com/" target="_blank" rel="noopener noreferrer">Visit keyword.com<svg class="btn__arrow" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M7 17L17 7M17 17V7H7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a></p>
+        <figure class="figure"><picture data-parallax="trigger" data-parallax-start="5" data-parallax-end="-5" data-parallax-disable="mobileLandscape">
+      <source type="image/avif" sizes="(min-width: 1296px) 1200px, calc(100vw - 2 * clamp(1.25rem, 5vw, 3rem))" srcset="/case/keyword-challenge-480.avif?v=3167d520 480w, /case/keyword-challenge-720.avif?v=3167d520 720w, /case/keyword-challenge-1140.avif?v=3167d520 1140w">
+      <source type="image/webp" sizes="(min-width: 1296px) 1200px, calc(100vw - 2 * clamp(1.25rem, 5vw, 3rem))" srcset="/case/keyword-challenge-480.webp?v=3167d520 480w, /case/keyword-challenge-720.webp?v=3167d520 720w, /case/keyword-challenge-1140.webp?v=3167d520 1140w">
+      <img class="shot" src="/case/keyword-challenge-1140.webp?v=3167d520"
+           width="1140" height="727" alt="The Keyword.com interface before the redesign — dense tables and organically grown navigation"
+           loading="lazy" decoding="async" data-fold>
+    </picture></figure>
+      </div>
+    </section>
+
+    <section class="band" id="design-process">
+      <div class="wrap" data-reveal-group data-stagger="90" data-start="top 85%">
+        <p class="band__no" aria-hidden="true">02</p>
+        <h2 class="band__title">Design process</h2>
+        <div class="duo">
+          <div><h3 class="feature__name">Research</h3>
+        <p class="feature__body">I partnered with the Product Owner to translate business requirements into user-centered design solutions:</p>
+        <ul class="notes notes--dot notes--wide">
+      <li><span class="notes__mark" aria-hidden="true">•</span><span><b>Stakeholder Interviews:</b> Held in-depth sessions with the CEO, Product Manager, and Engineering Lead to align on business goals, user expectations, and technical constraints.</span></li>
+      <li><span class="notes__mark" aria-hidden="true">•</span><span><b>User Feedback Analysis:</b> Reviewed customer support tickets, NPS responses, and cancellation data to uncover pain points and areas for improvement.</span></li>
+      <li><span class="notes__mark" aria-hidden="true">•</span><span><b>Usage Data Analysis:</b> Analyzed feature usage, drop-off points, typical user flows, and time spent across key sections.</span></li>
+      <li><span class="notes__mark" aria-hidden="true">•</span><span><b>Competitive Analysis:</b> Benchmarked leading SEO tools to identify industry standards, market gaps, and opportunities for differentiation.</span></li>
+      <li><span class="notes__mark" aria-hidden="true">•</span><span><b>UI Audit:</b> Performed a comprehensive audit to document inconsistencies in visual design, interaction patterns, and terminology.</span></li>
+    </ul></div>
+          <div><h3 class="feature__name">Key insights</h3>
+        <p class="feature__body">The research revealed several critical insights that shaped the redesign:</p>
+        <ul class="notes notes--dot notes--wide">
+      <li><span class="notes__mark" aria-hidden="true">•</span><span><b>Density over clarity:</b> Users were overwhelmed by the amount of data presented on key screens, making it difficult to extract actionable insights.</span></li>
+      <li><span class="notes__mark" aria-hidden="true">•</span><span><b>Organic architecture:</b> The information architecture had evolved organically, resulting in unintuitive navigation and buried features.</span></li>
+      <li><span class="notes__mark" aria-hidden="true">•</span><span><b>Inconsistent patterns:</b> Different sections of the product used varying interaction patterns for similar actions, increasing the learning curve.</span></li>
+      <li><span class="notes__mark" aria-hidden="true">•</span><span><b>No responsive support:</b> The existing design was not responsive, creating frustration for users who needed to check rankings on the go.</span></li>
+    </ul></div>
+        </div>
+        <div class="work__slider" data-slider-status="idle" role="region"
+      aria-roledescription="carousel" aria-label="Audit, flows and exploration">
+      <div class="work__viewport">
+        <div class="work__track" data-grab="idle">
+        <div class="work__slide" data-slide-status="idle" role="group"
+             aria-roledescription="slide" aria-label="1 of 6">
+          <picture >
+      <source type="image/avif" sizes="(min-width: 1296px) 1200px, calc(100vw - 2 * clamp(1.25rem, 5vw, 3rem))" srcset="/case/keyword-process-1-480.avif?v=6b288547 480w, /case/keyword-process-1-720.avif?v=6b288547 720w, /case/keyword-process-1-1200.avif?v=6b288547 1200w">
+      <source type="image/webp" sizes="(min-width: 1296px) 1200px, calc(100vw - 2 * clamp(1.25rem, 5vw, 3rem))" srcset="/case/keyword-process-1-480.webp?v=6b288547 480w, /case/keyword-process-1-720.webp?v=6b288547 720w, /case/keyword-process-1-1200.webp?v=6b288547 1200w">
+      <img class="work__shot" src="/case/keyword-process-1-1200.webp?v=6b288547"
+           width="1262" height="1169" alt="Audit, flows and exploration — 1 of 6"
+           loading="lazy" decoding="async" data-fold>
+    </picture>
+        </div>
+        <div class="work__slide" data-slide-status="idle" role="group"
+             aria-roledescription="slide" aria-label="2 of 6">
+          <picture >
+      <source type="image/avif" sizes="(min-width: 1296px) 1200px, calc(100vw - 2 * clamp(1.25rem, 5vw, 3rem))" srcset="/case/keyword-process-2-480.avif?v=5f57d847 480w, /case/keyword-process-2-720.avif?v=5f57d847 720w, /case/keyword-process-2-1200.avif?v=5f57d847 1200w, /case/keyword-process-2-1341.avif?v=5f57d847 1341w">
+      <source type="image/webp" sizes="(min-width: 1296px) 1200px, calc(100vw - 2 * clamp(1.25rem, 5vw, 3rem))" srcset="/case/keyword-process-2-480.webp?v=5f57d847 480w, /case/keyword-process-2-720.webp?v=5f57d847 720w, /case/keyword-process-2-1200.webp?v=5f57d847 1200w, /case/keyword-process-2-1341.webp?v=5f57d847 1341w">
+      <img class="work__shot" src="/case/keyword-process-2-1341.webp?v=5f57d847"
+           width="1341" height="1070" alt="Audit, flows and exploration — 2 of 6"
+           loading="lazy" decoding="async" data-fold>
+    </picture>
+        </div>
+        <div class="work__slide" data-slide-status="idle" role="group"
+             aria-roledescription="slide" aria-label="3 of 6">
+          <picture >
+      <source type="image/avif" sizes="(min-width: 1296px) 1200px, calc(100vw - 2 * clamp(1.25rem, 5vw, 3rem))" srcset="/case/keyword-process-3-480.avif?v=b6a41a41 480w, /case/keyword-process-3-720.avif?v=b6a41a41 720w, /case/keyword-process-3-1200.avif?v=b6a41a41 1200w, /case/keyword-process-3-1457.avif?v=b6a41a41 1457w">
+      <source type="image/webp" sizes="(min-width: 1296px) 1200px, calc(100vw - 2 * clamp(1.25rem, 5vw, 3rem))" srcset="/case/keyword-process-3-480.webp?v=b6a41a41 480w, /case/keyword-process-3-720.webp?v=b6a41a41 720w, /case/keyword-process-3-1200.webp?v=b6a41a41 1200w, /case/keyword-process-3-1457.webp?v=b6a41a41 1457w">
+      <img class="work__shot" src="/case/keyword-process-3-1457.webp?v=b6a41a41"
+           width="1457" height="899" alt="Audit, flows and exploration — 3 of 6"
+           loading="lazy" decoding="async" data-fold>
+    </picture>
+        </div>
+        <div class="work__slide" data-slide-status="idle" role="group"
+             aria-roledescription="slide" aria-label="4 of 6">
+          <picture >
+      <source type="image/avif" sizes="(min-width: 1296px) 1200px, calc(100vw - 2 * clamp(1.25rem, 5vw, 3rem))" srcset="/case/keyword-process-4-480.avif?v=76019217 480w, /case/keyword-process-4-720.avif?v=76019217 720w, /case/keyword-process-4-1200.avif?v=76019217 1200w, /case/keyword-process-4-1558.avif?v=76019217 1558w">
+      <source type="image/webp" sizes="(min-width: 1296px) 1200px, calc(100vw - 2 * clamp(1.25rem, 5vw, 3rem))" srcset="/case/keyword-process-4-480.webp?v=76019217 480w, /case/keyword-process-4-720.webp?v=76019217 720w, /case/keyword-process-4-1200.webp?v=76019217 1200w, /case/keyword-process-4-1558.webp?v=76019217 1558w">
+      <img class="work__shot" src="/case/keyword-process-4-1558.webp?v=76019217"
+           width="1558" height="923" alt="Audit, flows and exploration — 4 of 6"
+           loading="lazy" decoding="async" data-fold>
+    </picture>
+        </div>
+        <div class="work__slide" data-slide-status="idle" role="group"
+             aria-roledescription="slide" aria-label="5 of 6">
+          <picture >
+      <source type="image/avif" sizes="(min-width: 1296px) 1200px, calc(100vw - 2 * clamp(1.25rem, 5vw, 3rem))" srcset="/case/keyword-process-5-480.avif?v=cbd541a4 480w, /case/keyword-process-5-720.avif?v=cbd541a4 720w, /case/keyword-process-5-1200.avif?v=cbd541a4 1200w, /case/keyword-process-5-1424.avif?v=cbd541a4 1424w">
+      <source type="image/webp" sizes="(min-width: 1296px) 1200px, calc(100vw - 2 * clamp(1.25rem, 5vw, 3rem))" srcset="/case/keyword-process-5-480.webp?v=cbd541a4 480w, /case/keyword-process-5-720.webp?v=cbd541a4 720w, /case/keyword-process-5-1200.webp?v=cbd541a4 1200w, /case/keyword-process-5-1424.webp?v=cbd541a4 1424w">
+      <img class="work__shot" src="/case/keyword-process-5-1424.webp?v=cbd541a4"
+           width="1424" height="1037" alt="Audit, flows and exploration — 5 of 6"
+           loading="lazy" decoding="async" data-fold>
+    </picture>
+        </div>
+        <div class="work__slide" data-slide-status="idle" role="group"
+             aria-roledescription="slide" aria-label="6 of 6">
+          <picture >
+      <source type="image/avif" sizes="(min-width: 1296px) 1200px, calc(100vw - 2 * clamp(1.25rem, 5vw, 3rem))" srcset="/case/keyword-process-6-480.avif?v=293edb6a 480w, /case/keyword-process-6-720.avif?v=293edb6a 720w, /case/keyword-process-6-1200.avif?v=293edb6a 1200w, /case/keyword-process-6-1600.avif?v=293edb6a 1600w, /case/keyword-process-6-1801.avif?v=293edb6a 1801w">
+      <source type="image/webp" sizes="(min-width: 1296px) 1200px, calc(100vw - 2 * clamp(1.25rem, 5vw, 3rem))" srcset="/case/keyword-process-6-480.webp?v=293edb6a 480w, /case/keyword-process-6-720.webp?v=293edb6a 720w, /case/keyword-process-6-1200.webp?v=293edb6a 1200w, /case/keyword-process-6-1801.webp?v=293edb6a 1801w">
+      <img class="work__shot" src="/case/keyword-process-6-1801.webp?v=293edb6a"
+           width="1801" height="1074" alt="Audit, flows and exploration — 6 of 6"
+           loading="lazy" decoding="async" data-fold>
+    </picture>
+        </div>
+        </div>
+      </div>
+    </div>
+      </div>
+    </section>
+
+    <section class="band" id="solution">
+      <div class="wrap" data-reveal-group data-stagger="90" data-start="top 85%">
+        <p class="band__no" aria-hidden="true">03</p>
+        <h2 class="band__title">Solution</h2>
+        <p class="band__lede">I led the end-to-end UX and UI redesign — from rethinking core flows to reworking the visual language. We focused on simplifying the experience, surfacing insights faster, and making the product more approachable for new users while staying powerful for pros.</p>
+      <p class="band__lede">We also introduced a modular design system built specifically for SEO tools. It brought consistency across the platform and became the visual foundation for four other products in the SEO toolset.</p>
+      <p class="band__lede">The new experience helped drive growth, improve onboarding, and ultimately contributed to Keyword.com’s acquisition by saas.group.</p>
+      </div>
+    </section>
+
+    <section class="band feature">
+      <div class="wrap" data-reveal-group data-stagger="90" data-start="top 85%">
+        <h2 class="feature__name">Keywords home</h2>
+        <p class="feature__tagline">Keep a pulse on your website’s search rankings with a spot-on keyword ranking dashboard — straightforward, reliable, and just what you need to pinpoint exactly what’s working and what’s not.</p>
+        <figure class="figure"><picture data-parallax="trigger" data-parallax-start="5" data-parallax-end="-5" data-parallax-disable="mobileLandscape">
+      <source type="image/avif" sizes="(min-width: 1296px) 1200px, calc(100vw - 2 * clamp(1.25rem, 5vw, 3rem))" srcset="/case/keyword-home-480.avif?v=4d5a1ff2 480w, /case/keyword-home-720.avif?v=4d5a1ff2 720w, /case/keyword-home-1200.avif?v=4d5a1ff2 1200w, /case/keyword-home-1600.avif?v=4d5a1ff2 1600w, /case/keyword-home-2400.avif?v=4d5a1ff2 2400w">
+      <source type="image/webp" sizes="(min-width: 1296px) 1200px, calc(100vw - 2 * clamp(1.25rem, 5vw, 3rem))" srcset="/case/keyword-home-480.webp?v=4d5a1ff2 480w, /case/keyword-home-720.webp?v=4d5a1ff2 720w, /case/keyword-home-1200.webp?v=4d5a1ff2 1200w, /case/keyword-home-2400.webp?v=4d5a1ff2 2400w">
+      <img class="shot" src="/case/keyword-home-2400.webp?v=4d5a1ff2"
+           width="3200" height="2300" alt="Keywords home — final solution"
+           loading="lazy" decoding="async" data-fold>
+    </picture></figure>
+      </div>
+    </section>
+
+    <section class="band feature">
+      <div class="wrap" data-reveal-group data-stagger="90" data-start="top 85%">
+        <h2 class="feature__name">Keywords home — menu</h2>
+        <p class="feature__tagline">Navigation was restructured to group related features, use clear labels, ensure consistent access to actions, and allow collapsible sections to reduce visual noise.</p>
+        <figure class="figure"><picture data-parallax="trigger" data-parallax-start="5" data-parallax-end="-5" data-parallax-disable="mobileLandscape">
+      <source type="image/avif" sizes="(min-width: 1296px) 1200px, calc(100vw - 2 * clamp(1.25rem, 5vw, 3rem))" srcset="/case/keyword-menu-480.avif?v=966ca875 480w, /case/keyword-menu-720.avif?v=966ca875 720w, /case/keyword-menu-1200.avif?v=966ca875 1200w, /case/keyword-menu-1600.avif?v=966ca875 1600w, /case/keyword-menu-2400.avif?v=966ca875 2400w">
+      <source type="image/webp" sizes="(min-width: 1296px) 1200px, calc(100vw - 2 * clamp(1.25rem, 5vw, 3rem))" srcset="/case/keyword-menu-480.webp?v=966ca875 480w, /case/keyword-menu-720.webp?v=966ca875 720w, /case/keyword-menu-1200.webp?v=966ca875 1200w, /case/keyword-menu-2400.webp?v=966ca875 2400w">
+      <img class="shot" src="/case/keyword-menu-2400.webp?v=966ca875"
+           width="3200" height="2300" alt="Keywords home — menu — final solution"
+           loading="lazy" decoding="async" data-fold>
+    </picture></figure>
+      </div>
+    </section>
+
+    <section class="band feature">
+      <div class="wrap" data-reveal-group data-stagger="90" data-start="top 85%">
+        <h2 class="feature__name">Keywords home — local view</h2>
+        <p class="feature__tagline">Look beyond global visibility and start winning SERPs in local regions. Track any device or market, and optimize per geographical location. Google Snack Pack tracking included.</p>
+        <figure class="figure"><picture data-parallax="trigger" data-parallax-start="5" data-parallax-end="-5" data-parallax-disable="mobileLandscape">
+      <source type="image/avif" sizes="(min-width: 1296px) 1200px, calc(100vw - 2 * clamp(1.25rem, 5vw, 3rem))" srcset="/case/keyword-local-view-480.avif?v=b0f1c1c7 480w, /case/keyword-local-view-720.avif?v=b0f1c1c7 720w, /case/keyword-local-view-1200.avif?v=b0f1c1c7 1200w, /case/keyword-local-view-1600.avif?v=b0f1c1c7 1600w, /case/keyword-local-view-2400.avif?v=b0f1c1c7 2400w">
+      <source type="image/webp" sizes="(min-width: 1296px) 1200px, calc(100vw - 2 * clamp(1.25rem, 5vw, 3rem))" srcset="/case/keyword-local-view-480.webp?v=b0f1c1c7 480w, /case/keyword-local-view-720.webp?v=b0f1c1c7 720w, /case/keyword-local-view-1200.webp?v=b0f1c1c7 1200w, /case/keyword-local-view-2400.webp?v=b0f1c1c7 2400w">
+      <img class="shot" src="/case/keyword-local-view-2400.webp?v=b0f1c1c7"
+           width="3200" height="2740" alt="Keywords home — local view — final solution"
+           loading="lazy" decoding="async" data-fold>
+    </picture></figure>
+      </div>
+    </section>
+
+    <section class="band feature">
+      <div class="wrap" data-reveal-group data-stagger="90" data-start="top 85%">
+        <h2 class="feature__name">Settings — user management</h2>
+        <p class="feature__tagline">The admin interface was simplified with clearer permission controls, streamlined settings, improved organization, and a smoother user invite flow.</p>
+        <figure class="figure"><picture data-parallax="trigger" data-parallax-start="5" data-parallax-end="-5" data-parallax-disable="mobileLandscape">
+      <source type="image/avif" sizes="(min-width: 1296px) 1200px, calc(100vw - 2 * clamp(1.25rem, 5vw, 3rem))" srcset="/case/keyword-user-management-480.avif?v=3f71e249 480w, /case/keyword-user-management-720.avif?v=3f71e249 720w, /case/keyword-user-management-1200.avif?v=3f71e249 1200w, /case/keyword-user-management-1600.avif?v=3f71e249 1600w, /case/keyword-user-management-2400.avif?v=3f71e249 2400w">
+      <source type="image/webp" sizes="(min-width: 1296px) 1200px, calc(100vw - 2 * clamp(1.25rem, 5vw, 3rem))" srcset="/case/keyword-user-management-480.webp?v=3f71e249 480w, /case/keyword-user-management-720.webp?v=3f71e249 720w, /case/keyword-user-management-1200.webp?v=3f71e249 1200w, /case/keyword-user-management-2400.webp?v=3f71e249 2400w">
+      <img class="shot" src="/case/keyword-user-management-2400.webp?v=3f71e249"
+           width="2880" height="1352" alt="Settings — user management — final solution"
+           loading="lazy" decoding="async" data-fold>
+    </picture></figure>
+      </div>
+    </section>
+
+    <section class="band feature">
+      <div class="wrap" data-reveal-group data-stagger="90" data-start="top 85%">
+        <h2 class="feature__name">Keywords home — dashboard view</h2>
+        <p class="feature__tagline">A configurable overview for teams tracking many sites at once, so the state of a whole portfolio reads at a glance rather than one project at a time.</p>
+        <figure class="figure"><picture data-parallax="trigger" data-parallax-start="5" data-parallax-end="-5" data-parallax-disable="mobileLandscape">
+      <source type="image/avif" sizes="(min-width: 1296px) 1200px, calc(100vw - 2 * clamp(1.25rem, 5vw, 3rem))" srcset="/case/keyword-dashboard-view-480.avif?v=9a1e0c0f 480w, /case/keyword-dashboard-view-720.avif?v=9a1e0c0f 720w, /case/keyword-dashboard-view-1200.avif?v=9a1e0c0f 1200w, /case/keyword-dashboard-view-1600.avif?v=9a1e0c0f 1600w, /case/keyword-dashboard-view-2400.avif?v=9a1e0c0f 2400w">
+      <source type="image/webp" sizes="(min-width: 1296px) 1200px, calc(100vw - 2 * clamp(1.25rem, 5vw, 3rem))" srcset="/case/keyword-dashboard-view-480.webp?v=9a1e0c0f 480w, /case/keyword-dashboard-view-720.webp?v=9a1e0c0f 720w, /case/keyword-dashboard-view-1200.webp?v=9a1e0c0f 1200w, /case/keyword-dashboard-view-2400.webp?v=9a1e0c0f 2400w">
+      <img class="shot" src="/case/keyword-dashboard-view-2400.webp?v=9a1e0c0f"
+           width="2880" height="2410" alt="Keywords home — dashboard view — final solution"
+           loading="lazy" decoding="async" data-fold>
+    </picture></figure>
+      </div>
+    </section>
+
+    <section class="band feature">
+      <div class="wrap" data-reveal-group data-stagger="90" data-start="top 85%">
+        <h2 class="feature__name">Onboarding flow</h2>
+        <p class="feature__tagline">After several rounds of user testing, we refined the onboarding flow and achieved a 90% success rate. Users can now easily add keywords, view rankings, and create reports — getting value right from the start.</p>
+        <figure class="figure"><picture data-parallax="trigger" data-parallax-start="5" data-parallax-end="-5" data-parallax-disable="mobileLandscape">
+      <source type="image/avif" sizes="(min-width: 1296px) 1200px, calc(100vw - 2 * clamp(1.25rem, 5vw, 3rem))" srcset="/case/keyword-onboarding-480.avif?v=cb158927 480w, /case/keyword-onboarding-720.avif?v=cb158927 720w, /case/keyword-onboarding-1200.avif?v=cb158927 1200w, /case/keyword-onboarding-1600.avif?v=cb158927 1600w, /case/keyword-onboarding-2400.avif?v=cb158927 2400w">
+      <source type="image/webp" sizes="(min-width: 1296px) 1200px, calc(100vw - 2 * clamp(1.25rem, 5vw, 3rem))" srcset="/case/keyword-onboarding-480.webp?v=cb158927 480w, /case/keyword-onboarding-720.webp?v=cb158927 720w, /case/keyword-onboarding-1200.webp?v=cb158927 1200w, /case/keyword-onboarding-2400.webp?v=cb158927 2400w">
+      <img class="shot" src="/case/keyword-onboarding-2400.webp?v=cb158927"
+           width="2900" height="2064" alt="Onboarding flow — final solution"
+           loading="lazy" decoding="async" data-fold>
+    </picture></figure>
+      </div>
+    </section>
+
+    <section class="band feature">
+      <div class="wrap" data-reveal-group data-stagger="90" data-start="top 85%">
+        <h2 class="feature__name">Subscription cancellation</h2>
+        <p class="feature__tagline">We redesigned the cancellation flow to reduce churn and support business goals. Users are offered a pause option and shown the impact of canceling, helping them make a clear, informed decision.</p>
+        <div class="work__slider" data-slider-status="idle" role="region"
+      aria-roledescription="carousel" aria-label="Subscription cancellation — final solution">
+      <div class="work__viewport">
+        <div class="work__track" data-grab="idle">
+        <div class="work__slide" data-slide-status="idle" role="group"
+             aria-roledescription="slide" aria-label="1 of 3">
+          <picture >
+      <source type="image/avif" sizes="(min-width: 1296px) 1200px, calc(100vw - 2 * clamp(1.25rem, 5vw, 3rem))" srcset="/case/keyword-cancellation-1-480.avif?v=f0a678c4 480w, /case/keyword-cancellation-1-720.avif?v=f0a678c4 720w, /case/keyword-cancellation-1-1200.avif?v=f0a678c4 1200w, /case/keyword-cancellation-1-1600.avif?v=f0a678c4 1600w, /case/keyword-cancellation-1-2400.avif?v=f0a678c4 2400w">
+      <source type="image/webp" sizes="(min-width: 1296px) 1200px, calc(100vw - 2 * clamp(1.25rem, 5vw, 3rem))" srcset="/case/keyword-cancellation-1-480.webp?v=f0a678c4 480w, /case/keyword-cancellation-1-720.webp?v=f0a678c4 720w, /case/keyword-cancellation-1-1200.webp?v=f0a678c4 1200w, /case/keyword-cancellation-1-2400.webp?v=f0a678c4 2400w">
+      <img class="work__shot" src="/case/keyword-cancellation-1-2400.webp?v=f0a678c4"
+           width="2880" height="2630" alt="Subscription cancellation — final solution — 1 of 3"
+           loading="lazy" decoding="async" data-fold>
+    </picture>
+        </div>
+        <div class="work__slide" data-slide-status="idle" role="group"
+             aria-roledescription="slide" aria-label="2 of 3">
+          <picture >
+      <source type="image/avif" sizes="(min-width: 1296px) 1200px, calc(100vw - 2 * clamp(1.25rem, 5vw, 3rem))" srcset="/case/keyword-cancellation-2-480.avif?v=0507f965 480w, /case/keyword-cancellation-2-720.avif?v=0507f965 720w, /case/keyword-cancellation-2-1200.avif?v=0507f965 1200w, /case/keyword-cancellation-2-1600.avif?v=0507f965 1600w, /case/keyword-cancellation-2-2400.avif?v=0507f965 2400w">
+      <source type="image/webp" sizes="(min-width: 1296px) 1200px, calc(100vw - 2 * clamp(1.25rem, 5vw, 3rem))" srcset="/case/keyword-cancellation-2-480.webp?v=0507f965 480w, /case/keyword-cancellation-2-720.webp?v=0507f965 720w, /case/keyword-cancellation-2-1200.webp?v=0507f965 1200w, /case/keyword-cancellation-2-2400.webp?v=0507f965 2400w">
+      <img class="work__shot" src="/case/keyword-cancellation-2-2400.webp?v=0507f965"
+           width="2880" height="2344" alt="Subscription cancellation — final solution — 2 of 3"
+           loading="lazy" decoding="async" data-fold>
+    </picture>
+        </div>
+        <div class="work__slide" data-slide-status="idle" role="group"
+             aria-roledescription="slide" aria-label="3 of 3">
+          <picture >
+      <source type="image/avif" sizes="(min-width: 1296px) 1200px, calc(100vw - 2 * clamp(1.25rem, 5vw, 3rem))" srcset="/case/keyword-cancellation-3-480.avif?v=c1aed8c1 480w, /case/keyword-cancellation-3-720.avif?v=c1aed8c1 720w, /case/keyword-cancellation-3-1200.avif?v=c1aed8c1 1200w, /case/keyword-cancellation-3-1600.avif?v=c1aed8c1 1600w, /case/keyword-cancellation-3-2400.avif?v=c1aed8c1 2400w">
+      <source type="image/webp" sizes="(min-width: 1296px) 1200px, calc(100vw - 2 * clamp(1.25rem, 5vw, 3rem))" srcset="/case/keyword-cancellation-3-480.webp?v=c1aed8c1 480w, /case/keyword-cancellation-3-720.webp?v=c1aed8c1 720w, /case/keyword-cancellation-3-1200.webp?v=c1aed8c1 1200w, /case/keyword-cancellation-3-2400.webp?v=c1aed8c1 2400w">
+      <img class="work__shot" src="/case/keyword-cancellation-3-2400.webp?v=c1aed8c1"
+           width="2880" height="2344" alt="Subscription cancellation — final solution — 3 of 3"
+           loading="lazy" decoding="async" data-fold>
+    </picture>
+        </div>
+        </div>
+      </div>
+    </div>
+      </div>
+    </section>
+
+    <section class="band" id="impact">
+      <div class="wrap" data-reveal-group data-stagger="90" data-start="top 85%">
+        <p class="band__no" aria-hidden="true">04</p>
+        <h2 class="band__title">Impact</h2>
+        <div class="duo">
+          <div><h3 class="feature__name">UX metrics</h3>
+        <ul class="notes notes--dot notes--wide">
+      <li><span class="notes__mark" aria-hidden="true">•</span><span>Reduced onboarding time by <b>35%</b> for new users</span></li>
+      <li><span class="notes__mark" aria-hidden="true">•</span><span>Improved task completion rates for common workflows by <b>28%</b></span></li>
+      <li><span class="notes__mark" aria-hidden="true">•</span><span>Decreased support tickets related to UI confusion by <b>42%</b></span></li>
+    </ul></div>
+          <div><h3 class="feature__name">Business impact</h3>
+        <ul class="notes notes--dot notes--wide">
+      <li><span class="notes__mark" aria-hidden="true">•</span><span>Increased trial-to-paid conversion by <b>18%</b></span></li>
+      <li><span class="notes__mark" aria-hidden="true">•</span><span>Reduced churn rate by <b>12%</b> in the six months following launch</span></li>
+      <li><span class="notes__mark" aria-hidden="true">•</span><span>Contributed to a successful acquisition by <b>saas.group</b> in 2020</span></li>
+    </ul></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="band" id="challenges-overcome">
+      <div class="wrap" data-reveal-group data-stagger="90" data-start="top 85%">
+        <p class="band__no" aria-hidden="true">05</p>
+        <h2 class="band__title">Challenges overcome</h2>
+        <ul class="notes notes--dot">
+      <li><span class="notes__mark" aria-hidden="true">•</span><span><b>Balancing power and simplicity:</b> The biggest challenge was simplifying the interface without removing the power that advanced users relied on. I addressed this by using progressive disclosure patterns and ensuring that advanced features remained accessible but didn’t overwhelm the primary experience.</span></li>
+      <li><span class="notes__mark" aria-hidden="true">•</span><span><b>Managing stakeholder expectations:</b> Different stakeholders had varying priorities for the redesign. I navigated these by establishing clear success criteria early in the process and regularly communicating progress and trade-offs.</span></li>
+      <li><span class="notes__mark" aria-hidden="true">•</span><span><b>Technical constraints:</b> The existing codebase imposed limitations on what could be implemented. I worked closely with engineers to understand these constraints and find creative solutions that balanced ideal user experience with technical feasibility.</span></li>
+    </ul>
+      </div>
+    </section>
+
+    <section class="band" id="lessons-learned">
+      <div class="wrap" data-reveal-group data-stagger="90" data-start="top 85%">
+        <p class="band__no" aria-hidden="true">06</p>
+        <h2 class="band__title">Lessons learned</h2>
+        <ul class="wins" data-reveal-group-nested data-stagger="80">
+          <li><span class="notes__mark" aria-hidden="true">•</span>
+            <span>Developing clear, actionable visualizations for technical SEO data.</span></li>
+          <li><span class="notes__mark" aria-hidden="true">•</span>
+            <span>Building a comprehensive system that balanced consistency with flexibility.</span></li>
+          <li><span class="notes__mark" aria-hidden="true">•</span>
+            <span>Navigating competing priorities while maintaining focus on user needs.</span></li>
+          <li><span class="notes__mark" aria-hidden="true">•</span>
+            <span>Working effectively with engineers on implementation details.</span></li>
+          <li><span class="notes__mark" aria-hidden="true">•</span>
+            <span>Next time: incorporate more direct user testing in the wireframing phase.</span></li>
+          <li><span class="notes__mark" aria-hidden="true">•</span>
+            <span>Next time: develop more comprehensive documentation for edge cases.</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <nav data-section-dock-init aria-label="On this page" class="section-dock">
+      <div data-section-dock-pill class="section-dock__pill">
+        <button data-section-dock-toggle aria-expanded="false" aria-controls="section-dock-list" class="section-dock__toggle">
+          <span data-section-dock-label-wrap class="section-dock__label-wrap">
+            <span class="section-dock__label">
+              <span class="section-dock__link-num">01</span>
+              <span>Challenge</span>
+            </span>
+          </span>
+        </button>
+        <div data-section-dock-list id="section-dock-list" class="section-dock__list">
+          <div data-section-dock-indicator class="section-dock__indicator"></div>
+          <ul class="section-dock__items">
+        <li>
+          <a data-active data-section-dock-link href="#challenge" class="section-dock__link">
+            <span class="section-dock__link-num">01</span>
+            <span>Challenge</span>
+          </a>
+        </li>
+        <li>
+          <a data-section-dock-link href="#design-process" class="section-dock__link">
+            <span class="section-dock__link-num">02</span>
+            <span>Design process</span>
+          </a>
+        </li>
+        <li>
+          <a data-section-dock-link href="#solution" class="section-dock__link">
+            <span class="section-dock__link-num">03</span>
+            <span>Solution</span>
+          </a>
+        </li>
+        <li>
+          <a data-section-dock-link href="#impact" class="section-dock__link">
+            <span class="section-dock__link-num">04</span>
+            <span>Impact</span>
+          </a>
+        </li>
+        <li>
+          <a data-section-dock-link href="#challenges-overcome" class="section-dock__link">
+            <span class="section-dock__link-num">05</span>
+            <span>Challenges overcome</span>
+          </a>
+        </li>
+        <li>
+          <a data-section-dock-link href="#lessons-learned" class="section-dock__link">
+            <span class="section-dock__link-num">06</span>
+            <span>Lessons learned</span>
+          </a>
+        </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="wrap">
+      <a class="next" href="/payhoa">
+        <span>Next case study<strong>PayHOA</strong></span>
+        <span aria-hidden="true">→</span>
+      </a>
+    </div>
+
+    <footer class="section outro" aria-labelledby="outro-title" data-section-dock-hide>
+      
+      <div class="outro__fx" aria-hidden="true"
+           data-us-project="HfdY3nAq99Kc0BCtuBfP"
+           data-us-scale="1" data-us-dpi="1" data-us-fps="30"></div>
+      <div class="outro__inner">
+        
+        <h2 class="outro__title" id="outro-title" aria-label="Let’s talk about the next big thing"><span>Let&rsquo;s talk about</span><span>the next big thing</span></h2>
+
+        <a class="outro__social" href="https://www.linkedin.com/in/iamvisp/"
+           target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><span class="outro__roll" aria-hidden="true"><span class="outro__roll-ch" style="--i:0"><span>L</span><span>L</span></span><span class="outro__roll-ch" style="--i:1"><span>i</span><span>i</span></span><span class="outro__roll-ch" style="--i:2"><span>n</span><span>n</span></span><span class="outro__roll-ch" style="--i:3"><span>k</span><span>k</span></span><span class="outro__roll-ch" style="--i:4"><span>e</span><span>e</span></span><span class="outro__roll-ch" style="--i:5"><span>d</span><span>d</span></span><span class="outro__roll-ch" style="--i:6"><span>I</span><span>I</span></span><span class="outro__roll-ch" style="--i:7"><span>n</span><span>n</span></span></span><svg class="outro__arrow" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M7 17L17 7M17 17V7H7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        <a class="outro__mail" href="mailto:iamvisp@gmail.com"
+           aria-label="Copy email to clipboard" data-copy-button data-copy-email="iamvisp@gmail.com">
+          <span class="copy-email-icon copy-email-icon--lg" aria-hidden="true">
+            <span class="copy-email-icon__el"></span>
+            <span class="copy-email-icon__el"><svg viewBox="0 0 36 36" fill="none"><path d="M7.5 22.5H6C5.20435 22.5 4.44129 22.1839 3.87868 21.6213C3.31607 21.0587 3 20.2956 3 19.5V6C3 5.20435 3.31607 4.44129 3.87868 3.87868C4.44129 3.31607 5.20435 3 6 3H19.5C20.2956 3 21.0587 3.31607 21.6213 3.87868C22.1839 4.44129 22.5 5.20435 22.5 6V7.5M16.5 13.5H30C31.6569 13.5 33 14.8431 33 16.5V30C33 31.6569 31.6569 33 30 33H16.5C14.8431 33 13.5 31.6569 13.5 30V16.5C13.5 14.8431 14.8431 13.5 16.5 13.5Z" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+            <span class="copy-email-icon__el"><svg viewBox="0 0 36 36" fill="none"><path d="M30 9L13.5 25.5L6 18" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+          </span>
+          <span class="copy-email-text__wrap">
+            <span data-copy-email-element class="copy-email-text__el">iamvisp@gmail.com</span>
+            <span class="copy-email-text__el">Click to copy email</span>
+            <span class="copy-email-text__el">Copied to clipboard!</span>
+          </span>
+        </a>
+
+      </div>
+
+      <div class="outro__meta">
+        <span>&copy; 2026</span>
+      </div>
+    </footer>
+  </main>
+
+</body>
+</html>

@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+# The case-study editor. It already carries `noindex, nofollow` and is not
+# in the sitemap; this is the belt to that pair of braces, and it also keeps
+# crawlers from spending budget on a page that is a form over six JSON files.
+Disallow: /admin
+
+Sitemap: https://sashamartynchuk.com/sitemap.xml

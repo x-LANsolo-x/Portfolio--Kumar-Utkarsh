@@ -1,0 +1,496 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PayHOA — Case Study</title>
+  <meta name="description" content="PayHOA simplifies HOA management with modern tools for billing, communication and compliance. Product design from the ground up, then art direction — now over 502,000 units managed.">
+  
+  <link rel="preload" as="image"
+        type="image/avif"
+        href="/case/payhoa-hero-1200.avif?v=16e9e871"
+        imagesrcset="/case/payhoa-hero-480.avif?v=16e9e871 480w, /case/payhoa-hero-720.avif?v=16e9e871 720w, /case/payhoa-hero-1200.avif?v=16e9e871 1200w, /case/payhoa-hero-1600.avif?v=16e9e871 1600w, /case/payhoa-hero-2400.avif?v=16e9e871 2400w"
+        imagesizes="100vw">
+  
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="/favicon-32.png" sizes="32x32" type="image/png">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "CreativeWork",
+    "name": "PayHOA — Case Study",
+    "headline": "PayHOA",
+    "description": "PayHOA simplifies HOA management with modern tools for billing, communication and compliance. Product design from the ground up, then art direction — now over 502,000 units managed.",
+    "url": "https://sashamartynchuk.com/payhoa",
+    "image": "https://sashamartynchuk.com/case/payhoa-hero-1200.webp",
+    "author": {
+      "@type": "Person",
+      "name": "Sasha Martynchuk",
+      "url": "https://sashamartynchuk.com/"
+    },
+    "inLanguage": "en"
+  }
+  </script>
+  <link rel="canonical" href="https://sashamartynchuk.com/payhoa">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="PayHOA — Case Study">
+  <meta property="og:description" content="PayHOA simplifies HOA management with modern tools for billing, communication and compliance. Product design from the ground up, then art direction — now over 502,000 units managed.">
+  <meta property="og:url" content="https://sashamartynchuk.com/payhoa">
+  
+  <meta property="og:image" content="https://sashamartynchuk.com/case/payhoa-hero-1200.webp">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="PayHOA — Case Study">
+  <meta name="twitter:description" content="PayHOA simplifies HOA management with modern tools for billing, communication and compliance. Product design from the ground up, then art direction — now over 502,000 units managed.">
+  <meta name="twitter:image" content="https://sashamartynchuk.com/case/payhoa-hero-1200.webp">
+  <meta name="theme-color" content="#000000">
+
+  <link rel="preload" href="/fonts/NeueMontreal-Regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/fonts/NeueMontreal-Bold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/fonts/Arges-Black.woff2" as="font" type="font/woff2" crossorigin>
+
+  <script>
+  (function () {
+    function startAnalytics() {
+      var g = document.createElement('script');
+      g.async = true;
+      g.src = 'https://www.googletagmanager.com/gtag/js?id=G-FXJ8ZVD01Y';
+      document.head.appendChild(g);
+      window.dataLayer = window.dataLayer || [];
+      window.gtag = function () { window.dataLayer.push(arguments); };
+      window.gtag('js', new Date());
+      window.gtag('config', 'G-FXJ8ZVD01Y');
+
+      (function (c, l, a, r, i, t, y) {
+        c[a] = c[a] || function () { (c[a].q = c[a].q || []).push(arguments) };
+        t = l.createElement(r); t.async = 1; t.src = 'https://www.clarity.ms/tag/' + i;
+        y = l.getElementsByTagName(r)[0]; y.parentNode.insertBefore(t, y);
+      })(window, document, 'clarity', 'script', 'y0ua8k1qhj');
+
+      /*
+       * Contentsquare, tag 238705649a093.
+       *
+       * Their install doc gives a plain <script defer> in <head> for a project
+       * with no JS framework, which this is. It goes HERE instead, inside the
+       * same activation gate, for the reason the gate exists: a prerendered
+       * document runs its head scripts immediately, so a reader who merely
+       * HOVERED a case-study link would have opened a Contentsquare session for
+       * a page they never visited. Same URL, same tag, deferred to the moment
+       * the visit becomes a visit.
+       *
+       * The _uxa queue is declared before the script so anything the page ever
+       * pushes is buffered rather than dropped — the doc's IIFE loader pattern,
+       * which is the variant to use when _uxa is called directly.
+       */
+      window._uxa = window._uxa || [];
+      var cs = document.createElement('script');
+      cs.async = true;
+      cs.src = 'https://t.contentsquare.net/uxa/238705649a093.js';
+      document.head.appendChild(cs);
+    }
+
+    /*
+     * Even an activated visit waits for the page to settle: three trackers
+     * traced as 360ms of throttled main-thread time during boot. They start
+     * on the reader's first gesture, or a few seconds after load - whichever
+     * comes first. Same shape as index.html's copy.
+     */
+    function whenSettled() {
+      var fired = false;
+      var go = function () { if (fired) return; fired = true; startAnalytics(); };
+      var kinds = ['pointerdown', 'keydown', 'touchstart', 'wheel', 'scroll'];
+      for (var i = 0; i < kinds.length; i++) {
+        addEventListener(kinds[i], go, { once: true, passive: true, capture: true });
+      }
+      if (document.readyState === 'complete') setTimeout(go, 3500);
+      else addEventListener('load', function () { setTimeout(go, 3500); }, { once: true });
+    }
+
+    if (document.prerendering) {
+      document.addEventListener('prerenderingchange', whenSettled, { once: true });
+    } else {
+      whenSettled();
+    }
+  })();
+  </script>
+  <script>
+  /* Service worker: see public/sw.js for what it caches and why.
+
+     The kill switch is the important part of this snippet. A bad worker is
+     sticky - it can keep serving a broken site to anyone who has already
+     visited, and they have no way to ask for the real one. So:
+
+       ?nosw   unregisters it, clears its caches, and REMEMBERS that, so the
+               next load does not simply register it again - which is what the
+               first version of this did, one line after unregistering.
+       ?sw     turns it back on.
+
+     The flag lives in localStorage because it has to outlive the reload. */
+  (function () {
+    if (!('serviceWorker' in navigator)) return;
+    var OFF = 'sw-disabled';
+    var q = location.search;
+
+    if (q.indexOf('sw=1') > -1) { try { localStorage.removeItem(OFF); } catch (e) {} }
+
+    if (q.indexOf('nosw') > -1) {
+      try { localStorage.setItem(OFF, '1'); } catch (e) {}
+      navigator.serviceWorker.getRegistrations()
+        .then(function (rs) { return Promise.all(rs.map(function (r) { return r.unregister(); })); })
+        .then(function () { return window.caches ? caches.keys() : []; })
+        .then(function (ks) { return Promise.all(ks.map(function (k) { return caches.delete(k); })); })
+        .then(function () {
+          /* Uncontrolled on the way back, or the worker still serving this page
+             refills the caches that were just deleted. */
+          location.replace(location.pathname);
+        })
+        .catch(function () {});
+      return;
+    }
+
+    var off = false;
+    try { off = localStorage.getItem(OFF) === '1'; } catch (e) {}
+    if (off) {
+      /* Sweep on every disabled load, not only on the one that flipped the
+         switch. The worker that was still controlling the page during that
+         first pass refilled the caches after they were deleted; this load is
+         uncontrolled, so now the delete sticks. Costs nothing once empty. */
+      if (window.caches) {
+        caches.keys().then(function (ks) {
+          ks.forEach(function (k) { caches.delete(k); });
+        }).catch(function () {});
+      }
+      return;
+    }
+
+    addEventListener('load', function () {
+      navigator.serviceWorker.register('/sw.js').catch(function () {});
+    });
+  })();
+  </script>
+  <script type="speculationrules">
+  {
+    "prerender": [{
+      "where": { "href_matches": "/*" },
+      "eagerness": "moderate"
+    }]
+  }
+  </script>
+  <script>/* A skipped view transition (hidden tab, rapid re-navigation) rejects its
+     own ready/finished promises. Adopting them via pagereveal/pageswap covers
+     the case where the event still carries a transition object; when the skip
+     happens BEFORE pagereveal there is nothing to adopt, and only the global
+     handler can stop it surfacing as an uncaught error. Both, therefore. */
+    addEventListener("pagereveal",e=>{const t=e.viewTransition;if(t){t.ready&&t.ready.catch(()=>{});t.finished&&t.finished.catch(()=>{})}});
+    addEventListener("pageswap",e=>{const t=e.viewTransition;if(t&&t.finished)t.finished.catch(()=>{})});
+    addEventListener("unhandledrejection",e=>{const r=e.reason;
+      if(r&&r.name==="AbortError"&&/transition/i.test(r.message||""))e.preventDefault();});</script>
+  <script type="module" crossorigin src="/assets/index-CzGW6FVa.js"></script>
+  <script type="module" crossorigin src="/assets/fold-mode-DbKzrdIL.js"></script>
+  <script type="module" crossorigin src="/assets/elastic-pulse-CKgubG0W.js"></script>
+  <script type="module" crossorigin src="/assets/ScrollTrigger-DNECHiyU.js"></script>
+  <script type="module" crossorigin src="/assets/lightbox-08EUTKND.js"></script>
+  <script type="module" crossorigin src="/assets/main-BIwZVA1e.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/main-ClT0MItD.css">
+</head>
+<body>
+<!--
+
+     ┌───────────────────────────────────────────────────────────────┐
+     │   Hello, View Source.                                         │
+     └───────────────────────────────────────────────────────────────┘
+
+     You have found a very tidy document, and that is a little bit of a lie.
+
+     Every page on this site is written with its reasoning in the margin —
+     why Arges is preloaded and Neue Montreal is not, why the analytics tags
+     wait for a prerendered page to actually be activated, why the sign-off's
+     WebGL scene must not declare its lazy-load attribute (the SDK reads it as
+     a string, and "false" is truthy — that one cost an afternoon).
+
+     On this page that came to 16kB of prose against 19kB of actual markup.
+     Wonderful to work on. Rude to make you download. So a build step lifts it
+     out on the way to the server, and it all still lives one step upstream.
+
+     If you like this sort of thing, the whole of it is readable at:
+     github.com/iamvisp  ·  and I am reachable at iamvisp@gmail.com
+
+     Built with Vite, GSAP, Lenis, Matter.js, hand-written WebGL2, and a
+     number of Osmo Supply resources that are credited where they are used.
+
+-->
+
+  <a class="skip" href="#main">Skip to content</a>
+
+  <div class="rail" aria-hidden="true"><span class="rail__fill" data-rail></span></div>
+
+  <header class="topbar">
+    <a class="topbar__me" href="/" data-inkbleed aria-label="Sasha Martynchuk — home">
+      <img class="topbar__logo" src="/sasha-logo.svg" alt="Sasha Martynchuk" width="145" height="32" fetchpriority="high">
+    </a>
+
+    <a class="hero__mail copy-email-button" href="mailto:iamvisp@gmail.com"
+       aria-label="Copy email to clipboard" data-copy-button data-copy-email="iamvisp@gmail.com">
+      <span class="copy-email-icon" aria-hidden="true">
+        <span class="copy-email-icon__el"></span>
+        <span class="copy-email-icon__el"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3.33301 10H2.66634C2.31272 10 1.97358 9.85952 1.72353 9.60947C1.47348 9.35943 1.33301 9.02029 1.33301 8.66666V2.66667C1.33301 2.31304 1.47348 1.9739 1.72353 1.72386C1.97358 1.47381 2.31272 1.33333 2.66634 1.33333H8.66634C9.01996 1.33333 9.3591 1.47381 9.60915 1.72386C9.8592 1.9739 9.99967 2.31304 9.99967 2.66667V3.33333M7.33301 6H13.333C14.0694 6 14.6663 6.59695 14.6663 7.33333V13.3333C14.6663 14.0697 14.0694 14.6667 13.333 14.6667H7.33301C6.59663 14.6667 5.99967 14.0697 5.99967 13.3333V7.33333C5.99967 6.59695 6.59663 6 7.33301 6Z" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+        <span class="copy-email-icon__el"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M6.79985 9.9032L11.8909 4.81164C12.1252 4.57732 12.505 4.57724 12.7394 4.81146C12.9739 5.04579 12.974 5.42588 12.7396 5.66029L7.14697 11.2529C6.95526 11.4446 6.64443 11.4446 6.45272 11.2529L3.40565 8.2058C3.17137 7.97152 3.17137 7.59168 3.40565 7.3574C3.63992 7.12312 4.01977 7.12312 4.25405 7.3574L6.79985 9.9032Z" fill="currentColor"/></svg></span>
+      </span>
+      <span class="copy-email-text__wrap">
+        <span data-copy-email-element class="copy-email-text__el">iamvisp@gmail.com</span>
+        <span class="copy-email-text__el">Click to copy email</span>
+        <span class="copy-email-text__el">Copied to clipboard!</span>
+      </span>
+    </a>
+  </header>
+
+  <main id="main">
+    <section class="intro">
+      <div class="wrap" data-reveal-group data-stagger="90" data-start="top 85%" data-start="top 95%">
+        <h1 class="intro__title">PayHOA</h1>
+        <div class="intro__grid" data-reveal-group-nested data-stagger="110" data-ignore="false">
+          <div class="intro__lede">
+            <p>PayHOA simplifies HOA management with modern tools for billing, communication, and compliance — built to reduce manual work, improve transparency, and empower self-managed communities.</p>
+          </div>
+          <dl class="facts">
+            <dt>My role</dt><dd>Product Designer, then Art Director</dd>
+            <dt>Timeline</dt><dd>Jul 2019 – Nov 2019 (5 months)</dd>
+            <dt>Team</dt><dd>Product Owner, Front-end Engineer, Software Engineer</dd>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <div class="hero" style="--hero-ar: 1756 / 693">
+      <div class="hero__plate">
+        <picture >
+      <source type="image/avif" sizes="100vw" srcset="/case/payhoa-hero-480.avif?v=16e9e871 480w, /case/payhoa-hero-720.avif?v=16e9e871 720w, /case/payhoa-hero-1200.avif?v=16e9e871 1200w, /case/payhoa-hero-1600.avif?v=16e9e871 1600w, /case/payhoa-hero-2400.avif?v=16e9e871 2400w">
+      <source type="image/webp" sizes="100vw" srcset="/case/payhoa-hero-480.webp?v=16e9e871 480w, /case/payhoa-hero-720.webp?v=16e9e871 720w, /case/payhoa-hero-1200.webp?v=16e9e871 1200w, /case/payhoa-hero-2400.webp?v=16e9e871 2400w">
+      <img class="hero__img" src="/case/payhoa-hero-2400.webp?v=16e9e871"
+           width="3111" height="1227" alt="PayHOA — product imagery"
+           fetchpriority="high" decoding="async">
+    </picture>
+      </div>
+    </div>
+
+    <section class="band" id="challenge">
+      <div class="wrap" data-reveal-group data-stagger="90" data-start="top 85%">
+        <p class="band__no" aria-hidden="true">01</p>
+        <h2 class="band__title">Challenge</h2>
+        <p class="band__lede">Homeowners association management has long relied on manual, time-consuming processes and scattered communication tools. These inefficiencies make it difficult to track dues, manage invoices, and maintain accurate financial records — leading to delays, errors, and frustrated communities.</p>
+        <p><a class="btn btn--ghost" href="https://payhoa.com/" target="_blank" rel="noopener noreferrer">Visit payhoa.com<svg class="btn__arrow" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M7 17L17 7M17 17V7H7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a></p>
+        <figure class="figure"><picture data-parallax="trigger" data-parallax-start="5" data-parallax-end="-5" data-parallax-disable="mobileLandscape">
+      <source type="image/avif" sizes="(min-width: 1296px) 1200px, calc(100vw - 2 * clamp(1.25rem, 5vw, 3rem))" srcset="/case/payhoa-challenge-480.avif?v=1f3bb1c9 480w, /case/payhoa-challenge-720.avif?v=1f3bb1c9 720w, /case/payhoa-challenge-1024.avif?v=1f3bb1c9 1024w">
+      <source type="image/webp" sizes="(min-width: 1296px) 1200px, calc(100vw - 2 * clamp(1.25rem, 5vw, 3rem))" srcset="/case/payhoa-challenge-480.webp?v=1f3bb1c9 480w, /case/payhoa-challenge-720.webp?v=1f3bb1c9 720w, /case/payhoa-challenge-1024.webp?v=1f3bb1c9 1024w">
+      <img class="shot" src="/case/payhoa-challenge-1024.webp?v=1f3bb1c9"
+           width="1024" height="1024" alt="The manual, paper-and-spreadsheet workflow PayHOA set out to replace"
+           loading="lazy" decoding="async" data-fold>
+    </picture></figure>
+      </div>
+    </section>
+
+    <section class="band" id="results">
+      <div class="wrap" data-reveal-group data-stagger="90" data-start="top 85%">
+        <p class="band__no" aria-hidden="true">02</p>
+        <h2 class="band__title">Results</h2>
+        <p class="band__lede">With over 502,000 units managed and 92% positive customer reviews, PayHOA has become the #1 choice for homeowner associations — proving that a well-designed, user-focused platform can transform a traditionally manual industry.</p>
+        <figure class="figure"><picture data-parallax="trigger" data-parallax-start="5" data-parallax-end="-5" data-parallax-disable="mobileLandscape">
+      <source type="image/avif" sizes="(min-width: 1296px) 1200px, calc(100vw - 2 * clamp(1.25rem, 5vw, 3rem))" srcset="/case/payhoa-results-480.avif?v=cc5f007a 480w, /case/payhoa-results-720.avif?v=cc5f007a 720w, /case/payhoa-results-1200.avif?v=cc5f007a 1200w, /case/payhoa-results-1600.avif?v=cc5f007a 1600w, /case/payhoa-results-2400.avif?v=cc5f007a 2400w">
+      <source type="image/webp" sizes="(min-width: 1296px) 1200px, calc(100vw - 2 * clamp(1.25rem, 5vw, 3rem))" srcset="/case/payhoa-results-480.webp?v=cc5f007a 480w, /case/payhoa-results-720.webp?v=cc5f007a 720w, /case/payhoa-results-1200.webp?v=cc5f007a 1200w, /case/payhoa-results-2400.webp?v=cc5f007a 2400w">
+      <img class="shot" src="/case/payhoa-results-2400.webp?v=cc5f007a"
+           width="3000" height="1104" alt="PayHOA’s scale — units managed, review score and market position"
+           loading="lazy" decoding="async" data-fold>
+    </picture></figure>
+      </div>
+    </section>
+
+    <section class="band" id="design-process">
+      <div class="wrap" data-reveal-group data-stagger="90" data-start="top 85%">
+        <p class="band__no" aria-hidden="true">03</p>
+        <h2 class="band__title">Design process</h2>
+        <p class="band__lede">At PayHOA, I led product design from the ground up — aligning with stakeholders, mapping pain points, and designing the initial experience from concept to launch. I created wireframes, built a scalable design system, and ran usability testing to ensure clarity and ease of use for non-technical users.</p>
+      <p class="band__lede">After launching the first version, I transitioned into the role of Art Director, guiding the product’s direction and mentoring incoming designer Dima Martynchuk as he took over ongoing UX work and iteration.</p>
+        <div class="duo">
+          <div><h3 class="feature__name">Deliverables</h3>
+        <ul class="notes notes--dot notes--wide">
+      <li><span class="notes__mark" aria-hidden="true">•</span><span>User research</span></li>
+      <li><span class="notes__mark" aria-hidden="true">•</span><span>Competitive analysis</span></li>
+      <li><span class="notes__mark" aria-hidden="true">•</span><span>Mid-fidelity prototypes</span></li>
+      <li><span class="notes__mark" aria-hidden="true">•</span><span>User testing &amp; product validation</span></li>
+      <li><span class="notes__mark" aria-hidden="true">•</span><span>Web app UX/UI</span></li>
+      <li><span class="notes__mark" aria-hidden="true">•</span><span>High-fidelity designs</span></li>
+    </ul></div>
+        </div>
+        <div class="work__slider" data-slider-status="idle" role="region"
+      aria-roledescription="carousel" aria-label="Research, wireframes and the design system">
+      <div class="work__viewport">
+        <div class="work__track" data-grab="idle">
+        <div class="work__slide" data-slide-status="idle" role="group"
+             aria-roledescription="slide" aria-label="1 of 4">
+          <picture >
+      <source type="image/avif" sizes="(min-width: 1296px) 1200px, calc(100vw - 2 * clamp(1.25rem, 5vw, 3rem))" srcset="/case/payhoa-process-1-480.avif?v=4a753fc7 480w, /case/payhoa-process-1-720.avif?v=4a753fc7 720w, /case/payhoa-process-1-1200.avif?v=4a753fc7 1200w">
+      <source type="image/webp" sizes="(min-width: 1296px) 1200px, calc(100vw - 2 * clamp(1.25rem, 5vw, 3rem))" srcset="/case/payhoa-process-1-480.webp?v=4a753fc7 480w, /case/payhoa-process-1-720.webp?v=4a753fc7 720w, /case/payhoa-process-1-1200.webp?v=4a753fc7 1200w">
+      <img class="work__shot" src="/case/payhoa-process-1-1200.webp?v=4a753fc7"
+           width="1256" height="800" alt="Research, wireframes and the design system — 1 of 4"
+           loading="lazy" decoding="async" data-fold>
+    </picture>
+        </div>
+        <div class="work__slide" data-slide-status="idle" role="group"
+             aria-roledescription="slide" aria-label="2 of 4">
+          <picture >
+      <source type="image/avif" sizes="(min-width: 1296px) 1200px, calc(100vw - 2 * clamp(1.25rem, 5vw, 3rem))" srcset="/case/payhoa-process-2-480.avif?v=10a5db52 480w, /case/payhoa-process-2-720.avif?v=10a5db52 720w, /case/payhoa-process-2-1200.avif?v=10a5db52 1200w, /case/payhoa-process-2-1600.avif?v=10a5db52 1600w, /case/payhoa-process-2-2400.avif?v=10a5db52 2400w">
+      <source type="image/webp" sizes="(min-width: 1296px) 1200px, calc(100vw - 2 * clamp(1.25rem, 5vw, 3rem))" srcset="/case/payhoa-process-2-480.webp?v=10a5db52 480w, /case/payhoa-process-2-720.webp?v=10a5db52 720w, /case/payhoa-process-2-1200.webp?v=10a5db52 1200w, /case/payhoa-process-2-2400.webp?v=10a5db52 2400w">
+      <img class="work__shot" src="/case/payhoa-process-2-2400.webp?v=10a5db52"
+           width="4382" height="2949" alt="Research, wireframes and the design system — 2 of 4"
+           loading="lazy" decoding="async" data-fold>
+    </picture>
+        </div>
+        <div class="work__slide" data-slide-status="idle" role="group"
+             aria-roledescription="slide" aria-label="3 of 4">
+          <picture >
+      <source type="image/avif" sizes="(min-width: 1296px) 1200px, calc(100vw - 2 * clamp(1.25rem, 5vw, 3rem))" srcset="/case/payhoa-process-3-480.avif?v=72a3e915 480w, /case/payhoa-process-3-720.avif?v=72a3e915 720w, /case/payhoa-process-3-1200.avif?v=72a3e915 1200w, /case/payhoa-process-3-1600.avif?v=72a3e915 1600w">
+      <source type="image/webp" sizes="(min-width: 1296px) 1200px, calc(100vw - 2 * clamp(1.25rem, 5vw, 3rem))" srcset="/case/payhoa-process-3-480.webp?v=72a3e915 480w, /case/payhoa-process-3-720.webp?v=72a3e915 720w, /case/payhoa-process-3-1200.webp?v=72a3e915 1200w, /case/payhoa-process-3-1600.webp?v=72a3e915 1600w">
+      <img class="work__shot" src="/case/payhoa-process-3-1600.webp?v=72a3e915"
+           width="1676" height="1064" alt="Research, wireframes and the design system — 3 of 4"
+           loading="lazy" decoding="async" data-fold>
+    </picture>
+        </div>
+        <div class="work__slide" data-slide-status="idle" role="group"
+             aria-roledescription="slide" aria-label="4 of 4">
+          <picture >
+      <source type="image/avif" sizes="(min-width: 1296px) 1200px, calc(100vw - 2 * clamp(1.25rem, 5vw, 3rem))" srcset="/case/payhoa-process-4-480.avif?v=64df315b 480w, /case/payhoa-process-4-720.avif?v=64df315b 720w, /case/payhoa-process-4-1200.avif?v=64df315b 1200w, /case/payhoa-process-4-1599.avif?v=64df315b 1599w">
+      <source type="image/webp" sizes="(min-width: 1296px) 1200px, calc(100vw - 2 * clamp(1.25rem, 5vw, 3rem))" srcset="/case/payhoa-process-4-480.webp?v=64df315b 480w, /case/payhoa-process-4-720.webp?v=64df315b 720w, /case/payhoa-process-4-1200.webp?v=64df315b 1200w, /case/payhoa-process-4-1599.webp?v=64df315b 1599w">
+      <img class="work__shot" src="/case/payhoa-process-4-1599.webp?v=64df315b"
+           width="1599" height="1066" alt="Research, wireframes and the design system — 4 of 4"
+           loading="lazy" decoding="async" data-fold>
+    </picture>
+        </div>
+        </div>
+      </div>
+    </div>
+      </div>
+    </section>
+
+    <section class="band" id="final-solutions">
+      <div class="wrap" data-reveal-group data-stagger="90" data-start="top 85%">
+        <p class="band__no" aria-hidden="true">04</p>
+        <h2 class="band__title">Final solutions</h2>
+        <p class="band__lede">Billing, communication and compliance, in one place — the shipped product end to end.</p>
+        <figure class="figure"><picture data-parallax="trigger" data-parallax-start="5" data-parallax-end="-5" data-parallax-disable="mobileLandscape">
+      <source type="image/avif" sizes="(min-width: 1296px) 1200px, calc(100vw - 2 * clamp(1.25rem, 5vw, 3rem))" srcset="/case/payhoa-solutions-480.avif?v=21b04506 480w, /case/payhoa-solutions-720.avif?v=21b04506 720w, /case/payhoa-solutions-1200.avif?v=21b04506 1200w, /case/payhoa-solutions-1600.avif?v=21b04506 1600w, /case/payhoa-solutions-2400.avif?v=21b04506 2400w">
+      <source type="image/webp" sizes="(min-width: 1296px) 1200px, calc(100vw - 2 * clamp(1.25rem, 5vw, 3rem))" srcset="/case/payhoa-solutions-480.webp?v=21b04506 480w, /case/payhoa-solutions-720.webp?v=21b04506 720w, /case/payhoa-solutions-1200.webp?v=21b04506 1200w, /case/payhoa-solutions-2400.webp?v=21b04506 2400w">
+      <img class="shot" src="/case/payhoa-solutions-2400.webp?v=21b04506"
+           width="2800" height="9842" alt="The shipped PayHOA product — dashboard, invoicing, communications and compliance screens"
+           loading="lazy" decoding="async" data-fold>
+    </picture></figure>
+      </div>
+    </section>
+
+    <section class="band" id="takeaways">
+      <div class="wrap" data-reveal-group data-stagger="90" data-start="top 85%">
+        <p class="band__no" aria-hidden="true">05</p>
+        <h2 class="band__title">Takeaways</h2>
+        <ul class="wins" data-reveal-group-nested data-stagger="80">
+          <li><span class="notes__mark" aria-hidden="true">•</span>
+            <span>Balancing innovation with familiarity is key when redesigning for loyal users.</span></li>
+          <li><span class="notes__mark" aria-hidden="true">•</span>
+            <span>Small UX wins can yield major user satisfaction gains.</span></li>
+          <li><span class="notes__mark" aria-hidden="true">•</span>
+            <span>Early investment in design systems pays off in scalability and consistency.</span></li>
+          <li><span class="notes__mark" aria-hidden="true">•</span>
+            <span>Continuous feedback is essential to sustain design quality post-launch.</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <nav data-section-dock-init aria-label="On this page" class="section-dock">
+      <div data-section-dock-pill class="section-dock__pill">
+        <button data-section-dock-toggle aria-expanded="false" aria-controls="section-dock-list" class="section-dock__toggle">
+          <span data-section-dock-label-wrap class="section-dock__label-wrap">
+            <span class="section-dock__label">
+              <span class="section-dock__link-num">01</span>
+              <span>Challenge</span>
+            </span>
+          </span>
+        </button>
+        <div data-section-dock-list id="section-dock-list" class="section-dock__list">
+          <div data-section-dock-indicator class="section-dock__indicator"></div>
+          <ul class="section-dock__items">
+        <li>
+          <a data-active data-section-dock-link href="#challenge" class="section-dock__link">
+            <span class="section-dock__link-num">01</span>
+            <span>Challenge</span>
+          </a>
+        </li>
+        <li>
+          <a data-section-dock-link href="#results" class="section-dock__link">
+            <span class="section-dock__link-num">02</span>
+            <span>Results</span>
+          </a>
+        </li>
+        <li>
+          <a data-section-dock-link href="#design-process" class="section-dock__link">
+            <span class="section-dock__link-num">03</span>
+            <span>Design process</span>
+          </a>
+        </li>
+        <li>
+          <a data-section-dock-link href="#final-solutions" class="section-dock__link">
+            <span class="section-dock__link-num">04</span>
+            <span>Final solutions</span>
+          </a>
+        </li>
+        <li>
+          <a data-section-dock-link href="#takeaways" class="section-dock__link">
+            <span class="section-dock__link-num">05</span>
+            <span>Takeaways</span>
+          </a>
+        </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="wrap">
+      <a class="next" href="/okx">
+        <span>Next case study<strong>OKX</strong></span>
+        <span aria-hidden="true">→</span>
+      </a>
+    </div>
+
+    <footer class="section outro" aria-labelledby="outro-title" data-section-dock-hide>
+      
+      <div class="outro__fx" aria-hidden="true"
+           data-us-project="HfdY3nAq99Kc0BCtuBfP"
+           data-us-scale="1" data-us-dpi="1" data-us-fps="30"></div>
+      <div class="outro__inner">
+        
+        <h2 class="outro__title" id="outro-title" aria-label="Let’s talk about the next big thing"><span>Let&rsquo;s talk about</span><span>the next big thing</span></h2>
+
+        <a class="outro__social" href="https://www.linkedin.com/in/iamvisp/"
+           target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><span class="outro__roll" aria-hidden="true"><span class="outro__roll-ch" style="--i:0"><span>L</span><span>L</span></span><span class="outro__roll-ch" style="--i:1"><span>i</span><span>i</span></span><span class="outro__roll-ch" style="--i:2"><span>n</span><span>n</span></span><span class="outro__roll-ch" style="--i:3"><span>k</span><span>k</span></span><span class="outro__roll-ch" style="--i:4"><span>e</span><span>e</span></span><span class="outro__roll-ch" style="--i:5"><span>d</span><span>d</span></span><span class="outro__roll-ch" style="--i:6"><span>I</span><span>I</span></span><span class="outro__roll-ch" style="--i:7"><span>n</span><span>n</span></span></span><svg class="outro__arrow" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M7 17L17 7M17 17V7H7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        <a class="outro__mail" href="mailto:iamvisp@gmail.com"
+           aria-label="Copy email to clipboard" data-copy-button data-copy-email="iamvisp@gmail.com">
+          <span class="copy-email-icon copy-email-icon--lg" aria-hidden="true">
+            <span class="copy-email-icon__el"></span>
+            <span class="copy-email-icon__el"><svg viewBox="0 0 36 36" fill="none"><path d="M7.5 22.5H6C5.20435 22.5 4.44129 22.1839 3.87868 21.6213C3.31607 21.0587 3 20.2956 3 19.5V6C3 5.20435 3.31607 4.44129 3.87868 3.87868C4.44129 3.31607 5.20435 3 6 3H19.5C20.2956 3 21.0587 3.31607 21.6213 3.87868C22.1839 4.44129 22.5 5.20435 22.5 6V7.5M16.5 13.5H30C31.6569 13.5 33 14.8431 33 16.5V30C33 31.6569 31.6569 33 30 33H16.5C14.8431 33 13.5 31.6569 13.5 30V16.5C13.5 14.8431 14.8431 13.5 16.5 13.5Z" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+            <span class="copy-email-icon__el"><svg viewBox="0 0 36 36" fill="none"><path d="M30 9L13.5 25.5L6 18" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+          </span>
+          <span class="copy-email-text__wrap">
+            <span data-copy-email-element class="copy-email-text__el">iamvisp@gmail.com</span>
+            <span class="copy-email-text__el">Click to copy email</span>
+            <span class="copy-email-text__el">Copied to clipboard!</span>
+          </span>
+        </a>
+
+      </div>
+
+      <div class="outro__meta">
+        <span>&copy; 2026</span>
+      </div>
+    </footer>
+  </main>
+
+</body>
+</html>

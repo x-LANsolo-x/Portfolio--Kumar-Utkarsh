@@ -1,0 +1,1177 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pangeam — Case Study</title>
+  <meta name="description" content="Pangeam reveals how office spaces are used and tracks behavioral change without tracking individuals. Leading the 0→1 design journey from research to MVP and a scalable design system.">
+  
+  <link rel="preload" as="image"
+        type="image/avif"
+        href="/case/pangeam-hero-1200.avif?v=d97fd1e7"
+        imagesrcset="/case/pangeam-hero-480.avif?v=d97fd1e7 480w, /case/pangeam-hero-720.avif?v=d97fd1e7 720w, /case/pangeam-hero-1200.avif?v=d97fd1e7 1200w, /case/pangeam-hero-1600.avif?v=d97fd1e7 1600w, /case/pangeam-hero-2400.avif?v=d97fd1e7 2400w"
+        imagesizes="100vw">
+  
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="/favicon-32.png" sizes="32x32" type="image/png">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "CreativeWork",
+    "name": "Pangeam — Case Study",
+    "headline": "Pangeam",
+    "description": "Pangeam reveals how office spaces are used and tracks behavioral change without tracking individuals. Leading the 0→1 design journey from research to MVP and a scalable design system.",
+    "url": "https://sashamartynchuk.com/pangeam",
+    "image": "https://sashamartynchuk.com/case/pangeam-hero-1200.webp",
+    "author": {
+      "@type": "Person",
+      "name": "Sasha Martynchuk",
+      "url": "https://sashamartynchuk.com/"
+    },
+    "inLanguage": "en"
+  }
+  </script>
+  <link rel="canonical" href="https://sashamartynchuk.com/pangeam">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Pangeam — Case Study">
+  <meta property="og:description" content="Pangeam reveals how office spaces are used and tracks behavioral change without tracking individuals. Leading the 0→1 design journey from research to MVP and a scalable design system.">
+  <meta property="og:url" content="https://sashamartynchuk.com/pangeam">
+  
+  <meta property="og:image" content="https://sashamartynchuk.com/case/pangeam-hero-1200.webp">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Pangeam — Case Study">
+  <meta name="twitter:description" content="Pangeam reveals how office spaces are used and tracks behavioral change without tracking individuals. Leading the 0→1 design journey from research to MVP and a scalable design system.">
+  <meta name="twitter:image" content="https://sashamartynchuk.com/case/pangeam-hero-1200.webp">
+  <meta name="theme-color" content="#000000">
+
+  <link rel="preload" href="/fonts/NeueMontreal-Regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/fonts/NeueMontreal-Bold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/fonts/Arges-Black.woff2" as="font" type="font/woff2" crossorigin>
+
+  <script>
+  (function () {
+    function startAnalytics() {
+      var g = document.createElement('script');
+      g.async = true;
+      g.src = 'https://www.googletagmanager.com/gtag/js?id=G-FXJ8ZVD01Y';
+      document.head.appendChild(g);
+      window.dataLayer = window.dataLayer || [];
+      window.gtag = function () { window.dataLayer.push(arguments); };
+      window.gtag('js', new Date());
+      window.gtag('config', 'G-FXJ8ZVD01Y');
+
+      (function (c, l, a, r, i, t, y) {
+        c[a] = c[a] || function () { (c[a].q = c[a].q || []).push(arguments) };
+        t = l.createElement(r); t.async = 1; t.src = 'https://www.clarity.ms/tag/' + i;
+        y = l.getElementsByTagName(r)[0]; y.parentNode.insertBefore(t, y);
+      })(window, document, 'clarity', 'script', 'y0ua8k1qhj');
+
+      /*
+       * Contentsquare, tag 238705649a093.
+       *
+       * Their install doc gives a plain <script defer> in <head> for a project
+       * with no JS framework, which this is. It goes HERE instead, inside the
+       * same activation gate, for the reason the gate exists: a prerendered
+       * document runs its head scripts immediately, so a reader who merely
+       * HOVERED a case-study link would have opened a Contentsquare session for
+       * a page they never visited. Same URL, same tag, deferred to the moment
+       * the visit becomes a visit.
+       *
+       * The _uxa queue is declared before the script so anything the page ever
+       * pushes is buffered rather than dropped — the doc's IIFE loader pattern,
+       * which is the variant to use when _uxa is called directly.
+       */
+      window._uxa = window._uxa || [];
+      var cs = document.createElement('script');
+      cs.async = true;
+      cs.src = 'https://t.contentsquare.net/uxa/238705649a093.js';
+      document.head.appendChild(cs);
+    }
+
+    /*
+     * Even an activated visit waits for the page to settle: three trackers
+     * traced as 360ms of throttled main-thread time during boot. They start
+     * on the reader's first gesture, or a few seconds after load - whichever
+     * comes first. Same shape as index.html's copy.
+     */
+    function whenSettled() {
+      var fired = false;
+      var go = function () { if (fired) return; fired = true; startAnalytics(); };
+      var kinds = ['pointerdown', 'keydown', 'touchstart', 'wheel', 'scroll'];
+      for (var i = 0; i < kinds.length; i++) {
+        addEventListener(kinds[i], go, { once: true, passive: true, capture: true });
+      }
+      if (document.readyState === 'complete') setTimeout(go, 3500);
+      else addEventListener('load', function () { setTimeout(go, 3500); }, { once: true });
+    }
+
+    if (document.prerendering) {
+      document.addEventListener('prerenderingchange', whenSettled, { once: true });
+    } else {
+      whenSettled();
+    }
+  })();
+  </script>
+  <script>
+  /* Service worker: see public/sw.js for what it caches and why.
+
+     The kill switch is the important part of this snippet. A bad worker is
+     sticky - it can keep serving a broken site to anyone who has already
+     visited, and they have no way to ask for the real one. So:
+
+       ?nosw   unregisters it, clears its caches, and REMEMBERS that, so the
+               next load does not simply register it again - which is what the
+               first version of this did, one line after unregistering.
+       ?sw     turns it back on.
+
+     The flag lives in localStorage because it has to outlive the reload. */
+  (function () {
+    if (!('serviceWorker' in navigator)) return;
+    var OFF = 'sw-disabled';
+    var q = location.search;
+
+    if (q.indexOf('sw=1') > -1) { try { localStorage.removeItem(OFF); } catch (e) {} }
+
+    if (q.indexOf('nosw') > -1) {
+      try { localStorage.setItem(OFF, '1'); } catch (e) {}
+      navigator.serviceWorker.getRegistrations()
+        .then(function (rs) { return Promise.all(rs.map(function (r) { return r.unregister(); })); })
+        .then(function () { return window.caches ? caches.keys() : []; })
+        .then(function (ks) { return Promise.all(ks.map(function (k) { return caches.delete(k); })); })
+        .then(function () {
+          /* Uncontrolled on the way back, or the worker still serving this page
+             refills the caches that were just deleted. */
+          location.replace(location.pathname);
+        })
+        .catch(function () {});
+      return;
+    }
+
+    var off = false;
+    try { off = localStorage.getItem(OFF) === '1'; } catch (e) {}
+    if (off) {
+      /* Sweep on every disabled load, not only on the one that flipped the
+         switch. The worker that was still controlling the page during that
+         first pass refilled the caches after they were deleted; this load is
+         uncontrolled, so now the delete sticks. Costs nothing once empty. */
+      if (window.caches) {
+        caches.keys().then(function (ks) {
+          ks.forEach(function (k) { caches.delete(k); });
+        }).catch(function () {});
+      }
+      return;
+    }
+
+    addEventListener('load', function () {
+      navigator.serviceWorker.register('/sw.js').catch(function () {});
+    });
+  })();
+  </script>
+  <script type="speculationrules">
+  {
+    "prerender": [{
+      "where": { "href_matches": "/*" },
+      "eagerness": "moderate"
+    }]
+  }
+  </script>
+  <script>/* A skipped view transition (hidden tab, rapid re-navigation) rejects its
+     own ready/finished promises. Adopting them via pagereveal/pageswap covers
+     the case where the event still carries a transition object; when the skip
+     happens BEFORE pagereveal there is nothing to adopt, and only the global
+     handler can stop it surfacing as an uncaught error. Both, therefore. */
+    addEventListener("pagereveal",e=>{const t=e.viewTransition;if(t){t.ready&&t.ready.catch(()=>{});t.finished&&t.finished.catch(()=>{})}});
+    addEventListener("pageswap",e=>{const t=e.viewTransition;if(t&&t.finished)t.finished.catch(()=>{})});
+    addEventListener("unhandledrejection",e=>{const r=e.reason;
+      if(r&&r.name==="AbortError"&&/transition/i.test(r.message||""))e.preventDefault();});</script>
+  <script type="module" crossorigin src="/assets/index-CzGW6FVa.js"></script>
+  <script type="module" crossorigin src="/assets/fold-mode-DbKzrdIL.js"></script>
+  <script type="module" crossorigin src="/assets/elastic-pulse-CKgubG0W.js"></script>
+  <script type="module" crossorigin src="/assets/ScrollTrigger-DNECHiyU.js"></script>
+  <script type="module" crossorigin src="/assets/lightbox-08EUTKND.js"></script>
+  <script type="module" crossorigin src="/assets/main-BIwZVA1e.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/main-ClT0MItD.css">
+</head>
+<body>
+<!--
+
+     ┌───────────────────────────────────────────────────────────────┐
+     │   Hello, View Source.                                         │
+     └───────────────────────────────────────────────────────────────┘
+
+     You have found a very tidy document, and that is a little bit of a lie.
+
+     Every page on this site is written with its reasoning in the margin —
+     why Arges is preloaded and Neue Montreal is not, why the analytics tags
+     wait for a prerendered page to actually be activated, why the sign-off's
+     WebGL scene must not declare its lazy-load attribute (the SDK reads it as
+     a string, and "false" is truthy — that one cost an afternoon).
+
+     On this page that came to 16kB of prose against 19kB of actual markup.
+     Wonderful to work on. Rude to make you download. So a build step lifts it
+     out on the way to the server, and it all still lives one step upstream.
+
+     If you like this sort of thing, the whole of it is readable at:
+     github.com/iamvisp  ·  and I am reachable at iamvisp@gmail.com
+
+     Built with Vite, GSAP, Lenis, Matter.js, hand-written WebGL2, and a
+     number of Osmo Supply resources that are credited where they are used.
+
+-->
+
+  <a class="skip" href="#main">Skip to content</a>
+
+  <div class="rail" aria-hidden="true"><span class="rail__fill" data-rail></span></div>
+
+  <header class="topbar">
+    <a class="topbar__me" href="/" data-inkbleed aria-label="Sasha Martynchuk — home">
+      <img class="topbar__logo" src="/sasha-logo.svg" alt="Sasha Martynchuk" width="145" height="32" fetchpriority="high">
+    </a>
+
+    <a class="hero__mail copy-email-button" href="mailto:iamvisp@gmail.com"
+       aria-label="Copy email to clipboard" data-copy-button data-copy-email="iamvisp@gmail.com">
+      <span class="copy-email-icon" aria-hidden="true">
+        <span class="copy-email-icon__el"></span>
+        <span class="copy-email-icon__el"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3.33301 10H2.66634C2.31272 10 1.97358 9.85952 1.72353 9.60947C1.47348 9.35943 1.33301 9.02029 1.33301 8.66666V2.66667C1.33301 2.31304 1.47348 1.9739 1.72353 1.72386C1.97358 1.47381 2.31272 1.33333 2.66634 1.33333H8.66634C9.01996 1.33333 9.3591 1.47381 9.60915 1.72386C9.8592 1.9739 9.99967 2.31304 9.99967 2.66667V3.33333M7.33301 6H13.333C14.0694 6 14.6663 6.59695 14.6663 7.33333V13.3333C14.6663 14.0697 14.0694 14.6667 13.333 14.6667H7.33301C6.59663 14.6667 5.99967 14.0697 5.99967 13.3333V7.33333C5.99967 6.59695 6.59663 6 7.33301 6Z" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+        <span class="copy-email-icon__el"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M6.79985 9.9032L11.8909 4.81164C12.1252 4.57732 12.505 4.57724 12.7394 4.81146C12.9739 5.04579 12.974 5.42588 12.7396 5.66029L7.14697 11.2529C6.95526 11.4446 6.64443 11.4446 6.45272 11.2529L3.40565 8.2058C3.17137 7.97152 3.17137 7.59168 3.40565 7.3574C3.63992 7.12312 4.01977 7.12312 4.25405 7.3574L6.79985 9.9032Z" fill="currentColor"/></svg></span>
+      </span>
+      <span class="copy-email-text__wrap">
+        <span data-copy-email-element class="copy-email-text__el">iamvisp@gmail.com</span>
+        <span class="copy-email-text__el">Click to copy email</span>
+        <span class="copy-email-text__el">Copied to clipboard!</span>
+      </span>
+    </a>
+  </header>
+
+  <main id="main">
+    <section class="intro">
+      <div class="wrap" data-reveal-group data-stagger="90" data-start="top 85%" data-start="top 95%">
+        <h1 class="intro__title">Pangeam</h1>
+        <div class="intro__grid" data-reveal-group-nested data-stagger="110" data-ignore="false">
+          <div class="intro__lede">
+            <p>Pangeam reveals how office spaces are used, tracks behavioral change, and identifies ways to optimize them, without tracking individuals.</p>
+            <p>I led the full 0→1 design journey: from vision and research to MVP validation and scalable design systems. The platform launched with clients like Adobe, Centene, AT&amp;T, and Hines, and helped secure a $4.2M seed raise to scale the next phase.</p>
+          </div>
+          <dl class="facts">
+            <dt>My role</dt><dd>Senior Product Designer</dd>
+            <dt>Timeline</dt><dd>2022 Q4 – 2025 Q2 (2.5 years)</dd>
+            <dt>Team</dt><dd>CEO, PM, R&amp;D, 2 FE, 2 Engineers</dd>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <div class="hero" style="--hero-ar: 1756 / 556">
+      <div class="hero__plate">
+        <picture >
+      <source type="image/avif" sizes="100vw" srcset="/case/pangeam-hero-480.avif?v=d97fd1e7 480w, /case/pangeam-hero-720.avif?v=d97fd1e7 720w, /case/pangeam-hero-1200.avif?v=d97fd1e7 1200w, /case/pangeam-hero-1600.avif?v=d97fd1e7 1600w, /case/pangeam-hero-2400.avif?v=d97fd1e7 2400w">
+      <source type="image/webp" sizes="100vw" srcset="/case/pangeam-hero-480.webp?v=d97fd1e7 480w, /case/pangeam-hero-720.webp?v=d97fd1e7 720w, /case/pangeam-hero-1200.webp?v=d97fd1e7 1200w, /case/pangeam-hero-2400.webp?v=d97fd1e7 2400w">
+      <img class="hero__img" src="/case/pangeam-hero-2400.webp?v=d97fd1e7"
+           width="3600" height="1338" alt="Pangeam — product imagery"
+           fetchpriority="high" decoding="async">
+    </picture>
+      </div>
+    </div>
+
+    <section class="band">
+      <div class="wrap" data-reveal-group data-stagger="90" data-start="top 85%">
+        <div class="duo" data-reveal-group-nested data-stagger="110" data-ignore="false">
+          <div>
+            
+            <h2 class="band__title">Key contributions</h2>
+            <ul class="notes notes--dot notes--wide">
+      <li><span class="notes__mark" aria-hidden="true">•</span><span>Led end-to-end product design from research through implementation.</span></li>
+      <li><span class="notes__mark" aria-hidden="true">•</span><span>Developed the core behavioral framework that became the product's foundation.</span></li>
+      <li><span class="notes__mark" aria-hidden="true">•</span><span>Created a scalable design system supporting rapid feature development.</span></li>
+      <li><span class="notes__mark" aria-hidden="true">•</span><span>Facilitated cross-functional collaboration between business, engineering, and research teams.</span></li>
+      <li><span class="notes__mark" aria-hidden="true">•</span><span>Translated complex spatial data into intuitive visualizations for non-technical users.</span></li>
+    </ul>
+          </div>
+          <div>
+            
+            <h2 class="band__title">Impact</h2>
+            <ul class="notes notes--dot notes--wide">
+      <li><span class="notes__mark" aria-hidden="true">•</span><span>Platform launched with enterprise clients including Adobe, Centene, AT&amp;T, and Hines.</span></li>
+      <li><span class="notes__mark" aria-hidden="true">•</span><span>Helped secure $4.2M seed funding to scale the product.</span></li>
+      <li><span class="notes__mark" aria-hidden="true">•</span><span>Reduced workspace optimization decision time by 65%.</span></li>
+      <li><span class="notes__mark" aria-hidden="true">•</span><span>Increased space utilization efficiency by 32% across client implementations.</span></li>
+    </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="band" id="the-challenge">
+      <div class="wrap" data-reveal-group data-stagger="90" data-start="top 85%">
+        <p class="band__no" aria-hidden="true">01</p>
+        <h2 class="band__title">The challenge</h2>
+        <p class="band__lede">Modern workspaces are dynamic ecosystems that require continuous, thoughtful observation to optimize. Before Pangeam, workplace teams faced three critical challenges:</p>
+        <ul class="notes">
+      <li><span class="notes__mark" aria-hidden="true">1.</span><span><b>Workplace Changes Driven by Guesswork:</b> Facilities managers made critical space allocation decisions based on subjective observations and anecdotal feedback rather than objective data.</span></li>
+      <li><span class="notes__mark" aria-hidden="true">2.</span><span><b>Underutilized Spaces Increasing Costs:</b> Companies were spending millions on office space without understanding actual usage patterns, leading to significant waste.</span></li>
+      <li><span class="notes__mark" aria-hidden="true">3.</span><span><b>No Data on Event-Driven Engagement:</b> Organizations lacked visibility into how specific events, layouts, or amenities affected employee behavior and engagement.</span></li>
+    </ul>
+        <figure class="figure"><picture data-parallax="trigger" data-parallax-start="5" data-parallax-end="-5" data-parallax-disable="mobileLandscape">
+      <source type="image/avif" sizes="(min-width: 1296px) 1200px, calc(100vw - 2 * clamp(1.25rem, 5vw, 3rem))" srcset="/case/pangeam-challenge-480.avif?v=0198435e 480w, /case/pangeam-challenge-720.avif?v=0198435e 720w, /case/pangeam-challenge-1200.avif?v=0198435e 1200w, /case/pangeam-challenge-1600.avif?v=0198435e 1600w, /case/pangeam-challenge-2340.avif?v=0198435e 2340w">
+      <source type="image/webp" sizes="(min-width: 1296px) 1200px, calc(100vw - 2 * clamp(1.25rem, 5vw, 3rem))" srcset="/case/pangeam-challenge-480.webp?v=0198435e 480w, /case/pangeam-challenge-720.webp?v=0198435e 720w, /case/pangeam-challenge-1200.webp?v=0198435e 1200w, /case/pangeam-challenge-2340.webp?v=0198435e 2340w">
+      <img class="shot" src="/case/pangeam-challenge-2340.webp?v=0198435e"
+           width="2340" height="1264" alt="Isometric floor plan annotated with the questions workplace teams could not answer"
+           loading="lazy" decoding="async" data-fold>
+    </picture></figure>
+      </div>
+    </section>
+
+    <section class="band" id="research-discovery">
+      <div class="wrap" data-reveal-group data-stagger="90" data-start="top 85%">
+        <p class="band__no" aria-hidden="true">02</p>
+        <h2 class="band__title">Research &amp; discovery</h2>
+        <div class="duo">
+          <div><h3 class="feature__name">To deeply understand the problem space, we conducted:</h3>
+        <ul class="notes notes--dot notes--wide">
+      <li><span class="notes__mark" aria-hidden="true">•</span><span><b>Stakeholder Interviews:</b> 15 interviews with facilities managers, workplace strategists, and real estate decision-makers across industries.</span></li>
+      <li><span class="notes__mark" aria-hidden="true">•</span><span><b>Competitive Analysis:</b> Evaluated existing solutions including occupancy sensors, badge data systems, and manual tracking methods.</span></li>
+      <li><span class="notes__mark" aria-hidden="true">•</span><span><b>Contextual Inquiry:</b> On-site observations at 5 different enterprise workplace environments.</span></li>
+    </ul></div>
+          <div><h3 class="feature__name">Key insights:</h3>
+        <ul class="notes notes--dot notes--wide">
+      <li><span class="notes__mark" aria-hidden="true">•</span><span><b>Insight Translation Gap:</b> Existing solutions provided raw occupancy data but failed to translate it into actionable insights for non-technical stakeholders.</span></li>
+      <li><span class="notes__mark" aria-hidden="true">•</span><span><b>Behavioral Context Missing:</b> Simple presence/absence data wasn't enough; understanding the types of activities happening in spaces was crucial for optimization.</span></li>
+      <li><span class="notes__mark" aria-hidden="true">•</span><span><b>ROI Demonstration Challenge:</b> Workplace teams struggled to justify investments without clear metrics showing the impact of space changes.</span></li>
+    </ul></div>
+        </div>
+        <div class="work__slider" data-slider-status="idle" role="region"
+      aria-roledescription="carousel" aria-label="Research artefacts">
+      <div class="work__viewport">
+        <div class="work__track" data-grab="idle">
+        <div class="work__slide" data-slide-status="idle" role="group"
+             aria-roledescription="slide" aria-label="1 of 5">
+          <picture >
+      <source type="image/avif" sizes="(min-width: 1296px) 1200px, calc(100vw - 2 * clamp(1.25rem, 5vw, 3rem))" srcset="/case/pangeam-research-1-480.avif?v=ef9eb748 480w, /case/pangeam-research-1-691.avif?v=ef9eb748 691w">
+      <source type="image/webp" sizes="(min-width: 1296px) 1200px, calc(100vw - 2 * clamp(1.25rem, 5vw, 3rem))" srcset="/case/pangeam-research-1-480.webp?v=ef9eb748 480w, /case/pangeam-research-1-691.webp?v=ef9eb748 691w">
+      <img class="work__shot" src="/case/pangeam-research-1-691.webp?v=ef9eb748"
+           width="691" height="443" alt="Research artefacts — 1 of 5"
+           loading="lazy" decoding="async" data-fold>
+    </picture>
+        </div>
+        <div class="work__slide" data-slide-status="idle" role="group"
+             aria-roledescription="slide" aria-label="2 of 5">
+          <picture >
+      <source type="image/avif" sizes="(min-width: 1296px) 1200px, calc(100vw - 2 * clamp(1.25rem, 5vw, 3rem))" srcset="/case/pangeam-research-2-480.avif?v=a2064209 480w, /case/pangeam-research-2-720.avif?v=a2064209 720w, /case/pangeam-research-2-1200.avif?v=a2064209 1200w, /case/pangeam-research-2-1600.avif?v=a2064209 1600w, /case/pangeam-research-2-1800.avif?v=a2064209 1800w">
+      <source type="image/webp" sizes="(min-width: 1296px) 1200px, calc(100vw - 2 * clamp(1.25rem, 5vw, 3rem))" srcset="/case/pangeam-research-2-480.webp?v=a2064209 480w, /case/pangeam-research-2-720.webp?v=a2064209 720w, /case/pangeam-research-2-1200.webp?v=a2064209 1200w, /case/pangeam-research-2-1800.webp?v=a2064209 1800w">
+      <img class="work__shot" src="/case/pangeam-research-2-1800.webp?v=a2064209"
+           width="1800" height="1344" alt="Research artefacts — 2 of 5"
+           loading="lazy" decoding="async" data-fold>
+    </picture>
+        </div>
+        <div class="work__slide" data-slide-status="idle" role="group"
+             aria-roledescription="slide" aria-label="3 of 5">
+          <picture >
+      <source type="image/avif" sizes="(min-width: 1296px) 1200px, calc(100vw - 2 * clamp(1.25rem, 5vw, 3rem))" srcset="/case/pangeam-research-3-480.avif?v=2ab28a2d 480w, /case/pangeam-research-3-691.avif?v=2ab28a2d 691w">
+      <source type="image/webp" sizes="(min-width: 1296px) 1200px, calc(100vw - 2 * clamp(1.25rem, 5vw, 3rem))" srcset="/case/pangeam-research-3-480.webp?v=2ab28a2d 480w, /case/pangeam-research-3-691.webp?v=2ab28a2d 691w">
+      <img class="work__shot" src="/case/pangeam-research-3-691.webp?v=2ab28a2d"
+           width="691" height="443" alt="Research artefacts — 3 of 5"
+           loading="lazy" decoding="async" data-fold>
+    </picture>
+        </div>
+        <div class="work__slide" data-slide-status="idle" role="group"
+             aria-roledescription="slide" aria-label="4 of 5">
+          <picture >
+      <source type="image/avif" sizes="(min-width: 1296px) 1200px, calc(100vw - 2 * clamp(1.25rem, 5vw, 3rem))" srcset="/case/pangeam-research-4-480.avif?v=217cb98c 480w, /case/pangeam-research-4-720.avif?v=217cb98c 720w, /case/pangeam-research-4-1200.avif?v=217cb98c 1200w, /case/pangeam-research-4-1400.avif?v=217cb98c 1400w">
+      <source type="image/webp" sizes="(min-width: 1296px) 1200px, calc(100vw - 2 * clamp(1.25rem, 5vw, 3rem))" srcset="/case/pangeam-research-4-480.webp?v=217cb98c 480w, /case/pangeam-research-4-720.webp?v=217cb98c 720w, /case/pangeam-research-4-1200.webp?v=217cb98c 1200w, /case/pangeam-research-4-1400.webp?v=217cb98c 1400w">
+      <img class="work__shot" src="/case/pangeam-research-4-1400.webp?v=217cb98c"
+           width="1400" height="385" alt="Research artefacts — 4 of 5"
+           loading="lazy" decoding="async" data-fold>
+    </picture>
+        </div>
+        <div class="work__slide" data-slide-status="idle" role="group"
+             aria-roledescription="slide" aria-label="5 of 5">
+          <picture >
+      <source type="image/avif" sizes="(min-width: 1296px) 1200px, calc(100vw - 2 * clamp(1.25rem, 5vw, 3rem))" srcset="/case/pangeam-research-5-480.avif?v=7e33b54a 480w, /case/pangeam-research-5-691.avif?v=7e33b54a 691w">
+      <source type="image/webp" sizes="(min-width: 1296px) 1200px, calc(100vw - 2 * clamp(1.25rem, 5vw, 3rem))" srcset="/case/pangeam-research-5-480.webp?v=7e33b54a 480w, /case/pangeam-research-5-691.webp?v=7e33b54a 691w">
+      <img class="work__shot" src="/case/pangeam-research-5-691.webp?v=7e33b54a"
+           width="691" height="426" alt="Research artefacts — 5 of 5"
+           loading="lazy" decoding="async" data-fold>
+    </picture>
+        </div>
+        </div>
+      </div>
+    </div>
+      </div>
+    </section>
+
+    <section class="band" id="hardware-solution">
+      <div class="wrap" data-reveal-group data-stagger="90" data-start="top 85%">
+        <p class="band__no" aria-hidden="true">03</p>
+        <h2 class="band__title">Hardware solution</h2>
+        <p class="band__lede">AI-driven depth sensor, anonymously detects human activities and interactions.</p>
+        <ul class="notes notes--dot">
+      <li><span class="notes__mark" aria-hidden="true">•</span><span><b>Privacy-First Design:</b> Sensors capture depth data only, with no personally identifiable information</span></li>
+      <li><span class="notes__mark" aria-hidden="true">•</span><span><b>Behavioral Classification:</b> AI differentiates among focusing, collaborating, and connecting activities</span></li>
+      <li><span class="notes__mark" aria-hidden="true">•</span><span><b>Scalable Deployment:</b> Modular system that can be installed in various workspace configurations</span></li>
+    </ul>
+        <figure class="figure">
+      <video class="clip" data-clip muted loop playsinline preload="none" poster="/case/pangeam-poster-day-in-life-1200.webp"
+        width="1280" height="720" aria-label="Depth-sensor view of a day in the life of an office floor">
+        <source src="/case/video/pangeam-day-in-life.mp4" type="video/mp4">
+      </video>
+    </figure>
+      </div>
+    </section>
+
+    <section class="band" id="software-solution">
+      <div class="wrap" data-reveal-group data-stagger="90" data-start="top 85%">
+        <p class="band__no" aria-hidden="true">04</p>
+        <h2 class="band__title">Software solution</h2>
+        <p class="band__lede">AI-powered software transformed sensor data into human-readable insights. Working with our co-founder and workplace strategist, Pete Bacevice, I helped develop the Focus / Collaborate / Connect / Other model — our core behavioral framework for understanding how space is used:</p>
+        <ul class="notes notes--dot">
+      <li><span class="notes__mark" aria-hidden="true">•</span><span><b>Focus:</b> Individual work that requires concentration</span></li>
+      <li><span class="notes__mark" aria-hidden="true">•</span><span><b>Collaborate:</b> Team-based work and structured meetings</span></li>
+      <li><span class="notes__mark" aria-hidden="true">•</span><span><b>Connect:</b> Informal interactions and relationship-building</span></li>
+      <li><span class="notes__mark" aria-hidden="true">•</span><span><b>Other:</b> Transitions, movement, and miscellaneous activities</span></li>
+    </ul>
+        <p class="band__lede">This framework translated complex behavioral data into intuitive categories that resonated with both workplace teams and executive stakeholders.</p>
+        <figure class="figure">
+      <video class="clip" data-clip muted loop playsinline preload="none" poster="/case/pangeam-poster-how-we-do-it-1200.webp"
+        width="1280" height="720" aria-label="How the platform turns sensor data into readable insight">
+        <source src="/case/video/pangeam-how-we-do-it.mp4" type="video/mp4">
+      </video>
+    </figure>
+      </div>
+    </section>
+
+    <section class="band" id="first-prototypes">
+      <div class="wrap" data-reveal-group data-stagger="90" data-start="top 85%">
+        <p class="band__no" aria-hidden="true">05</p>
+        <h2 class="band__title">First prototypes</h2>
+        <p class="band__lede">Before moving into implementation, we began by validating our concepts with potential customers — leaders in workplace strategy.</p>
+      <p class="band__lede">We ran user interviews with potential customers — testing early flows and exploring their goals. By asking the right questions, we uncovered friction points, revealed new feature opportunities, and heard exactly what we hoped for: “This is what we’ve been looking for.”</p>
+        <figure class="figure"><picture data-parallax="trigger" data-parallax-start="5" data-parallax-end="-5" data-parallax-disable="mobileLandscape">
+      <source type="image/avif" sizes="(min-width: 1296px) 1200px, calc(100vw - 2 * clamp(1.25rem, 5vw, 3rem))" srcset="/case/pangeam-prototypes-480.avif?v=83e592ec 480w, /case/pangeam-prototypes-720.avif?v=83e592ec 720w, /case/pangeam-prototypes-1200.avif?v=83e592ec 1200w, /case/pangeam-prototypes-1600.avif?v=83e592ec 1600w, /case/pangeam-prototypes-1933.avif?v=83e592ec 1933w">
+      <source type="image/webp" sizes="(min-width: 1296px) 1200px, calc(100vw - 2 * clamp(1.25rem, 5vw, 3rem))" srcset="/case/pangeam-prototypes-480.webp?v=83e592ec 480w, /case/pangeam-prototypes-720.webp?v=83e592ec 720w, /case/pangeam-prototypes-1200.webp?v=83e592ec 1200w, /case/pangeam-prototypes-1933.webp?v=83e592ec 1933w">
+      <img class="shot" src="/case/pangeam-prototypes-1933.webp?v=83e592ec"
+           width="1933" height="1312" alt="Early prototype screens used in customer interviews"
+           loading="lazy" decoding="async" data-fold>
+    </picture></figure>
+      </div>
+    </section>
+
+    <section class="band" id="first-prototypes-key-metrics">
+      <div class="wrap" data-reveal-group data-stagger="90" data-start="top 85%">
+        <p class="band__no" aria-hidden="true">06</p>
+        <h2 class="band__title">First prototypes: key metrics</h2>
+        <div class="metrics" data-reveal-group-nested data-stagger="120">
+          <article class="metric">
+            <h3 class="metric__name">Task Completion Rate</h3>
+            <p class="metric__figure"><span class="metric__value">34%</span>
+              <span class="metric__delta">90% in final version</span></p>
+            <p><b>What it measures:</b> Percentage of users who successfully complete a task.</p>
+            <p><b>UX Question it answers:</b> Can users successfully complete what they came to do?</p>
+            <p class="metric__sub">Key findings:</p>
+            <ul class="notes notes--dot notes--wide">
+      <li><span class="notes__mark" aria-hidden="true">•</span><span>The floor page was overloaded with tabs, making it hard to distinguish relevant data. Many users missed key interactions.</span></li>
+      <li><span class="notes__mark" aria-hidden="true">•</span><span>Users struggled to locate relevant analytics data; switching between the floor page and analytics view created friction.</span></li>
+      <li><span class="notes__mark" aria-hidden="true">•</span><span>After simplifying navigation and unifying the analytics view, users completed tasks more confidently and with fewer errors.</span></li>
+    </ul>
+          </article>
+          <article class="metric">
+            <h3 class="metric__name">Funnel Conversion Rate</h3>
+            <p class="metric__figure"><span class="metric__value">50%</span>
+              <span class="metric__delta">80% in final version</span></p>
+            <p><b>What it measures:</b> Percentage of users who complete all steps in a defined flow.</p>
+            <p><b>UX Question it answers:</b> How well does our flow perform from start to finish?</p>
+            <p class="metric__sub">Key findings:</p>
+            <ul class="notes notes--dot notes--wide">
+      <li><span class="notes__mark" aria-hidden="true">•</span><span>Users dropped off during the floorplan upload stage due to unclear instructions and lack of feedback.</span></li>
+      <li><span class="notes__mark" aria-hidden="true">•</span><span>Breaking down the flow into smaller, guided steps with clear CTAs improved comprehension and reduced friction.</span></li>
+      <li><span class="notes__mark" aria-hidden="true">•</span><span>Introducing a step-based walkthrough significantly increased conversion rates across flows like Building-Floor navigation, Find Data, Calendar, and Floor Plan.</span></li>
+    </ul>
+          </article>
+          <article class="metric">
+            <h3 class="metric__name">Task Completion Rate</h3>
+            <p class="metric__figure"><span class="metric__value">42%</span>
+              <span class="metric__delta">improvement</span></p>
+            <p><b>What it measures:</b> How long it takes users to complete a key workflow.</p>
+            <p><b>UX Question it answers:</b> Is this experience intuitive and efficient for our users?</p>
+            <p class="metric__sub">Key findings:</p>
+            <ul class="notes notes--dot notes--wide">
+      <li><span class="notes__mark" aria-hidden="true">•</span><span>Hesitation clicks dropped by 50% after improving screen layout and reducing decision fatigue.</span></li>
+      <li><span class="notes__mark" aria-hidden="true">•</span><span>Refining onboarding steps and adding contextual tooltips shortened task time significantly.</span></li>
+      <li><span class="notes__mark" aria-hidden="true">•</span><span>Clearer microcopy and progressive disclosure helped users focus on just one decision at a time, improving flow speed and accuracy.</span></li>
+    </ul>
+          </article>
+          <article class="metric">
+            <h3 class="metric__name">Key Takeaways: What didn’t go so well 👎</h3>
+
+            <p class="metric__sub"></p>
+            <ul class="notes notes--dot notes--wide">
+      <li><span class="notes__mark" aria-hidden="true">•</span><span><b>Raw data.</b> Users wanted more than just data — they needed context, guidance, and clear takeaways to make informed decisions.</span></li>
+      <li><span class="notes__mark" aria-hidden="true">•</span><span><b>Poor navigation in Reports.</b> Navigating through the Reports section was unintuitive, leading to user frustration and increased time spent finding key information.</span></li>
+      <li><span class="notes__mark" aria-hidden="true">•</span><span><b>Visual hierarchy.</b> The interface felt cluttered, making it difficult for users to prioritize and process information efficiently.</span></li>
+      <li><span class="notes__mark" aria-hidden="true">•</span><span><b>Hidden analytics section.</b> Users had difficulty locating the analytics section, limiting their ability to gain valuable insights from the platform.</span></li>
+    </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="band feature">
+      <div class="wrap" data-reveal-group data-stagger="90" data-start="top 85%">
+        <h2 class="feature__name">Homepage</h2>
+        <p class="feature__tagline">A central hub for workplace strategy teams, HR leaders, and executives.</p>
+        <p class="feature__body">We reimagined this page to stop the guesswork—bringing clarity to how buildings are performing across a portfolio. With quick access to team fit scores, presence insights, and analytics, leaders can spot underperforming spaces and take action faster.</p>
+        <figure class="figure"><picture data-parallax="trigger" data-parallax-start="5" data-parallax-end="-5" data-parallax-disable="mobileLandscape">
+      <source type="image/avif" sizes="(min-width: 1296px) 1200px, calc(100vw - 2 * clamp(1.25rem, 5vw, 3rem))" srcset="/case/pangeam-homepage-mvp-480.avif?v=15fc647e 480w, /case/pangeam-homepage-mvp-720.avif?v=15fc647e 720w, /case/pangeam-homepage-mvp-1200.avif?v=15fc647e 1200w, /case/pangeam-homepage-mvp-1600.avif?v=15fc647e 1600w, /case/pangeam-homepage-mvp-2400.avif?v=15fc647e 2400w">
+      <source type="image/webp" sizes="(min-width: 1296px) 1200px, calc(100vw - 2 * clamp(1.25rem, 5vw, 3rem))" srcset="/case/pangeam-homepage-mvp-480.webp?v=15fc647e 480w, /case/pangeam-homepage-mvp-720.webp?v=15fc647e 720w, /case/pangeam-homepage-mvp-1200.webp?v=15fc647e 1200w, /case/pangeam-homepage-mvp-2400.webp?v=15fc647e 2400w">
+      <img class="shot" src="/case/pangeam-homepage-mvp-2400.webp?v=15fc647e"
+           width="3200" height="2240" alt="The MVP homepage, dense with metrics"
+           loading="lazy" decoding="async" data-fold>
+    </picture></figure>
+        <div class="feature__phase">
+          <p class="badge">MVP. Areas for improvements</p>
+          <ul class="notes">
+      <li><span class="notes__mark" aria-hidden="true">1.</span><span><b>Too Basic Metrics:</b> User testing revealed a need for deeper insights—existing metrics didn’t show whether space was used as intended.</span></li>
+      <li><span class="notes__mark" aria-hidden="true">2.</span><span><b>Confusing Navigation:</b> The layout didn’t match user mental models. Floor pages felt disconnected.</span></li>
+    </ul>
+        </div>
+        <div class="feature__phase">
+          <p class="badge badge--final">Final solution</p>
+          <ul class="notes">
+      <li><span class="notes__mark" aria-hidden="true">1.</span><span><b>Improved Metrics:</b> We realigned visuals and content to quickly answer: “Is this space working?”</span></li>
+      <li><span class="notes__mark" aria-hidden="true">2.</span><span><b>Improved Navigation:</b> Floor-level navigation now follows consistent patterns across the product.</span></li>
+    </ul>
+        </div>
+        <div class="work__slider" data-slider-status="idle" role="region"
+      aria-roledescription="carousel" aria-label="Homepage — final solution">
+      <div class="work__viewport">
+        <div class="work__track" data-grab="idle">
+        <div class="work__slide" data-slide-status="idle" role="group"
+             aria-roledescription="slide" aria-label="1 of 3">
+          <picture >
+      <source type="image/avif" sizes="(min-width: 1296px) 1200px, calc(100vw - 2 * clamp(1.25rem, 5vw, 3rem))" srcset="/case/pangeam-homepage-final-1-480.avif?v=370270a9 480w, /case/pangeam-homepage-final-1-720.avif?v=370270a9 720w, /case/pangeam-homepage-final-1-1200.avif?v=370270a9 1200w, /case/pangeam-homepage-final-1-1600.avif?v=370270a9 1600w, /case/pangeam-homepage-final-1-2400.avif?v=370270a9 2400w">
+      <source type="image/webp" sizes="(min-width: 1296px) 1200px, calc(100vw - 2 * clamp(1.25rem, 5vw, 3rem))" srcset="/case/pangeam-homepage-final-1-480.webp?v=370270a9 480w, /case/pangeam-homepage-final-1-720.webp?v=370270a9 720w, /case/pangeam-homepage-final-1-1200.webp?v=370270a9 1200w, /case/pangeam-homepage-final-1-2400.webp?v=370270a9 2400w">
+      <img class="work__shot" src="/case/pangeam-homepage-final-1-2400.webp?v=370270a9"
+           width="3200" height="2240" alt="Homepage — final solution — 1 of 3"
+           loading="lazy" decoding="async" data-fold>
+    </picture>
+        </div>
+        <div class="work__slide" data-slide-status="idle" role="group"
+             aria-roledescription="slide" aria-label="2 of 3">
+          <picture >
+      <source type="image/avif" sizes="(min-width: 1296px) 1200px, calc(100vw - 2 * clamp(1.25rem, 5vw, 3rem))" srcset="/case/pangeam-homepage-final-2-480.avif?v=196ab651 480w, /case/pangeam-homepage-final-2-720.avif?v=196ab651 720w, /case/pangeam-homepage-final-2-1200.avif?v=196ab651 1200w, /case/pangeam-homepage-final-2-1600.avif?v=196ab651 1600w">
+      <source type="image/webp" sizes="(min-width: 1296px) 1200px, calc(100vw - 2 * clamp(1.25rem, 5vw, 3rem))" srcset="/case/pangeam-homepage-final-2-480.webp?v=196ab651 480w, /case/pangeam-homepage-final-2-720.webp?v=196ab651 720w, /case/pangeam-homepage-final-2-1200.webp?v=196ab651 1200w, /case/pangeam-homepage-final-2-1600.webp?v=196ab651 1600w">
+      <img class="work__shot" src="/case/pangeam-homepage-final-2-1600.webp?v=196ab651"
+           width="1600" height="1120" alt="Homepage — final solution — 2 of 3"
+           loading="lazy" decoding="async" data-fold>
+    </picture>
+        </div>
+        <div class="work__slide" data-slide-status="idle" role="group"
+             aria-roledescription="slide" aria-label="3 of 3">
+          <picture >
+      <source type="image/avif" sizes="(min-width: 1296px) 1200px, calc(100vw - 2 * clamp(1.25rem, 5vw, 3rem))" srcset="/case/pangeam-homepage-final-3-480.avif?v=3f52583f 480w, /case/pangeam-homepage-final-3-720.avif?v=3f52583f 720w, /case/pangeam-homepage-final-3-1200.avif?v=3f52583f 1200w, /case/pangeam-homepage-final-3-1600.avif?v=3f52583f 1600w">
+      <source type="image/webp" sizes="(min-width: 1296px) 1200px, calc(100vw - 2 * clamp(1.25rem, 5vw, 3rem))" srcset="/case/pangeam-homepage-final-3-480.webp?v=3f52583f 480w, /case/pangeam-homepage-final-3-720.webp?v=3f52583f 720w, /case/pangeam-homepage-final-3-1200.webp?v=3f52583f 1200w, /case/pangeam-homepage-final-3-1600.webp?v=3f52583f 1600w">
+      <img class="work__shot" src="/case/pangeam-homepage-final-3-1600.webp?v=3f52583f"
+           width="1600" height="1120" alt="Homepage — final solution — 3 of 3"
+           loading="lazy" decoding="async" data-fold>
+    </picture>
+        </div>
+        </div>
+      </div>
+    </div>
+      </div>
+    </section>
+
+    <section class="band feature">
+      <div class="wrap" data-reveal-group data-stagger="90" data-start="top 85%">
+        <h2 class="feature__name">Floor Page</h2>
+        <p class="feature__tagline">For teams managing day-to-day environments.</p>
+        <p class="feature__body">This view helps operations and strategy leads see how each floor is actually being used. We simplified the layout, improved key metrics, and introduced the “intervention” feature to help teams track the impact of small changes with clarity.</p>
+        <figure class="figure"><picture data-parallax="trigger" data-parallax-start="5" data-parallax-end="-5" data-parallax-disable="mobileLandscape">
+      <source type="image/avif" sizes="(min-width: 1296px) 1200px, calc(100vw - 2 * clamp(1.25rem, 5vw, 3rem))" srcset="/case/pangeam-floor-mvp-480.avif?v=23bd1eda 480w, /case/pangeam-floor-mvp-720.avif?v=23bd1eda 720w, /case/pangeam-floor-mvp-1200.avif?v=23bd1eda 1200w, /case/pangeam-floor-mvp-1600.avif?v=23bd1eda 1600w, /case/pangeam-floor-mvp-2400.avif?v=23bd1eda 2400w">
+      <source type="image/webp" sizes="(min-width: 1296px) 1200px, calc(100vw - 2 * clamp(1.25rem, 5vw, 3rem))" srcset="/case/pangeam-floor-mvp-480.webp?v=23bd1eda 480w, /case/pangeam-floor-mvp-720.webp?v=23bd1eda 720w, /case/pangeam-floor-mvp-1200.webp?v=23bd1eda 1200w, /case/pangeam-floor-mvp-2400.webp?v=23bd1eda 2400w">
+      <img class="shot" src="/case/pangeam-floor-mvp-2400.webp?v=23bd1eda"
+           width="3200" height="1816" alt="The MVP floor page, overloaded with tabs"
+           loading="lazy" decoding="async" data-fold>
+    </picture></figure>
+        <div class="feature__phase">
+          <p class="badge">MVP. Areas for improvements</p>
+          <ul class="notes">
+      <li><span class="notes__mark" aria-hidden="true">1.</span><span><b>Overloaded with Tabs:</b> Too many options led to cognitive overload and poor usability.</span></li>
+      <li><span class="notes__mark" aria-hidden="true">2.</span><span><b>Poor UX Constraints:</b> Limited users’ focus on key areas of interest.</span></li>
+      <li><span class="notes__mark" aria-hidden="true">3.</span><span><b>Disruptive Sidebar:</b> Took up space and broke visual flow.</span></li>
+    </ul>
+        </div>
+        <div class="feature__phase">
+          <p class="badge badge--final">Final solution</p>
+          <ul class="notes">
+      <li><span class="notes__mark" aria-hidden="true">1.</span><span><b>Improved UI:</b> Unified layout and design patterns across screens, making the experience smoother and more predictable.</span></li>
+      <li><span class="notes__mark" aria-hidden="true">2.</span><span><b>Interventions:</b> After testing, we added a feature to highlight actions teams can take to improve space usage, based on live data.</span></li>
+    </ul>
+        </div>
+        <div class="work__slider" data-slider-status="idle" role="region"
+      aria-roledescription="carousel" aria-label="Floor Page — final solution">
+      <div class="work__viewport">
+        <div class="work__track" data-grab="idle">
+        <div class="work__slide" data-slide-status="idle" role="group"
+             aria-roledescription="slide" aria-label="1 of 5">
+          <picture >
+      <source type="image/avif" sizes="(min-width: 1296px) 1200px, calc(100vw - 2 * clamp(1.25rem, 5vw, 3rem))" srcset="/case/pangeam-floor-final-1-480.avif?v=f5a977e6 480w, /case/pangeam-floor-final-1-720.avif?v=f5a977e6 720w, /case/pangeam-floor-final-1-1200.avif?v=f5a977e6 1200w, /case/pangeam-floor-final-1-1600.avif?v=f5a977e6 1600w, /case/pangeam-floor-final-1-2400.avif?v=f5a977e6 2400w">
+      <source type="image/webp" sizes="(min-width: 1296px) 1200px, calc(100vw - 2 * clamp(1.25rem, 5vw, 3rem))" srcset="/case/pangeam-floor-final-1-480.webp?v=f5a977e6 480w, /case/pangeam-floor-final-1-720.webp?v=f5a977e6 720w, /case/pangeam-floor-final-1-1200.webp?v=f5a977e6 1200w, /case/pangeam-floor-final-1-2400.webp?v=f5a977e6 2400w">
+      <img class="work__shot" src="/case/pangeam-floor-final-1-2400.webp?v=f5a977e6"
+           width="3200" height="1872" alt="Floor Page — final solution — 1 of 5"
+           loading="lazy" decoding="async" data-fold>
+    </picture>
+        </div>
+        <div class="work__slide" data-slide-status="idle" role="group"
+             aria-roledescription="slide" aria-label="2 of 5">
+          <picture >
+      <source type="image/avif" sizes="(min-width: 1296px) 1200px, calc(100vw - 2 * clamp(1.25rem, 5vw, 3rem))" srcset="/case/pangeam-floor-final-2-480.avif?v=4d12a408 480w, /case/pangeam-floor-final-2-720.avif?v=4d12a408 720w, /case/pangeam-floor-final-2-1200.avif?v=4d12a408 1200w, /case/pangeam-floor-final-2-1600.avif?v=4d12a408 1600w, /case/pangeam-floor-final-2-2160.avif?v=4d12a408 2160w">
+      <source type="image/webp" sizes="(min-width: 1296px) 1200px, calc(100vw - 2 * clamp(1.25rem, 5vw, 3rem))" srcset="/case/pangeam-floor-final-2-480.webp?v=4d12a408 480w, /case/pangeam-floor-final-2-720.webp?v=4d12a408 720w, /case/pangeam-floor-final-2-1200.webp?v=4d12a408 1200w, /case/pangeam-floor-final-2-2160.webp?v=4d12a408 2160w">
+      <img class="work__shot" src="/case/pangeam-floor-final-2-2160.webp?v=4d12a408"
+           width="3188" height="1864" alt="Floor Page — final solution — 2 of 5"
+           loading="lazy" decoding="async" data-fold>
+    </picture>
+        </div>
+        <div class="work__slide" data-slide-status="idle" role="group"
+             aria-roledescription="slide" aria-label="3 of 5">
+          <picture >
+      <source type="image/avif" sizes="(min-width: 1296px) 1200px, calc(100vw - 2 * clamp(1.25rem, 5vw, 3rem))" srcset="/case/pangeam-floor-final-3-480.avif?v=665d31c3 480w, /case/pangeam-floor-final-3-720.avif?v=665d31c3 720w, /case/pangeam-floor-final-3-1200.avif?v=665d31c3 1200w, /case/pangeam-floor-final-3-1600.avif?v=665d31c3 1600w, /case/pangeam-floor-final-3-2160.avif?v=665d31c3 2160w">
+      <source type="image/webp" sizes="(min-width: 1296px) 1200px, calc(100vw - 2 * clamp(1.25rem, 5vw, 3rem))" srcset="/case/pangeam-floor-final-3-480.webp?v=665d31c3 480w, /case/pangeam-floor-final-3-720.webp?v=665d31c3 720w, /case/pangeam-floor-final-3-1200.webp?v=665d31c3 1200w, /case/pangeam-floor-final-3-2160.webp?v=665d31c3 2160w">
+      <img class="work__shot" src="/case/pangeam-floor-final-3-2160.webp?v=665d31c3"
+           width="3188" height="1864" alt="Floor Page — final solution — 3 of 5"
+           loading="lazy" decoding="async" data-fold>
+    </picture>
+        </div>
+        <div class="work__slide" data-slide-status="idle" role="group"
+             aria-roledescription="slide" aria-label="4 of 5">
+          <picture >
+      <source type="image/avif" sizes="(min-width: 1296px) 1200px, calc(100vw - 2 * clamp(1.25rem, 5vw, 3rem))" srcset="/case/pangeam-floor-final-4-480.avif?v=dad17bd6 480w, /case/pangeam-floor-final-4-720.avif?v=dad17bd6 720w, /case/pangeam-floor-final-4-1200.avif?v=dad17bd6 1200w, /case/pangeam-floor-final-4-1600.avif?v=dad17bd6 1600w, /case/pangeam-floor-final-4-2160.avif?v=dad17bd6 2160w">
+      <source type="image/webp" sizes="(min-width: 1296px) 1200px, calc(100vw - 2 * clamp(1.25rem, 5vw, 3rem))" srcset="/case/pangeam-floor-final-4-480.webp?v=dad17bd6 480w, /case/pangeam-floor-final-4-720.webp?v=dad17bd6 720w, /case/pangeam-floor-final-4-1200.webp?v=dad17bd6 1200w, /case/pangeam-floor-final-4-2160.webp?v=dad17bd6 2160w">
+      <img class="work__shot" src="/case/pangeam-floor-final-4-2160.webp?v=dad17bd6"
+           width="3188" height="1864" alt="Floor Page — final solution — 4 of 5"
+           loading="lazy" decoding="async" data-fold>
+    </picture>
+        </div>
+        <div class="work__slide" data-slide-status="idle" role="group"
+             aria-roledescription="slide" aria-label="5 of 5">
+          <picture >
+      <source type="image/avif" sizes="(min-width: 1296px) 1200px, calc(100vw - 2 * clamp(1.25rem, 5vw, 3rem))" srcset="/case/pangeam-floor-final-5-480.avif?v=306732e8 480w, /case/pangeam-floor-final-5-720.avif?v=306732e8 720w, /case/pangeam-floor-final-5-1200.avif?v=306732e8 1200w, /case/pangeam-floor-final-5-1600.avif?v=306732e8 1600w, /case/pangeam-floor-final-5-2160.avif?v=306732e8 2160w">
+      <source type="image/webp" sizes="(min-width: 1296px) 1200px, calc(100vw - 2 * clamp(1.25rem, 5vw, 3rem))" srcset="/case/pangeam-floor-final-5-480.webp?v=306732e8 480w, /case/pangeam-floor-final-5-720.webp?v=306732e8 720w, /case/pangeam-floor-final-5-1200.webp?v=306732e8 1200w, /case/pangeam-floor-final-5-2160.webp?v=306732e8 2160w">
+      <img class="work__shot" src="/case/pangeam-floor-final-5-2160.webp?v=306732e8"
+           width="3188" height="1864" alt="Floor Page — final solution — 5 of 5"
+           loading="lazy" decoding="async" data-fold>
+    </picture>
+        </div>
+        </div>
+      </div>
+    </div>
+      </div>
+    </section>
+
+    <section class="band feature">
+      <div class="wrap" data-reveal-group data-stagger="90" data-start="top 85%">
+        <h2 class="feature__name">Reports</h2>
+        <p class="feature__tagline">Designed for stakeholders who need answers, not just numbers.</p>
+        <p class="feature__body">We moved from raw data dumps to smarter storytelling—highlighting what happened, why it matters, and where to look next. AI-generated insights now guide the user through key takeaways, making decisions faster and easier.</p>
+        <figure class="figure"><picture data-parallax="trigger" data-parallax-start="5" data-parallax-end="-5" data-parallax-disable="mobileLandscape">
+      <source type="image/avif" sizes="(min-width: 1296px) 1200px, calc(100vw - 2 * clamp(1.25rem, 5vw, 3rem))" srcset="/case/pangeam-reports-mvp-480.avif?v=6a22a11f 480w, /case/pangeam-reports-mvp-720.avif?v=6a22a11f 720w, /case/pangeam-reports-mvp-1200.avif?v=6a22a11f 1200w, /case/pangeam-reports-mvp-1600.avif?v=6a22a11f 1600w, /case/pangeam-reports-mvp-2400.avif?v=6a22a11f 2400w">
+      <source type="image/webp" sizes="(min-width: 1296px) 1200px, calc(100vw - 2 * clamp(1.25rem, 5vw, 3rem))" srcset="/case/pangeam-reports-mvp-480.webp?v=6a22a11f 480w, /case/pangeam-reports-mvp-720.webp?v=6a22a11f 720w, /case/pangeam-reports-mvp-1200.webp?v=6a22a11f 1200w, /case/pangeam-reports-mvp-2400.webp?v=6a22a11f 2400w">
+      <img class="shot" src="/case/pangeam-reports-mvp-2400.webp?v=6a22a11f"
+           width="4000" height="2250" alt="The MVP reports view"
+           loading="lazy" decoding="async" data-fold>
+    </picture></figure>
+        <div class="feature__phase">
+          <p class="badge">MVP. Areas for improvements</p>
+          <ul class="notes">
+      <li><span class="notes__mark" aria-hidden="true">1.</span><span><b>Navigation Issue:</b> Long data load times on front-end made side navigation unusable—had to remove it entirely.</span></li>
+      <li><span class="notes__mark" aria-hidden="true">2.</span><span><b>Raw Data:</b> Users needed more than numbers—they wanted context, guidance, and clear takeaways.</span></li>
+    </ul>
+        </div>
+        <div class="feature__phase">
+          <p class="badge badge--final">Final solution</p>
+          <ul class="notes">
+      <li><span class="notes__mark" aria-hidden="true">1.</span><span><b>Informative Metrics:</b> We clarified the story behind the data and added more actionable insights.</span></li>
+      <li><span class="notes__mark" aria-hidden="true">2.</span><span><b>AI Insights:</b> AI now helps summarize key patterns, making reports easier to understand and share.</span></li>
+    </ul>
+        </div>
+        <div class="work__slider" data-slider-status="idle" role="region"
+      aria-roledescription="carousel" aria-label="Reports — final solution">
+      <div class="work__viewport">
+        <div class="work__track" data-grab="idle">
+        <div class="work__slide" data-slide-status="idle" role="group"
+             aria-roledescription="slide" aria-label="1 of 4">
+          <picture >
+      <source type="image/avif" sizes="(min-width: 1296px) 1200px, calc(100vw - 2 * clamp(1.25rem, 5vw, 3rem))" srcset="/case/pangeam-reports-final-1-480.avif?v=82ec9ddc 480w, /case/pangeam-reports-final-1-720.avif?v=82ec9ddc 720w, /case/pangeam-reports-final-1-1200.avif?v=82ec9ddc 1200w, /case/pangeam-reports-final-1-1600.avif?v=82ec9ddc 1600w, /case/pangeam-reports-final-1-2400.avif?v=82ec9ddc 2400w">
+      <source type="image/webp" sizes="(min-width: 1296px) 1200px, calc(100vw - 2 * clamp(1.25rem, 5vw, 3rem))" srcset="/case/pangeam-reports-final-1-480.webp?v=82ec9ddc 480w, /case/pangeam-reports-final-1-720.webp?v=82ec9ddc 720w, /case/pangeam-reports-final-1-1200.webp?v=82ec9ddc 1200w, /case/pangeam-reports-final-1-2400.webp?v=82ec9ddc 2400w">
+      <img class="work__shot" src="/case/pangeam-reports-final-1-2400.webp?v=82ec9ddc"
+           width="3224" height="2378" alt="Reports — final solution — 1 of 4"
+           loading="lazy" decoding="async" data-fold>
+    </picture>
+        </div>
+        <div class="work__slide" data-slide-status="idle" role="group"
+             aria-roledescription="slide" aria-label="2 of 4">
+          <picture >
+      <source type="image/avif" sizes="(min-width: 1296px) 1200px, calc(100vw - 2 * clamp(1.25rem, 5vw, 3rem))" srcset="/case/pangeam-reports-final-2-480.avif?v=586a9d15 480w, /case/pangeam-reports-final-2-720.avif?v=586a9d15 720w, /case/pangeam-reports-final-2-1200.avif?v=586a9d15 1200w, /case/pangeam-reports-final-2-1600.avif?v=586a9d15 1600w, /case/pangeam-reports-final-2-2160.avif?v=586a9d15 2160w">
+      <source type="image/webp" sizes="(min-width: 1296px) 1200px, calc(100vw - 2 * clamp(1.25rem, 5vw, 3rem))" srcset="/case/pangeam-reports-final-2-480.webp?v=586a9d15 480w, /case/pangeam-reports-final-2-720.webp?v=586a9d15 720w, /case/pangeam-reports-final-2-1200.webp?v=586a9d15 1200w, /case/pangeam-reports-final-2-2160.webp?v=586a9d15 2160w">
+      <img class="work__shot" src="/case/pangeam-reports-final-2-2160.webp?v=586a9d15"
+           width="3224" height="2378" alt="Reports — final solution — 2 of 4"
+           loading="lazy" decoding="async" data-fold>
+    </picture>
+        </div>
+        <div class="work__slide" data-slide-status="idle" role="group"
+             aria-roledescription="slide" aria-label="3 of 4">
+          <picture >
+      <source type="image/avif" sizes="(min-width: 1296px) 1200px, calc(100vw - 2 * clamp(1.25rem, 5vw, 3rem))" srcset="/case/pangeam-reports-final-3-480.avif?v=752b00af 480w, /case/pangeam-reports-final-3-720.avif?v=752b00af 720w, /case/pangeam-reports-final-3-1200.avif?v=752b00af 1200w, /case/pangeam-reports-final-3-1600.avif?v=752b00af 1600w, /case/pangeam-reports-final-3-2160.avif?v=752b00af 2160w">
+      <source type="image/webp" sizes="(min-width: 1296px) 1200px, calc(100vw - 2 * clamp(1.25rem, 5vw, 3rem))" srcset="/case/pangeam-reports-final-3-480.webp?v=752b00af 480w, /case/pangeam-reports-final-3-720.webp?v=752b00af 720w, /case/pangeam-reports-final-3-1200.webp?v=752b00af 1200w, /case/pangeam-reports-final-3-2160.webp?v=752b00af 2160w">
+      <img class="work__shot" src="/case/pangeam-reports-final-3-2160.webp?v=752b00af"
+           width="3224" height="2378" alt="Reports — final solution — 3 of 4"
+           loading="lazy" decoding="async" data-fold>
+    </picture>
+        </div>
+        <div class="work__slide" data-slide-status="idle" role="group"
+             aria-roledescription="slide" aria-label="4 of 4">
+          <picture >
+      <source type="image/avif" sizes="(min-width: 1296px) 1200px, calc(100vw - 2 * clamp(1.25rem, 5vw, 3rem))" srcset="/case/pangeam-reports-final-4-480.avif?v=264c5fbd 480w, /case/pangeam-reports-final-4-720.avif?v=264c5fbd 720w, /case/pangeam-reports-final-4-1200.avif?v=264c5fbd 1200w, /case/pangeam-reports-final-4-1600.avif?v=264c5fbd 1600w, /case/pangeam-reports-final-4-2160.avif?v=264c5fbd 2160w">
+      <source type="image/webp" sizes="(min-width: 1296px) 1200px, calc(100vw - 2 * clamp(1.25rem, 5vw, 3rem))" srcset="/case/pangeam-reports-final-4-480.webp?v=264c5fbd 480w, /case/pangeam-reports-final-4-720.webp?v=264c5fbd 720w, /case/pangeam-reports-final-4-1200.webp?v=264c5fbd 1200w, /case/pangeam-reports-final-4-2160.webp?v=264c5fbd 2160w">
+      <img class="work__shot" src="/case/pangeam-reports-final-4-2160.webp?v=264c5fbd"
+           width="2400" height="2138" alt="Reports — final solution — 4 of 4"
+           loading="lazy" decoding="async" data-fold>
+    </picture>
+        </div>
+        </div>
+      </div>
+    </div>
+      </div>
+    </section>
+
+    <section class="band feature">
+      <div class="wrap" data-reveal-group data-stagger="90" data-start="top 85%">
+        <h2 class="feature__name">Calendar</h2>
+        <p class="feature__tagline">A quick overview for workplace teams to compare building performance, spot trends, and focus where it matters.</p>
+        <div class="work__slider" data-slider-status="idle" role="region"
+      aria-roledescription="carousel" aria-label="Calendar — final solution">
+      <div class="work__viewport">
+        <div class="work__track" data-grab="idle">
+        <div class="work__slide" data-slide-status="idle" role="group"
+             aria-roledescription="slide" aria-label="1 of 4">
+          <picture >
+      <source type="image/avif" sizes="(min-width: 1296px) 1200px, calc(100vw - 2 * clamp(1.25rem, 5vw, 3rem))" srcset="/case/pangeam-calendar-1-480.avif?v=1d8b1201 480w, /case/pangeam-calendar-1-720.avif?v=1d8b1201 720w, /case/pangeam-calendar-1-1200.avif?v=1d8b1201 1200w, /case/pangeam-calendar-1-1600.avif?v=1d8b1201 1600w, /case/pangeam-calendar-1-2400.avif?v=1d8b1201 2400w">
+      <source type="image/webp" sizes="(min-width: 1296px) 1200px, calc(100vw - 2 * clamp(1.25rem, 5vw, 3rem))" srcset="/case/pangeam-calendar-1-480.webp?v=1d8b1201 480w, /case/pangeam-calendar-1-720.webp?v=1d8b1201 720w, /case/pangeam-calendar-1-1200.webp?v=1d8b1201 1200w, /case/pangeam-calendar-1-2400.webp?v=1d8b1201 2400w">
+      <img class="work__shot" src="/case/pangeam-calendar-1-2400.webp?v=1d8b1201"
+           width="2400" height="1341" alt="Calendar — final solution — 1 of 4"
+           loading="lazy" decoding="async" data-fold>
+    </picture>
+        </div>
+        <div class="work__slide" data-slide-status="idle" role="group"
+             aria-roledescription="slide" aria-label="2 of 4">
+          <picture >
+      <source type="image/avif" sizes="(min-width: 1296px) 1200px, calc(100vw - 2 * clamp(1.25rem, 5vw, 3rem))" srcset="/case/pangeam-calendar-2-480.avif?v=62c9a499 480w, /case/pangeam-calendar-2-720.avif?v=62c9a499 720w, /case/pangeam-calendar-2-1200.avif?v=62c9a499 1200w, /case/pangeam-calendar-2-1600.avif?v=62c9a499 1600w, /case/pangeam-calendar-2-2160.avif?v=62c9a499 2160w">
+      <source type="image/webp" sizes="(min-width: 1296px) 1200px, calc(100vw - 2 * clamp(1.25rem, 5vw, 3rem))" srcset="/case/pangeam-calendar-2-480.webp?v=62c9a499 480w, /case/pangeam-calendar-2-720.webp?v=62c9a499 720w, /case/pangeam-calendar-2-1200.webp?v=62c9a499 1200w, /case/pangeam-calendar-2-2160.webp?v=62c9a499 2160w">
+      <img class="work__shot" src="/case/pangeam-calendar-2-2160.webp?v=62c9a499"
+           width="2400" height="1341" alt="Calendar — final solution — 2 of 4"
+           loading="lazy" decoding="async" data-fold>
+    </picture>
+        </div>
+        <div class="work__slide" data-slide-status="idle" role="group"
+             aria-roledescription="slide" aria-label="3 of 4">
+          <picture >
+      <source type="image/avif" sizes="(min-width: 1296px) 1200px, calc(100vw - 2 * clamp(1.25rem, 5vw, 3rem))" srcset="/case/pangeam-calendar-3-480.avif?v=61f04be1 480w, /case/pangeam-calendar-3-720.avif?v=61f04be1 720w, /case/pangeam-calendar-3-1200.avif?v=61f04be1 1200w, /case/pangeam-calendar-3-1600.avif?v=61f04be1 1600w, /case/pangeam-calendar-3-2160.avif?v=61f04be1 2160w">
+      <source type="image/webp" sizes="(min-width: 1296px) 1200px, calc(100vw - 2 * clamp(1.25rem, 5vw, 3rem))" srcset="/case/pangeam-calendar-3-480.webp?v=61f04be1 480w, /case/pangeam-calendar-3-720.webp?v=61f04be1 720w, /case/pangeam-calendar-3-1200.webp?v=61f04be1 1200w, /case/pangeam-calendar-3-2160.webp?v=61f04be1 2160w">
+      <img class="work__shot" src="/case/pangeam-calendar-3-2160.webp?v=61f04be1"
+           width="2400" height="1341" alt="Calendar — final solution — 3 of 4"
+           loading="lazy" decoding="async" data-fold>
+    </picture>
+        </div>
+        <div class="work__slide" data-slide-status="idle" role="group"
+             aria-roledescription="slide" aria-label="4 of 4">
+          <picture >
+      <source type="image/avif" sizes="(min-width: 1296px) 1200px, calc(100vw - 2 * clamp(1.25rem, 5vw, 3rem))" srcset="/case/pangeam-calendar-4-480.avif?v=0cdffd65 480w, /case/pangeam-calendar-4-720.avif?v=0cdffd65 720w, /case/pangeam-calendar-4-1200.avif?v=0cdffd65 1200w, /case/pangeam-calendar-4-1600.avif?v=0cdffd65 1600w, /case/pangeam-calendar-4-2160.avif?v=0cdffd65 2160w">
+      <source type="image/webp" sizes="(min-width: 1296px) 1200px, calc(100vw - 2 * clamp(1.25rem, 5vw, 3rem))" srcset="/case/pangeam-calendar-4-480.webp?v=0cdffd65 480w, /case/pangeam-calendar-4-720.webp?v=0cdffd65 720w, /case/pangeam-calendar-4-1200.webp?v=0cdffd65 1200w, /case/pangeam-calendar-4-2160.webp?v=0cdffd65 2160w">
+      <img class="work__shot" src="/case/pangeam-calendar-4-2160.webp?v=0cdffd65"
+           width="2400" height="1946" alt="Calendar — final solution — 4 of 4"
+           loading="lazy" decoding="async" data-fold>
+    </picture>
+        </div>
+        </div>
+      </div>
+    </div>
+      </div>
+    </section>
+
+    <section class="band feature">
+      <div class="wrap" data-reveal-group data-stagger="90" data-start="top 85%">
+        <h2 class="feature__name">Onboarding Flow</h2>
+        <p class="feature__tagline">We streamlined setup into a guided path—upload your floor plan, set targets, and you’re ready. Simple steps, no confusion, full clarity.</p>
+        <p class="feature__body">After usability testing, we refined key moments in the flow where users got stuck or misunderstood instructions—turning friction into fluidity.</p>
+        <div class="work__slider" data-slider-status="idle" role="region"
+      aria-roledescription="carousel" aria-label="Onboarding Flow — final solution">
+      <div class="work__viewport">
+        <div class="work__track" data-grab="idle">
+        <div class="work__slide" data-slide-status="idle" role="group"
+             aria-roledescription="slide" aria-label="1 of 6">
+          <picture >
+      <source type="image/avif" sizes="(min-width: 1296px) 1200px, calc(100vw - 2 * clamp(1.25rem, 5vw, 3rem))" srcset="/case/pangeam-onboarding-1-480.avif?v=adf65efb 480w, /case/pangeam-onboarding-1-720.avif?v=adf65efb 720w, /case/pangeam-onboarding-1-1200.avif?v=adf65efb 1200w, /case/pangeam-onboarding-1-1600.avif?v=adf65efb 1600w, /case/pangeam-onboarding-1-2400.avif?v=adf65efb 2400w">
+      <source type="image/webp" sizes="(min-width: 1296px) 1200px, calc(100vw - 2 * clamp(1.25rem, 5vw, 3rem))" srcset="/case/pangeam-onboarding-1-480.webp?v=adf65efb 480w, /case/pangeam-onboarding-1-720.webp?v=adf65efb 720w, /case/pangeam-onboarding-1-1200.webp?v=adf65efb 1200w, /case/pangeam-onboarding-1-2400.webp?v=adf65efb 2400w">
+      <img class="work__shot" src="/case/pangeam-onboarding-1-2400.webp?v=adf65efb"
+           width="2400" height="1356" alt="Onboarding Flow — final solution — 1 of 6"
+           loading="lazy" decoding="async" data-fold>
+    </picture>
+        </div>
+        <div class="work__slide" data-slide-status="idle" role="group"
+             aria-roledescription="slide" aria-label="2 of 6">
+          <picture >
+      <source type="image/avif" sizes="(min-width: 1296px) 1200px, calc(100vw - 2 * clamp(1.25rem, 5vw, 3rem))" srcset="/case/pangeam-onboarding-2-480.avif?v=314abde5 480w, /case/pangeam-onboarding-2-720.avif?v=314abde5 720w, /case/pangeam-onboarding-2-1200.avif?v=314abde5 1200w, /case/pangeam-onboarding-2-1600.avif?v=314abde5 1600w, /case/pangeam-onboarding-2-2160.avif?v=314abde5 2160w">
+      <source type="image/webp" sizes="(min-width: 1296px) 1200px, calc(100vw - 2 * clamp(1.25rem, 5vw, 3rem))" srcset="/case/pangeam-onboarding-2-480.webp?v=314abde5 480w, /case/pangeam-onboarding-2-720.webp?v=314abde5 720w, /case/pangeam-onboarding-2-1200.webp?v=314abde5 1200w, /case/pangeam-onboarding-2-2160.webp?v=314abde5 2160w">
+      <img class="work__shot" src="/case/pangeam-onboarding-2-2160.webp?v=314abde5"
+           width="2400" height="1356" alt="Onboarding Flow — final solution — 2 of 6"
+           loading="lazy" decoding="async" data-fold>
+    </picture>
+        </div>
+        <div class="work__slide" data-slide-status="idle" role="group"
+             aria-roledescription="slide" aria-label="3 of 6">
+          <picture >
+      <source type="image/avif" sizes="(min-width: 1296px) 1200px, calc(100vw - 2 * clamp(1.25rem, 5vw, 3rem))" srcset="/case/pangeam-onboarding-3-480.avif?v=0657594f 480w, /case/pangeam-onboarding-3-720.avif?v=0657594f 720w, /case/pangeam-onboarding-3-1200.avif?v=0657594f 1200w, /case/pangeam-onboarding-3-1600.avif?v=0657594f 1600w, /case/pangeam-onboarding-3-2160.avif?v=0657594f 2160w">
+      <source type="image/webp" sizes="(min-width: 1296px) 1200px, calc(100vw - 2 * clamp(1.25rem, 5vw, 3rem))" srcset="/case/pangeam-onboarding-3-480.webp?v=0657594f 480w, /case/pangeam-onboarding-3-720.webp?v=0657594f 720w, /case/pangeam-onboarding-3-1200.webp?v=0657594f 1200w, /case/pangeam-onboarding-3-2160.webp?v=0657594f 2160w">
+      <img class="work__shot" src="/case/pangeam-onboarding-3-2160.webp?v=0657594f"
+           width="2400" height="2264" alt="Onboarding Flow — final solution — 3 of 6"
+           loading="lazy" decoding="async" data-fold>
+    </picture>
+        </div>
+        <div class="work__slide" data-slide-status="idle" role="group"
+             aria-roledescription="slide" aria-label="4 of 6">
+          <picture >
+      <source type="image/avif" sizes="(min-width: 1296px) 1200px, calc(100vw - 2 * clamp(1.25rem, 5vw, 3rem))" srcset="/case/pangeam-onboarding-4-480.avif?v=70ec942d 480w, /case/pangeam-onboarding-4-720.avif?v=70ec942d 720w, /case/pangeam-onboarding-4-1200.avif?v=70ec942d 1200w, /case/pangeam-onboarding-4-1600.avif?v=70ec942d 1600w, /case/pangeam-onboarding-4-2160.avif?v=70ec942d 2160w">
+      <source type="image/webp" sizes="(min-width: 1296px) 1200px, calc(100vw - 2 * clamp(1.25rem, 5vw, 3rem))" srcset="/case/pangeam-onboarding-4-480.webp?v=70ec942d 480w, /case/pangeam-onboarding-4-720.webp?v=70ec942d 720w, /case/pangeam-onboarding-4-1200.webp?v=70ec942d 1200w, /case/pangeam-onboarding-4-2160.webp?v=70ec942d 2160w">
+      <img class="work__shot" src="/case/pangeam-onboarding-4-2160.webp?v=70ec942d"
+           width="2400" height="1460" alt="Onboarding Flow — final solution — 4 of 6"
+           loading="lazy" decoding="async" data-fold>
+    </picture>
+        </div>
+        <div class="work__slide" data-slide-status="idle" role="group"
+             aria-roledescription="slide" aria-label="5 of 6">
+          <picture >
+      <source type="image/avif" sizes="(min-width: 1296px) 1200px, calc(100vw - 2 * clamp(1.25rem, 5vw, 3rem))" srcset="/case/pangeam-onboarding-5-480.avif?v=8c97cbf9 480w, /case/pangeam-onboarding-5-720.avif?v=8c97cbf9 720w, /case/pangeam-onboarding-5-1200.avif?v=8c97cbf9 1200w, /case/pangeam-onboarding-5-1600.avif?v=8c97cbf9 1600w, /case/pangeam-onboarding-5-2160.avif?v=8c97cbf9 2160w">
+      <source type="image/webp" sizes="(min-width: 1296px) 1200px, calc(100vw - 2 * clamp(1.25rem, 5vw, 3rem))" srcset="/case/pangeam-onboarding-5-480.webp?v=8c97cbf9 480w, /case/pangeam-onboarding-5-720.webp?v=8c97cbf9 720w, /case/pangeam-onboarding-5-1200.webp?v=8c97cbf9 1200w, /case/pangeam-onboarding-5-2160.webp?v=8c97cbf9 2160w">
+      <img class="work__shot" src="/case/pangeam-onboarding-5-2160.webp?v=8c97cbf9"
+           width="2400" height="1460" alt="Onboarding Flow — final solution — 5 of 6"
+           loading="lazy" decoding="async" data-fold>
+    </picture>
+        </div>
+        <div class="work__slide" data-slide-status="idle" role="group"
+             aria-roledescription="slide" aria-label="6 of 6">
+          <picture >
+      <source type="image/avif" sizes="(min-width: 1296px) 1200px, calc(100vw - 2 * clamp(1.25rem, 5vw, 3rem))" srcset="/case/pangeam-onboarding-6-480.avif?v=384f6c80 480w, /case/pangeam-onboarding-6-720.avif?v=384f6c80 720w, /case/pangeam-onboarding-6-1200.avif?v=384f6c80 1200w, /case/pangeam-onboarding-6-1600.avif?v=384f6c80 1600w, /case/pangeam-onboarding-6-2160.avif?v=384f6c80 2160w">
+      <source type="image/webp" sizes="(min-width: 1296px) 1200px, calc(100vw - 2 * clamp(1.25rem, 5vw, 3rem))" srcset="/case/pangeam-onboarding-6-480.webp?v=384f6c80 480w, /case/pangeam-onboarding-6-720.webp?v=384f6c80 720w, /case/pangeam-onboarding-6-1200.webp?v=384f6c80 1200w, /case/pangeam-onboarding-6-2160.webp?v=384f6c80 2160w">
+      <img class="work__shot" src="/case/pangeam-onboarding-6-2160.webp?v=384f6c80"
+           width="2400" height="1685" alt="Onboarding Flow — final solution — 6 of 6"
+           loading="lazy" decoding="async" data-fold>
+    </picture>
+        </div>
+        </div>
+      </div>
+    </div>
+      </div>
+    </section>
+
+    <section class="band feature">
+      <div class="wrap" data-reveal-group data-stagger="90" data-start="top 85%">
+        <h2 class="feature__name">Walkthroughs</h2>
+        <p class="feature__tagline">We built replayable walkthroughs for every flow, so users feel confident navigating complex insights.</p>
+        <div class="work__slider" data-slider-status="idle" role="region"
+      aria-roledescription="carousel" aria-label="Walkthroughs — final solution">
+      <div class="work__viewport">
+        <div class="work__track" data-grab="idle">
+        <div class="work__slide" data-slide-status="idle" role="group"
+             aria-roledescription="slide" aria-label="1 of 4">
+          <picture >
+      <source type="image/avif" sizes="(min-width: 1296px) 1200px, calc(100vw - 2 * clamp(1.25rem, 5vw, 3rem))" srcset="/case/pangeam-walkthrough-1-480.avif?v=3bd44a3c 480w, /case/pangeam-walkthrough-1-720.avif?v=3bd44a3c 720w, /case/pangeam-walkthrough-1-1200.avif?v=3bd44a3c 1200w, /case/pangeam-walkthrough-1-1600.avif?v=3bd44a3c 1600w, /case/pangeam-walkthrough-1-2400.avif?v=3bd44a3c 2400w">
+      <source type="image/webp" sizes="(min-width: 1296px) 1200px, calc(100vw - 2 * clamp(1.25rem, 5vw, 3rem))" srcset="/case/pangeam-walkthrough-1-480.webp?v=3bd44a3c 480w, /case/pangeam-walkthrough-1-720.webp?v=3bd44a3c 720w, /case/pangeam-walkthrough-1-1200.webp?v=3bd44a3c 1200w, /case/pangeam-walkthrough-1-2400.webp?v=3bd44a3c 2400w">
+      <img class="work__shot" src="/case/pangeam-walkthrough-1-2400.webp?v=3bd44a3c"
+           width="2400" height="1383" alt="Walkthroughs — final solution — 1 of 4"
+           loading="lazy" decoding="async" data-fold>
+    </picture>
+        </div>
+        <div class="work__slide" data-slide-status="idle" role="group"
+             aria-roledescription="slide" aria-label="2 of 4">
+          <picture >
+      <source type="image/avif" sizes="(min-width: 1296px) 1200px, calc(100vw - 2 * clamp(1.25rem, 5vw, 3rem))" srcset="/case/pangeam-walkthrough-2-480.avif?v=39a3a029 480w, /case/pangeam-walkthrough-2-720.avif?v=39a3a029 720w, /case/pangeam-walkthrough-2-1200.avif?v=39a3a029 1200w, /case/pangeam-walkthrough-2-1600.avif?v=39a3a029 1600w, /case/pangeam-walkthrough-2-2160.avif?v=39a3a029 2160w">
+      <source type="image/webp" sizes="(min-width: 1296px) 1200px, calc(100vw - 2 * clamp(1.25rem, 5vw, 3rem))" srcset="/case/pangeam-walkthrough-2-480.webp?v=39a3a029 480w, /case/pangeam-walkthrough-2-720.webp?v=39a3a029 720w, /case/pangeam-walkthrough-2-1200.webp?v=39a3a029 1200w, /case/pangeam-walkthrough-2-2160.webp?v=39a3a029 2160w">
+      <img class="work__shot" src="/case/pangeam-walkthrough-2-2160.webp?v=39a3a029"
+           width="2400" height="1388" alt="Walkthroughs — final solution — 2 of 4"
+           loading="lazy" decoding="async" data-fold>
+    </picture>
+        </div>
+        <div class="work__slide" data-slide-status="idle" role="group"
+             aria-roledescription="slide" aria-label="3 of 4">
+          <picture >
+      <source type="image/avif" sizes="(min-width: 1296px) 1200px, calc(100vw - 2 * clamp(1.25rem, 5vw, 3rem))" srcset="/case/pangeam-walkthrough-3-480.avif?v=7c033243 480w, /case/pangeam-walkthrough-3-720.avif?v=7c033243 720w, /case/pangeam-walkthrough-3-1200.avif?v=7c033243 1200w, /case/pangeam-walkthrough-3-1600.avif?v=7c033243 1600w, /case/pangeam-walkthrough-3-2160.avif?v=7c033243 2160w">
+      <source type="image/webp" sizes="(min-width: 1296px) 1200px, calc(100vw - 2 * clamp(1.25rem, 5vw, 3rem))" srcset="/case/pangeam-walkthrough-3-480.webp?v=7c033243 480w, /case/pangeam-walkthrough-3-720.webp?v=7c033243 720w, /case/pangeam-walkthrough-3-1200.webp?v=7c033243 1200w, /case/pangeam-walkthrough-3-2160.webp?v=7c033243 2160w">
+      <img class="work__shot" src="/case/pangeam-walkthrough-3-2160.webp?v=7c033243"
+           width="2400" height="1388" alt="Walkthroughs — final solution — 3 of 4"
+           loading="lazy" decoding="async" data-fold>
+    </picture>
+        </div>
+        <div class="work__slide" data-slide-status="idle" role="group"
+             aria-roledescription="slide" aria-label="4 of 4">
+          <picture >
+      <source type="image/avif" sizes="(min-width: 1296px) 1200px, calc(100vw - 2 * clamp(1.25rem, 5vw, 3rem))" srcset="/case/pangeam-walkthrough-4-480.avif?v=4a4622b3 480w, /case/pangeam-walkthrough-4-720.avif?v=4a4622b3 720w, /case/pangeam-walkthrough-4-1200.avif?v=4a4622b3 1200w, /case/pangeam-walkthrough-4-1600.avif?v=4a4622b3 1600w, /case/pangeam-walkthrough-4-2160.avif?v=4a4622b3 2160w">
+      <source type="image/webp" sizes="(min-width: 1296px) 1200px, calc(100vw - 2 * clamp(1.25rem, 5vw, 3rem))" srcset="/case/pangeam-walkthrough-4-480.webp?v=4a4622b3 480w, /case/pangeam-walkthrough-4-720.webp?v=4a4622b3 720w, /case/pangeam-walkthrough-4-1200.webp?v=4a4622b3 1200w, /case/pangeam-walkthrough-4-2160.webp?v=4a4622b3 2160w">
+      <img class="work__shot" src="/case/pangeam-walkthrough-4-2160.webp?v=4a4622b3"
+           width="2400" height="1388" alt="Walkthroughs — final solution — 4 of 4"
+           loading="lazy" decoding="async" data-fold>
+    </picture>
+        </div>
+        </div>
+      </div>
+    </div>
+      </div>
+    </section>
+
+    <section class="band" id="website">
+      <div class="wrap" data-reveal-group data-stagger="90" data-start="top 85%">
+        <p class="band__no" aria-hidden="true">07</p>
+        <h2 class="band__title">Website</h2>
+        <p class="band__lede">As Lead Designer, I kicked off the website redesign by aligning with stakeholders and reviewing audience research. Together with leadership, we set clear goals: improve conversion, clarify product value, and support sales—with metrics in place to track success.</p>
+      <p class="band__lede">I designed, built, and launched the site in Framer, chosen for its speed and flexibility. Subtle interactions enhanced engagement without compromising clarity or accessibility. I explored 3D visuals using Spline but ultimately prioritized performance and load speed to deliver a faster, more focused experience.</p>
+        <p><a class="btn btn--ghost" href="https://www.pangeam.com/" target="_blank" rel="noopener noreferrer">View Website<svg class="btn__arrow" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M7 17L17 7M17 17V7H7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a></p>
+        <div class="work__slider" data-slider-status="idle" role="region"
+      aria-roledescription="carousel" aria-label="Website screens">
+      <div class="work__viewport">
+        <div class="work__track" data-grab="idle">
+        <div class="work__slide" data-slide-status="idle" role="group"
+             aria-roledescription="slide" aria-label="1 of 4">
+          <picture >
+      <source type="image/avif" sizes="(min-width: 1296px) 1200px, calc(100vw - 2 * clamp(1.25rem, 5vw, 3rem))" srcset="/case/pangeam-website-1-480.avif?v=157b3981 480w, /case/pangeam-website-1-720.avif?v=157b3981 720w, /case/pangeam-website-1-1200.avif?v=157b3981 1200w, /case/pangeam-website-1-1600.avif?v=157b3981 1600w, /case/pangeam-website-1-2400.avif?v=157b3981 2400w">
+      <source type="image/webp" sizes="(min-width: 1296px) 1200px, calc(100vw - 2 * clamp(1.25rem, 5vw, 3rem))" srcset="/case/pangeam-website-1-480.webp?v=157b3981 480w, /case/pangeam-website-1-720.webp?v=157b3981 720w, /case/pangeam-website-1-1200.webp?v=157b3981 1200w, /case/pangeam-website-1-2400.webp?v=157b3981 2400w">
+      <img class="work__shot" src="/case/pangeam-website-1-2400.webp?v=157b3981"
+           width="2604" height="1607" alt="Website screens — 1 of 4"
+           loading="lazy" decoding="async" data-fold>
+    </picture>
+        </div>
+        <div class="work__slide" data-slide-status="idle" role="group"
+             aria-roledescription="slide" aria-label="2 of 4">
+          <picture >
+      <source type="image/avif" sizes="(min-width: 1296px) 1200px, calc(100vw - 2 * clamp(1.25rem, 5vw, 3rem))" srcset="/case/pangeam-website-2-480.avif?v=1064c7c4 480w, /case/pangeam-website-2-720.avif?v=1064c7c4 720w, /case/pangeam-website-2-1200.avif?v=1064c7c4 1200w, /case/pangeam-website-2-1399.avif?v=1064c7c4 1399w">
+      <source type="image/webp" sizes="(min-width: 1296px) 1200px, calc(100vw - 2 * clamp(1.25rem, 5vw, 3rem))" srcset="/case/pangeam-website-2-480.webp?v=1064c7c4 480w, /case/pangeam-website-2-720.webp?v=1064c7c4 720w, /case/pangeam-website-2-1200.webp?v=1064c7c4 1200w, /case/pangeam-website-2-1399.webp?v=1064c7c4 1399w">
+      <img class="work__shot" src="/case/pangeam-website-2-1399.webp?v=1064c7c4"
+           width="1399" height="885" alt="Website screens — 2 of 4"
+           loading="lazy" decoding="async" data-fold>
+    </picture>
+        </div>
+        <div class="work__slide" data-slide-status="idle" role="group"
+             aria-roledescription="slide" aria-label="3 of 4">
+          <picture >
+      <source type="image/avif" sizes="(min-width: 1296px) 1200px, calc(100vw - 2 * clamp(1.25rem, 5vw, 3rem))" srcset="/case/pangeam-website-3-480.avif?v=ec53967a 480w, /case/pangeam-website-3-720.avif?v=ec53967a 720w, /case/pangeam-website-3-1200.avif?v=ec53967a 1200w, /case/pangeam-website-3-1400.avif?v=ec53967a 1400w">
+      <source type="image/webp" sizes="(min-width: 1296px) 1200px, calc(100vw - 2 * clamp(1.25rem, 5vw, 3rem))" srcset="/case/pangeam-website-3-480.webp?v=ec53967a 480w, /case/pangeam-website-3-720.webp?v=ec53967a 720w, /case/pangeam-website-3-1200.webp?v=ec53967a 1200w, /case/pangeam-website-3-1400.webp?v=ec53967a 1400w">
+      <img class="work__shot" src="/case/pangeam-website-3-1400.webp?v=ec53967a"
+           width="1400" height="885" alt="Website screens — 3 of 4"
+           loading="lazy" decoding="async" data-fold>
+    </picture>
+        </div>
+        <div class="work__slide" data-slide-status="idle" role="group"
+             aria-roledescription="slide" aria-label="4 of 4">
+          <picture >
+      <source type="image/avif" sizes="(min-width: 1296px) 1200px, calc(100vw - 2 * clamp(1.25rem, 5vw, 3rem))" srcset="/case/pangeam-website-4-480.avif?v=db06db81 480w, /case/pangeam-website-4-720.avif?v=db06db81 720w, /case/pangeam-website-4-1200.avif?v=db06db81 1200w, /case/pangeam-website-4-1399.avif?v=db06db81 1399w">
+      <source type="image/webp" sizes="(min-width: 1296px) 1200px, calc(100vw - 2 * clamp(1.25rem, 5vw, 3rem))" srcset="/case/pangeam-website-4-480.webp?v=db06db81 480w, /case/pangeam-website-4-720.webp?v=db06db81 720w, /case/pangeam-website-4-1200.webp?v=db06db81 1200w, /case/pangeam-website-4-1399.webp?v=db06db81 1399w">
+      <img class="work__shot" src="/case/pangeam-website-4-1399.webp?v=db06db81"
+           width="1399" height="885" alt="Website screens — 4 of 4"
+           loading="lazy" decoding="async" data-fold>
+    </picture>
+        </div>
+        </div>
+      </div>
+    </div>
+      </div>
+    </section>
+
+    <section class="band" id="presentation-decks">
+      <div class="wrap" data-reveal-group data-stagger="90" data-start="top 85%">
+        <p class="band__no" aria-hidden="true">08</p>
+        <h2 class="band__title">Presentation decks</h2>
+        <div class="duo">
+          <div><p class="feature__body">To support sales, onboarding, and fundraising, we partnered with stakeholders across teams to create a full suite of presentation materials. We built a dedicated design system in Figma and Google Slides, making it easy for anyone to create polished, on-brand decks without starting from scratch.</p></div>
+          <div><h3 class="feature__name">Deliverables</h3>
+        <ul class="notes notes--dot notes--wide">
+      <li><span class="notes__mark" aria-hidden="true">•</span><span>Sales Decks</span></li>
+      <li><span class="notes__mark" aria-hidden="true">•</span><span>Pitch Decks</span></li>
+      <li><span class="notes__mark" aria-hidden="true">•</span><span>Onboarding and Installation Guides</span></li>
+      <li><span class="notes__mark" aria-hidden="true">•</span><span>White Papers</span></li>
+      <li><span class="notes__mark" aria-hidden="true">•</span><span>Proposal and RFP templates</span></li>
+    </ul></div>
+        </div>
+        <div class="work__slider" data-slider-status="idle" role="region"
+      aria-roledescription="carousel" aria-label="Presentation decks">
+      <div class="work__viewport">
+        <div class="work__track" data-grab="idle">
+        <div class="work__slide" data-slide-status="idle" role="group"
+             aria-roledescription="slide" aria-label="1 of 3">
+          <picture >
+      <source type="image/avif" sizes="(min-width: 1296px) 1200px, calc(100vw - 2 * clamp(1.25rem, 5vw, 3rem))" srcset="/case/pangeam-decks-1-480.avif?v=8aa4a9ff 480w, /case/pangeam-decks-1-720.avif?v=8aa4a9ff 720w, /case/pangeam-decks-1-1200.avif?v=8aa4a9ff 1200w, /case/pangeam-decks-1-1600.avif?v=8aa4a9ff 1600w, /case/pangeam-decks-1-1985.avif?v=8aa4a9ff 1985w">
+      <source type="image/webp" sizes="(min-width: 1296px) 1200px, calc(100vw - 2 * clamp(1.25rem, 5vw, 3rem))" srcset="/case/pangeam-decks-1-480.webp?v=8aa4a9ff 480w, /case/pangeam-decks-1-720.webp?v=8aa4a9ff 720w, /case/pangeam-decks-1-1200.webp?v=8aa4a9ff 1200w, /case/pangeam-decks-1-1985.webp?v=8aa4a9ff 1985w">
+      <img class="work__shot" src="/case/pangeam-decks-1-1985.webp?v=8aa4a9ff"
+           width="1985" height="976" alt="Presentation decks — 1 of 3"
+           loading="lazy" decoding="async" data-fold>
+    </picture>
+        </div>
+        <div class="work__slide" data-slide-status="idle" role="group"
+             aria-roledescription="slide" aria-label="2 of 3">
+          <picture >
+      <source type="image/avif" sizes="(min-width: 1296px) 1200px, calc(100vw - 2 * clamp(1.25rem, 5vw, 3rem))" srcset="/case/pangeam-decks-2-480.avif?v=c0c1a0e1 480w, /case/pangeam-decks-2-720.avif?v=c0c1a0e1 720w, /case/pangeam-decks-2-1200.avif?v=c0c1a0e1 1200w, /case/pangeam-decks-2-1600.avif?v=c0c1a0e1 1600w, /case/pangeam-decks-2-1958.avif?v=c0c1a0e1 1958w">
+      <source type="image/webp" sizes="(min-width: 1296px) 1200px, calc(100vw - 2 * clamp(1.25rem, 5vw, 3rem))" srcset="/case/pangeam-decks-2-480.webp?v=c0c1a0e1 480w, /case/pangeam-decks-2-720.webp?v=c0c1a0e1 720w, /case/pangeam-decks-2-1200.webp?v=c0c1a0e1 1200w, /case/pangeam-decks-2-1958.webp?v=c0c1a0e1 1958w">
+      <img class="work__shot" src="/case/pangeam-decks-2-1958.webp?v=c0c1a0e1"
+           width="1958" height="976" alt="Presentation decks — 2 of 3"
+           loading="lazy" decoding="async" data-fold>
+    </picture>
+        </div>
+        <div class="work__slide" data-slide-status="idle" role="group"
+             aria-roledescription="slide" aria-label="3 of 3">
+          <picture >
+      <source type="image/avif" sizes="(min-width: 1296px) 1200px, calc(100vw - 2 * clamp(1.25rem, 5vw, 3rem))" srcset="/case/pangeam-decks-3-480.avif?v=6efe1ba5 480w, /case/pangeam-decks-3-720.avif?v=6efe1ba5 720w, /case/pangeam-decks-3-1200.avif?v=6efe1ba5 1200w, /case/pangeam-decks-3-1600.avif?v=6efe1ba5 1600w, /case/pangeam-decks-3-2160.avif?v=6efe1ba5 2160w">
+      <source type="image/webp" sizes="(min-width: 1296px) 1200px, calc(100vw - 2 * clamp(1.25rem, 5vw, 3rem))" srcset="/case/pangeam-decks-3-480.webp?v=6efe1ba5 480w, /case/pangeam-decks-3-720.webp?v=6efe1ba5 720w, /case/pangeam-decks-3-1200.webp?v=6efe1ba5 1200w, /case/pangeam-decks-3-2160.webp?v=6efe1ba5 2160w">
+      <img class="work__shot" src="/case/pangeam-decks-3-2160.webp?v=6efe1ba5"
+           width="2610" height="934" alt="Presentation decks — 3 of 3"
+           loading="lazy" decoding="async" data-fold>
+    </picture>
+        </div>
+        </div>
+      </div>
+    </div>
+      </div>
+    </section>
+
+    <section class="band" id="takeaways">
+      <div class="wrap" data-reveal-group data-stagger="90" data-start="top 85%">
+        <p class="band__no" aria-hidden="true">09</p>
+        <h2 class="band__title">Takeaways</h2>
+        <ul class="wins" data-reveal-group-nested data-stagger="80">
+          <li><span class="notes__mark" aria-hidden="true">•</span>
+            <span><b>Minor UX tweaks → major wins</b>Small changes led to clearer flows and higher engagement.</span></li>
+          <li><span class="notes__mark" aria-hidden="true">•</span>
+            <span><b>Validated early, built smarter</b>Testing concepts early helped avoid wasted effort and focus on real needs.</span></li>
+          <li><span class="notes__mark" aria-hidden="true">•</span>
+            <span><b>Early design system saved dev time</b>Prevented UI rework and enabled faster, more consistent delivery.</span></li>
+          <li><span class="notes__mark" aria-hidden="true">•</span>
+            <span><b>Key features trimmed pre-MVP</b>Collaboration with engineering avoided costly overbuild.</span></li>
+          <li><span class="notes__mark" aria-hidden="true">•</span>
+            <span><b>$4.2M seed funding secured</b>Validated product vision attracted early investors and market confidence.</span></li>
+          <li><span class="notes__mark" aria-hidden="true">•</span>
+            <span><b>6 enterprise clients onboarded</b>Adopted by major real estate and workplace teams during MVP phase.</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <nav data-section-dock-init aria-label="On this page" class="section-dock">
+      <div data-section-dock-pill class="section-dock__pill">
+        <button data-section-dock-toggle aria-expanded="false" aria-controls="section-dock-list" class="section-dock__toggle">
+          <span data-section-dock-label-wrap class="section-dock__label-wrap">
+            <span class="section-dock__label">
+              <span class="section-dock__link-num">01</span>
+              <span>The challenge</span>
+            </span>
+          </span>
+        </button>
+        <div data-section-dock-list id="section-dock-list" class="section-dock__list">
+          <div data-section-dock-indicator class="section-dock__indicator"></div>
+          <ul class="section-dock__items">
+        <li>
+          <a data-active data-section-dock-link href="#the-challenge" class="section-dock__link">
+            <span class="section-dock__link-num">01</span>
+            <span>The challenge</span>
+          </a>
+        </li>
+        <li>
+          <a data-section-dock-link href="#research-discovery" class="section-dock__link">
+            <span class="section-dock__link-num">02</span>
+            <span>Research &amp; discovery</span>
+          </a>
+        </li>
+        <li>
+          <a data-section-dock-link href="#hardware-solution" class="section-dock__link">
+            <span class="section-dock__link-num">03</span>
+            <span>Hardware solution</span>
+          </a>
+        </li>
+        <li>
+          <a data-section-dock-link href="#software-solution" class="section-dock__link">
+            <span class="section-dock__link-num">04</span>
+            <span>Software solution</span>
+          </a>
+        </li>
+        <li>
+          <a data-section-dock-link href="#first-prototypes" class="section-dock__link">
+            <span class="section-dock__link-num">05</span>
+            <span>First prototypes</span>
+          </a>
+        </li>
+        <li>
+          <a data-section-dock-link href="#first-prototypes-key-metrics" class="section-dock__link">
+            <span class="section-dock__link-num">06</span>
+            <span>First prototypes: key metrics</span>
+          </a>
+        </li>
+        <li>
+          <a data-section-dock-link href="#website" class="section-dock__link">
+            <span class="section-dock__link-num">07</span>
+            <span>Website</span>
+          </a>
+        </li>
+        <li>
+          <a data-section-dock-link href="#presentation-decks" class="section-dock__link">
+            <span class="section-dock__link-num">08</span>
+            <span>Presentation decks</span>
+          </a>
+        </li>
+        <li>
+          <a data-section-dock-link href="#takeaways" class="section-dock__link">
+            <span class="section-dock__link-num">09</span>
+            <span>Takeaways</span>
+          </a>
+        </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="wrap">
+      <a class="next" href="/lumus-ai">
+        <span>Next case study<strong>Lumus AI</strong></span>
+        <span aria-hidden="true">→</span>
+      </a>
+    </div>
+
+    <footer class="section outro" aria-labelledby="outro-title" data-section-dock-hide>
+      
+      <div class="outro__fx" aria-hidden="true"
+           data-us-project="HfdY3nAq99Kc0BCtuBfP"
+           data-us-scale="1" data-us-dpi="1" data-us-fps="30"></div>
+      <div class="outro__inner">
+        
+        <h2 class="outro__title" id="outro-title" aria-label="Let’s talk about the next big thing"><span>Let&rsquo;s talk about</span><span>the next big thing</span></h2>
+
+        <a class="outro__social" href="https://www.linkedin.com/in/iamvisp/"
+           target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><span class="outro__roll" aria-hidden="true"><span class="outro__roll-ch" style="--i:0"><span>L</span><span>L</span></span><span class="outro__roll-ch" style="--i:1"><span>i</span><span>i</span></span><span class="outro__roll-ch" style="--i:2"><span>n</span><span>n</span></span><span class="outro__roll-ch" style="--i:3"><span>k</span><span>k</span></span><span class="outro__roll-ch" style="--i:4"><span>e</span><span>e</span></span><span class="outro__roll-ch" style="--i:5"><span>d</span><span>d</span></span><span class="outro__roll-ch" style="--i:6"><span>I</span><span>I</span></span><span class="outro__roll-ch" style="--i:7"><span>n</span><span>n</span></span></span><svg class="outro__arrow" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M7 17L17 7M17 17V7H7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        <a class="outro__mail" href="mailto:iamvisp@gmail.com"
+           aria-label="Copy email to clipboard" data-copy-button data-copy-email="iamvisp@gmail.com">
+          <span class="copy-email-icon copy-email-icon--lg" aria-hidden="true">
+            <span class="copy-email-icon__el"></span>
+            <span class="copy-email-icon__el"><svg viewBox="0 0 36 36" fill="none"><path d="M7.5 22.5H6C5.20435 22.5 4.44129 22.1839 3.87868 21.6213C3.31607 21.0587 3 20.2956 3 19.5V6C3 5.20435 3.31607 4.44129 3.87868 3.87868C4.44129 3.31607 5.20435 3 6 3H19.5C20.2956 3 21.0587 3.31607 21.6213 3.87868C22.1839 4.44129 22.5 5.20435 22.5 6V7.5M16.5 13.5H30C31.6569 13.5 33 14.8431 33 16.5V30C33 31.6569 31.6569 33 30 33H16.5C14.8431 33 13.5 31.6569 13.5 30V16.5C13.5 14.8431 14.8431 13.5 16.5 13.5Z" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+            <span class="copy-email-icon__el"><svg viewBox="0 0 36 36" fill="none"><path d="M30 9L13.5 25.5L6 18" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+          </span>
+          <span class="copy-email-text__wrap">
+            <span data-copy-email-element class="copy-email-text__el">iamvisp@gmail.com</span>
+            <span class="copy-email-text__el">Click to copy email</span>
+            <span class="copy-email-text__el">Copied to clipboard!</span>
+          </span>
+        </a>
+
+      </div>
+
+      <div class="outro__meta">
+        <span>&copy; 2026</span>
+      </div>
+    </footer>
+  </main>
+
+</body>
+</html>
