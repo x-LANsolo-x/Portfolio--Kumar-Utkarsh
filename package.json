@@ -2,13 +2,15 @@
   "name": "sashamartynchuk-portfolio-clone",
   "version": "1.0.0",
   "private": true,
+  "type": "module",
   "description": "Pixel-perfect clone of Sasha Martynchuk Portfolio",
   "scripts": {
-    "build": "echo 'Static site ready for deployment'",
-    "start": "serve -s . -p 3000",
-    "serve": "serve -s . -p 3000"
+    "build": "vite build && node copy-assets.js",
+    "preview": "vite preview",
+    "serve": "serve -s dist -p 3000"
   },
   "devDependencies": {
-    "serve": "^14.2.4"
+    "serve": "^14.2.4",
+    "vite": "^5.4.21"
   }
 }
