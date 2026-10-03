@@ -2,7 +2,7 @@ import fs from 'fs';
 import path from 'path';
 
 const folders = ['fonts', 'stickers', 'case', 'gallery', 'work', 'about'];
-const files = ['utkarsh-logo.svg', 'robots.txt', 'sitemap.xml'];
+const files = ['utkarsh-logo.svg', 'robots.txt', 'sitemap.xml', 'favicon.svg', 'favicon-32.png'];
 
 for (const folder of folders) {
   const src = path.resolve(folder);

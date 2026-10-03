@@ -1,18 +1,5 @@
-<svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-<!--
-  The mark, as supplied, with one addition: it is drawn dark on a LIGHT tab
-  strip and light on a dark one.
-
-  The source artwork is filled pure white, which is right on this site and
-  invisible in a browser tab in light mode — a white shape on a white tab. An
-  SVG favicon is a live document, so it can answer the question itself;
-  `prefers-color-scheme` inside the file is honoured by Chrome and Firefox, and
-  a browser that ignores it falls back to the PNG below, which is white on
-  black and legible either way.
--->
-<style>
-  path { fill: #ffffff; }
-  @media (prefers-color-scheme: light) { path { fill: #0a0a0a; } }
-</style>
-<path d="M37.9822 16.6686C38.7006 10.1916 29.876 6.58947 23.8688 9.11575C21.2754 10.2064 19.0681 12.0449 18.4448 14.929C18.3189 15.5368 18.2516 16.1332 18.2176 16.7091C17.968 20.9272 14.5325 22.9507 11.4296 20.0825C9.82388 18.5982 8.46134 17.0331 7.03723 17.0392C4.84391 17.0751 2.43373 19.5379 2.34321 21.848C1.97618 24.9997 9.64111 31.3887 15.8277 31.9964C20.3121 32.5375 26.861 30.1151 28.4582 26.6462C29.3768 24.4839 28.031 21.1003 27.933 19.0712C27.8322 16.9835 30.727 18.1958 32.2653 19.6108C34.5231 21.0387 37.6532 18.8477 37.9822 16.6686Z" fill="white"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48">
+  <rect width="48" height="48" rx="11" fill="#0d0e12"/>
+  <rect x="0.75" y="0.75" width="46.5" height="46.5" rx="10.25" fill="none" stroke="rgba(255,255,255,0.18)" stroke-width="1.5"/>
+  <text x="50%" y="54%" font-family="system-ui, -apple-system, 'SF Pro Display', 'Inter', 'Segoe UI', Roboto, sans-serif" font-size="23" font-weight="800" fill="#ffffff" text-anchor="middle" dominant-baseline="central" letter-spacing="-0.8px">KU</text>
 </svg>
