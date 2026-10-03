@@ -1,4 +1,4 @@
-import{g as a}from"./index-CzGW6FVa.js";const xe=`#version 300 es
+import{g as a}from"./core.js";const xe=`#version 300 es
 precision highp float;
 
 in vec2 aUV;

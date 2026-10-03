@@ -1,4 +1,4 @@
-import{o as k}from"./viewport-C0fhXW_y.js";import{i as B}from"./fold-mode-DbKzrdIL.js";const C=`#version 300 es
+import{o as k}from"./viewport.js";import{i as B}from"./fold-mode.js";const C=`#version 300 es
 precision highp float;
 
 in vec2 aUV;

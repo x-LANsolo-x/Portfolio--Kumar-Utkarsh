@@ -1,4 +1,4 @@
-import{g as k}from"./index-CzGW6FVa.js";import{g as ft,W as et,a as dt}from"./title-warp-BNwbqMDR.js";import{S as ut}from"./ScrollTrigger-DNECHiyU.js";import{i as mt}from"./fold-mode-DbKzrdIL.js";import{o as vt}from"./viewport-C0fhXW_y.js";const gt=`#version 300 es
+import{g as k}from"./core.js";import{g as ft,W as et,a as dt}from"./title-warp.js";import{S as ut}from"./scroll-trigger.js";import{i as mt}from"./fold-mode.js";import{o as vt}from"./viewport.js";const gt=`#version 300 es
 in vec2 aPos;
 void main() { gl_Position = vec4(aPos, 0.0, 1.0); }
 `,K=[{scale:2,fps:30,interactFps:60},{scale:1.5,fps:30,interactFps:60},{scale:1,fps:30,interactFps:60},{scale:.75,fps:30,interactFps:45},{scale:.5,fps:24,interactFps:30}],xt=2;function bt(){const u=navigator.connection;return u&&(u.saveData||u.effectiveType==="slow-2g"||u.effectiveType==="2g")?1:0}function yt(){const u=navigator.hardwareConcurrency||8,s=navigator.deviceMemory||8,t=matchMedia("(pointer: coarse)").matches,e=bt();return u<=4||s<=4||t?xt+e:e}const _t=`#version 300 es

@@ -1,4 +1,4 @@
-import{g as j}from"./index-CzGW6FVa.js";import{g as Me,W as Ae}from"./title-warp-BNwbqMDR.js";import"./viewport-C0fhXW_y.js";import"./fold-mode-DbKzrdIL.js";var xe=typeof globalThis<"u"?globalThis:typeof window<"u"?window:typeof global<"u"?global:typeof self<"u"?self:{};function Ie(J){return J&&J.__esModule&&Object.prototype.hasOwnProperty.call(J,"default")?J.default:J}var ae={exports:{}};/*!
+import{g as j}from"./core.js";import{g as Me,W as Ae}from"./title-warp.js";import"./viewport.js";import"./fold-mode.js";var xe=typeof globalThis<"u"?globalThis:typeof window<"u"?window:typeof global<"u"?global:typeof self<"u"?self:{};function Ie(J){return J&&J.__esModule&&Object.prototype.hasOwnProperty.call(J,"default")?J.default:J}var ae={exports:{}};/*!
  * matter-js 0.20.0 by @liabru
  * http://brm.io/matter-js/
  * License MIT
