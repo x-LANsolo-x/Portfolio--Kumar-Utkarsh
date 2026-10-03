@@ -1,7 +1,7 @@
 import fs from 'fs';
 import path from 'path';
 
-const folders = ['fonts', 'stickers', 'case', 'gallery', 'work'];
+const folders = ['fonts', 'stickers', 'case', 'gallery', 'work', 'about'];
 const files = ['utkarsh-logo.svg', 'robots.txt', 'sitemap.xml'];
 
 for (const folder of folders) {
