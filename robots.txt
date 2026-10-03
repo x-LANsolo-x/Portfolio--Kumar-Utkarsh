@@ -5,4 +5,4 @@ Allow: /
 # crawlers from spending budget on a page that is a form over six JSON files.
 Disallow: /admin
 
-Sitemap: https://sashamartynchuk.com/sitemap.xml
+Sitemap: https://kumarutkarsh.pages.dev/sitemap.xml

@@ -1,16 +1,18 @@
 {
-  "name": "sashamartynchuk-portfolio-clone",
+  "name": "kumar-utkarsh-portfolio",
   "version": "1.0.0",
   "private": true,
   "type": "module",
-  "description": "Pixel-perfect clone of Sasha Martynchuk Portfolio",
+  "description": "Kumar Utkarsh Portfolio",
   "scripts": {
     "build": "vite build && node copy-assets.js",
     "preview": "vite preview",
     "serve": "serve -s dist -p 3000"
   },
   "devDependencies": {
+    "canvas": "^3.2.3",
     "opentype.js": "^2.0.0",
+    "potrace": "^2.1.8",
     "serve": "^14.2.4",
     "vite": "^5.4.21",
     "wawoff2": "^2.0.1"
