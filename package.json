@@ -10,7 +10,9 @@
     "serve": "serve -s dist -p 3000"
   },
   "devDependencies": {
+    "opentype.js": "^2.0.0",
     "serve": "^14.2.4",
-    "vite": "^5.4.21"
+    "vite": "^5.4.21",
+    "wawoff2": "^2.0.1"
   }
 }
